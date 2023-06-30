@@ -1,0 +1,11 @@
+# Computational workflows
+::: {.callout-note}
+## Learning targets
+
+- You will have the version control system git installed on your computer and be able to run the important commands.
+
+- You will be able to keep your computing environment stable.
+
+- You will have a roadmap on how to automate your code. 
+:::
+

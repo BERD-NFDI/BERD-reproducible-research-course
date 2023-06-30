@@ -2,12 +2,15 @@ project:
   type: book
 
 book:
-  title: "berd-reproducible-research-course"
-  author: "Norah Jones"
-  date: "6/30/2023"
+  title: "BERD Course: Make Your Research Reproducible"
+  author: "Heidi Seibold"
   chapters:
     - index.qmd
     - intro.qmd
+    - 1-reproducible-research.qmd
+    - 2-project-organization.qmd
+    - 3-computational-workflows.qmd
+    - 4-publishing-research.qmd
     - summary.qmd
     - references.qmd
 
@@ -15,7 +18,7 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
   pdf:
     documentclass: scrreprt
 

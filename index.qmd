@@ -1,9 +1,9 @@
-# Preface {.unnumbered}
+# Overview {.unnumbered}
 
-This is a Quarto book.
+This booklet helps you implement impactful steps in **making your research reproducible** (and open). 
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Making your work reproducible may seem daunting right now, but we'll take it **step by step** and you can choose what you want to implement now and what you want to keep for later. This is a process and there is no need to take all the steps at once. Let's just try to move towards reproducible on the reproducibility scale.
 
-```{r}
-1 + 1
-```
+::: captioned-image-container
+![Reproducibility scale](images/repro-scale.jpg){fig-alt="Reproducibility scale: a scale showing **not reproducible** on one end and **reproducible** on the other end."}
+:::

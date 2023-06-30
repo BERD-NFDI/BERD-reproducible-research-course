@@ -1,0 +1,17 @@
+# Publishing research outputs
+
+::: {.callout-note}
+## Learning targets
+
+- You will know about licenses.
+
+- You will be able to pick the right platform to share your data.
+
+- You will know how to implement the FAIR principles in practice.
+:::
+
+## Licensing
+
+## Where to publish
+
+## FAIR revisited

@@ -1,0 +1,22 @@
+# Get your research project organized
+
+::: {.callout-note}
+## Learning targets
+
+- You will be able to create a sensible folder structure for your research projects.
+
+- You will be able to use good names for files, folders, functions, …
+
+- You will have a good understanding of documentation requirements for your research project.
+:::
+
+
+## Naming things
+
+## File and folder organization
+
+## Documentation
+
+### Documenting data
+### Documenting code
+### Documenting research projects

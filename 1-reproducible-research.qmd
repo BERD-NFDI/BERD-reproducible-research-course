@@ -1,0 +1,37 @@
+# Reproducible research and how to get there
+
+::: {.callout-note}
+## Learning targets
+
+- You will know what reproducibility is, what the hurdles are, and why it is important for research.
+
+- You will know about the FAIR data principles and be able to discuss the issues in implementing them.
+
+- You will be able to discuss the complexity of collaboration in research and communicating and working more effectively is important for good research.
+:::
+
+
+## What is reproducible research?
+
+A popular definition of reproducibility comes from [The Turing Way Book](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html):
+
+> At *The Turing Way*, we define **reproducible research** as work that can be independently recreated from the same data and the same code that the original team used. Reproducible is distinct from replicable, robust and generalisable as described in the figure below.
+
+::: captioned-image-container
+![Matrix defining reproducible research (from The Turing Way)](images/reproducible-matrix.jpg){fig-alt="Reproducibility scale: a scale showing **not reproducible** on one end and **reproducible** on the other end."}
+:::
+
+## Hurdles: reproducible research is hard
+
+From the definition above, reproducible research sounds really easy. It is a minimum standard. But still it is hard!
+
+TODO: more on hurdles
+
+
+## FAIR principles for reproducible research
+
+TODO: see also https://data.research.cornell.edu/content/preparing-fair-data-reuse-and-reproducibility
+
+## Teams work that fosters reproducibility
+
+TODO: ...
