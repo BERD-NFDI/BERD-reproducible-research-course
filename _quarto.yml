@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "berd-reproducible-research-course"
+  author: "Norah Jones"
+  date: "6/30/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
