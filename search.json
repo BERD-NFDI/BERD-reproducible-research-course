@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BERD Course: Make Your Research Reproducible",
+    "section": "",
+    "text": "Overview\nThis booklet helps you implement impactful steps in making your research reproducible (and open).\nMaking your work reproducible may seem daunting right now, but we’ll take it step by step and you can choose what you want to implement now and what you want to keep for later. This is a process and there is no need to take all the steps at once. Let’s just try to move towards reproducible on the reproducibility scale.\n\n\n\n\nReproducibility scale"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "1-reproducible-research.html#what-is-reproducible-research",
+    "href": "1-reproducible-research.html#what-is-reproducible-research",
+    "title": "1  Reproducible research and how to get there",
+    "section": "1.1 What is reproducible research?",
+    "text": "1.1 What is reproducible research?\nA popular definition of reproducibility comes from The Turing Way Book:\n\nAt The Turing Way, we define reproducible research as work that can be independently recreated from the same data and the same code that the original team used. Reproducible is distinct from replicable, robust and generalisable as described in the figure below.\n\n\n\n\n\nMatrix defining reproducible research (from The Turing Way)"
+  },
+  {
+    "objectID": "1-reproducible-research.html#hurdles-reproducible-research-is-hard",
+    "href": "1-reproducible-research.html#hurdles-reproducible-research-is-hard",
+    "title": "1  Reproducible research and how to get there",
+    "section": "1.2 Hurdles: reproducible research is hard",
+    "text": "1.2 Hurdles: reproducible research is hard\nFrom the definition above, reproducible research sounds really easy. It is a minimum standard. But still it is hard!\nTODO: more on hurdles"
+  },
+  {
+    "objectID": "1-reproducible-research.html#fair-principles-for-reproducible-research",
+    "href": "1-reproducible-research.html#fair-principles-for-reproducible-research",
+    "title": "1  Reproducible research and how to get there",
+    "section": "1.3 FAIR principles for reproducible research",
+    "text": "1.3 FAIR principles for reproducible research\nTODO: see also https://data.research.cornell.edu/content/preparing-fair-data-reuse-and-reproducibility"
+  },
+  {
+    "objectID": "1-reproducible-research.html#teams-work-that-fosters-reproducibility",
+    "href": "1-reproducible-research.html#teams-work-that-fosters-reproducibility",
+    "title": "1  Reproducible research and how to get there",
+    "section": "1.4 Teams work that fosters reproducibility",
+    "text": "1.4 Teams work that fosters reproducibility\nTODO: …"
+  },
+  {
+    "objectID": "2-project-organization.html#naming-things",
+    "href": "2-project-organization.html#naming-things",
+    "title": "2  Get your research project organized",
+    "section": "2.1 Naming things",
+    "text": "2.1 Naming things"
+  },
+  {
+    "objectID": "2-project-organization.html#file-and-folder-organization",
+    "href": "2-project-organization.html#file-and-folder-organization",
+    "title": "2  Get your research project organized",
+    "section": "2.2 File and folder organization",
+    "text": "2.2 File and folder organization"
+  },
+  {
+    "objectID": "2-project-organization.html#documentation",
+    "href": "2-project-organization.html#documentation",
+    "title": "2  Get your research project organized",
+    "section": "2.3 Documentation",
+    "text": "2.3 Documentation\n\n2.3.1 Documenting data\n\n\n2.3.2 Documenting code\n\n\n2.3.3 Documenting research projects"
+  },
+  {
+    "objectID": "3-computational-workflows.html",
+    "href": "3-computational-workflows.html",
+    "title": "3  Computational workflows",
+    "section": "",
+    "text": "Learning targets\n\n\n\n\nYou will have the version control system git installed on your computer and be able to run the important commands.\nYou will be able to keep your computing environment stable.\nYou will have a roadmap on how to automate your code."
+  },
+  {
+    "objectID": "4-publishing-research.html#licensing",
+    "href": "4-publishing-research.html#licensing",
+    "title": "4  Publishing research outputs",
+    "section": "4.1 Licensing",
+    "text": "4.1 Licensing"
+  },
+  {
+    "objectID": "4-publishing-research.html#where-to-publish",
+    "href": "4-publishing-research.html#where-to-publish",
+    "title": "4  Publishing research outputs",
+    "section": "4.2 Where to publish",
+    "text": "4.2 Where to publish"
+  },
+  {
+    "objectID": "4-publishing-research.html#fair-revisited",
+    "href": "4-publishing-research.html#fair-revisited",
+    "title": "4  Publishing research outputs",
+    "section": "4.3 FAIR revisited",
+    "text": "4.3 FAIR revisited"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "5  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]
