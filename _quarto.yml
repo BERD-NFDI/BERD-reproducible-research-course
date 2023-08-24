@@ -25,6 +25,10 @@ book:
     - 3-2-stabilize.qmd
     - 3-3-automate.qmd
   - part: 4-publishing-research.qmd
+    chapters:
+    - 4-1-licensing.qmd
+    - 4-2-where-to-publish.qmd
+    - 4-3-fair-revisited.qmd
   - part: summary.qmd
     chapters:
     - references.qmd

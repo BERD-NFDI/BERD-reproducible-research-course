@@ -19,6 +19,8 @@
 Read this chapter and watch this week's videos. 
 Afterwards go through the following assignments:
 
+- Discuss with your accountability buddy and/or your research team: what are good places to publish
+    your data, code and other research outputs in your field?
 - Upload something (e.g. data or a slide deck) to a repository of your choice. How FAIR can you make it?
 
 Discuss your progress with your accountability buddy. Bring any questions and

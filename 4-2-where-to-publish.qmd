@@ -1,1 +1,76 @@
 ## Where to publish
+
+When people write the following:
+
+> *The data/code will be made available upon request.*
+
+This usually means:
+
+> *Once the PhD student who wrote this paper leaves their position, the
+> data/code will be lost in space.*
+
+Am I right? But how can you do better? How can you make your research outputs
+available?
+
+### Publish in a repository
+
+Publish your research outputs in a repository. You basically have three
+options here:
+
+-   A general purpose service (e.g. [Zenodo](https://zenodo.org/) or
+    [Open Science Framework](https://osf.io/)),
+-   The service of your institution (e.g. [Open Data
+    LMU](https://data.ub.uni-muenchen.de/) or [ETH Zurich's Research
+    Collection](https://www.research-collection.ethz.ch/?locale-attribute=en)),
+-   A field or project specific service (e.g. a specific repository for
+    [high throughput sequencing data](https://www.ncbi.nlm.nih.gov/sra)
+    or [CRAN](https://cran.r-project.org/) for R-Packages)
+
+Please make sure to use a trustworthy service. How to check if a service
+is trustworthy? My rule of thumb is that services that have investor
+backing (e.g. Figshare) are less trustworthy than services backed by the
+research community (e.g. Zenodo, which is developed by OpenAIRE and
+CERN). Why? Well, I think an Open Science service should not be driven
+primarily by commercial goals. At some point commercial services will
+take money from you, if that may be by selling your data, by locking
+your uploaded material behind a pay wall, or in another way.
+
+### Publish with the paper
+
+Some journals offer to publish your research outputs with your paper. I
+will be honest, I have mixed feelings about this. Not all journals which
+offer this, really have the expertise to do so and they don't
+necessarily have the possibility to store data long term. For one of my
+papers we uploaded the material with the journal, but the link to the
+material keeps vanishing and I keep getting the confused emails of
+interested readers. So, make sure the journal you upload your material
+to, ensures long term storage and availability 🧐.
+
+### If your research outputs cannot be shared openly
+
+What should you do if you cannot publish your research outputs openly?
+
+If you have sensitive data (e.g. patient data) and no consent, do not publish the data! There
+are other options for you.
+
+If for any reason you cannot share your research outputs, think of
+options how you can still ensure that others can trust in the
+reproducibility of your research.
+
+- Can you maybe publish the metadata and the code? 
+- Can you publish a synthetic version of your data? 
+- Can you share the data with specific people (e.g. researchers in the same field)? 
+
+Brainstorm with your peers, librarians, or IT support. There
+are always solutions that are better than publishing nothing.
+
+
+### Further reading
+
+-   [Zenodo Guide](https://www.openaire.eu/zenodo-guide)
+-   [How create an OSF
+    project](https://help.osf.io/article/252-create-a-project)
+
+
+
+
