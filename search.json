@@ -14,11 +14,11 @@
     "text": "Course format\nThis is an online course. Each week you will..\n\nwatch the weekly videos (~45 min),\nreview one of the booklet chapters,\nhave a short session with your accountability buddy (15-20 minutes),\nimplement the tasks of the week, and\ndiscuss your progress in the weekly online meeting with the instructor and fellow course participants (1-1.5 hours).\n\nYou will choose your accountability buddy during the course. You and your buddy will help each other in implementing the tasks of each week.\nWeekly Meetings:\n\nTuesday, October 17, 3 pm – 4:30 pm CET\nTuesday, October 24, 3 pm – 4:30 pm CET\nTuesday, October 31, NO MEETING but self-paced learning\nTuesday, November 7, 3 pm – 4:30 pm CET\nTuesday, November 14, 3 pm – 4:30 pm CET"
   },
   {
-    "objectID": "1-reproducible-research.html#what-is-reproducible-research",
-    "href": "1-reproducible-research.html#what-is-reproducible-research",
+    "objectID": "1-reproducible-research.html",
+    "href": "1-reproducible-research.html",
     "title": "Reproducible research and how to get there",
-    "section": "What is reproducible research?",
-    "text": "What is reproducible research?\nA popular definition of reproducibility comes from The Turing Way Book:\n\nAt The Turing Way, we define reproducible research as work that can be independently recreated from the same data and the same code that the original team used. Reproducible is distinct from replicable, robust and generalisable as described in the figure below.\n\n\n\n\n\nMatrix defining reproducible research (from The Turing Way)"
+    "section": "",
+    "text": "Learning targets\n\n\n\n\nYou will know what reproducibility is, what the hurdles are, and why it is important for research.\nYou will know about the FAIR data principles and be able to discuss the issues in implementing them.\nYou will be able to discuss the complexity of collaboration in research and communicating and working more effectively is important for good research.\n\n\n\n\n\n\n\n\n\nTasks\n\n\n\nRead this chapter and watch this week’s videos. Afterwards go through the following assignments:\n\nviewof flavor = Inputs.checkbox([\n\"What questions came up for you while watching the videos and going through the booklet?\", \n\"What are your personal hurdles for reproducible research? What can you do to address them?\",\n\"What are hurdles for you in producing FAIR data? What can you do for the data you work with?\", \n\"Which of the points in the 8 steps for Planning a Community does your research team already check off? Which should be discussed? If possible, bring open points to your team meeting. \"\n])"
   },
   {
     "objectID": "1-2-hurdles.html",
@@ -39,7 +39,7 @@
     "href": "1-4-team-work.html",
     "title": "3  Team work that fosters reproducibility",
     "section": "",
-    "text": "TODO: …"
+    "text": "Research is increasingly being conducted in teams. The bigger and more complex the team, the more complicated it can be to work in a reproducible fashion. Thinking about how to set up a team to foster reproducibility is essential, because a bigger team can also mean that reproducibility becomes easier. If the whole team works together, their diverse skills will help in creating a thriving and reproducible research project.\nIn The Turing Way’s Guide to Planning a Community they discuss 8 steps, that work well for a broad range of research teams:\n\nChoose a Communication Platform (e.g. GitHub + Chat + Website)\nProvide a Project Summary File (e.g. README.md)\nSelect a Code of Conduct\nProvide Contribution Guidelines and Interaction Pathways\nCreate a Basic Management/Leadership Structure (roles)\nProvide Contact Details Wherever Useful (email address to role)\nIdentify Failed Approaches, and Stop Them\nHave Documentation (e.g. a wiki) and Dissemination Plans for Your Project (e.g. publication on Zenodo)\n\nNote that there are two important parts fo thriving teams:\n\nDocuments (wiki, checklist, …)\nRoles of people (research software engineer, welcome team, …)\n\nHow is your team set up? Which of the 8 steps are unclear to you?"
   },
   {
     "objectID": "2-project-organization.html#naming-things",
