@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BERD Course: Make Your Research Reproducible - 6&nbsp; File and folder organization</title>
+<title>BERD Course: Make Your Research Reproducible - 11&nbsp; Licensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./2-3-documentation.html" rel="next">
-<link href="./2-1-naming.html" rel="prev">
+<link href="./4-2-where-to-publish.html" rel="next">
+<link href="./4-publishing-research.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-project-organization.html">Get your research project organized</a></li><li class="breadcrumb-item"><a href="./2-2-organisation.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">File and folder organization</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4-publishing-research.html">Publishing research outputs</a></li><li class="breadcrumb-item"><a href="./4-1-licensing.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Licensing</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -178,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2-2-organisation.html" class="sidebar-item-text sidebar-link active">
+  <a href="./2-2-organisation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">File and folder organization</span></span></a>
   </div>
 </li>
@@ -230,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4-1-licensing.html" class="sidebar-item-text sidebar-link">
+  <a href="./4-1-licensing.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Licensing</span></span></a>
   </div>
 </li>
@@ -275,8 +275,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#how-to-organize-files-and-folders-well" id="toc-how-to-organize-files-and-folders-well" class="nav-link active" data-scroll-target="#how-to-organize-files-and-folders-well">How to organize files and folders well?</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  <li><a href="#choosing-a-license-for-texts-data-media" id="toc-choosing-a-license-for-texts-data-media" class="nav-link active" data-scroll-target="#choosing-a-license-for-texts-data-media">Choosing a license for texts, data, media, …</a></li>
+  <li><a href="#choosing-a-license-for-software" id="toc-choosing-a-license-for-software" class="nav-link" data-scroll-target="#choosing-a-license-for-software">Choosing a license for software</a></li>
+  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other">Other</a></li>
   </ul>
 </nav>
     </div>
@@ -285,7 +286,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">File and folder organization</span></h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Licensing</span></h1>
 </div>
 
 
@@ -300,40 +301,48 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><strong>My first research project was a mess 🙈.</strong> I had hundreds of files with dubious file names and sometimes several files with similar code written for computing on different infrastructures (my computer, the institute server, the cluster of the computing facility).</p>
-<p>I felt like the worst researcher of all times. But I wasn’t. <strong>Many struggle with organizing their files and folders in increasingly complex research projects.</strong></p>
-<section id="how-to-organize-files-and-folders-well" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-organize-files-and-folders-well">How to organize files and folders well?</h3>
-<p>It basically comes down to structuring folders and files <strong>systematically from the beginning</strong>.</p>
-<p>Think about what a good folder structure could be for your research project. A standard project of mine looks something like this:</p>
-<pre><code>.
-├── analysis            &lt;- all things data analysis
-│   └── src             &lt;- functions and other source files
-├── comm
-│   ├── internal_comm   &lt;- internal communication such as meeting notes
-│   └── journal_comm    &lt;- communication with the journal, e.g. peer review
-├── data
-│   ├── data_clean      &lt;- clean version of the data
-│   └── data_raw        &lt;- raw data (don't touch)
-├── dissemination
-│   ├── manuscripts
-│   ├── posters
-│   └── presentations
-├── documentation       &lt;- documentation, e.g. data management plan
-└── misc                &lt;- miscellaneous files that don't fit elsewhere</code></pre>
-<p>You can download this folder structure as a template from <a href="https://github.com/HeidiSeibold/research-project-template">https://github.com/HeidiSeibold/research-project-template</a>.<br>
-Not every project is the same and likely your project will be more complex than this. But if you think about good organization from the beginning, it will be easier in the long run.</p>
-<p>What do you think about file or folder organization? Is your folder structure similar to mine?</p>
-</section>
-<section id="further-reading" class="level3">
-<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
+<p>Reusing other researcher’s work is inherent in science. Licensing plays a central role for reuse, so we should know how it works.</p>
+<p>In my workshops on open and reproducible research licensing often comes up as a topic of fear.</p>
+<p><em>What am I allowed to do? Should I better let the legal department decide? How do I avoid going to jail?</em></p>
+<p>Most of the time choosing a license is actually quite simple. So let me help you loose your fear of it! 🤗</p>
+<section id="choosing-a-license-for-texts-data-media" class="level3">
+<h3 class="anchored" data-anchor-id="choosing-a-license-for-texts-data-media">Choosing a license for texts, data, media, …</h3>
+<p>I really like the Creative Commons licenses for most research outputs (and other things I produce, like this newsletter).</p>
+<p>They are easy to understand and to pick. On the CC-website you can find a simple tool to help you choose your license:</p>
+<p>https://creativecommons.org/choose/</p>
+<p>In research we want to almost always use the CC-BY or CC0 license.</p>
 <ul>
-<li><a href="https://the-turing-way.netlify.app/reproducible-research/compendia.html">Research Compendia</a>, The Turing Way</li>
-<li><a href="https://genr.eu/wp/towards-a-standardized-research-folder-structure/">Towards a Standardized Research Folder Structure</a>, GenR blog</li>
-<li>Folder structure of R packages, <a href="https://swcarpentry.github.io/r-novice-inflammation/08-making-packages-R/">Making Packages in R</a>, Software Carpentry</li>
-<li><a href="https://github.com/HeidiSeibold/research-project-template">Research Project Template</a>, Heidi Seibold</li>
-<li><a href="http://projecttemplate.net/">Data Analysis Project Template</a>, a <a href="https://github.com/KentonWhite/ProjectTemplate/graphs/contributors">group of R users</a></li>
+<li><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> (also known as CC0 1.0 Universal) means that the output is in the public domain and can by used by everyone for anything.</li>
+<li><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a> (also known as Attribution 4.0 International) requires the user to give credit to the creator but gives freedom on what can be done with the output. This is the license I use 90% of the time.</li>
 </ul>
+<section id="why-not-non-commercial" class="level4">
+<h4 class="anchored" data-anchor-id="why-not-non-commercial">Why not non-commercial?</h4>
+<p><a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC</a> is another license I often see used, but I do not like it in the context of research. Why? The “NC” for non-commerical prohibits commercial use for anyone but the owner. That means, for example, that educators (like me) cannot use it, if there are fees or commercial learning platforms involved. Even blogs and Wikipedia struggle with NC if there are commercial derivatives or components. Read more here.</p>
+</section>
+</section>
+<section id="choosing-a-license-for-software" class="level3">
+<h3 class="anchored" data-anchor-id="choosing-a-license-for-software">Choosing a license for software</h3>
+<p>Software needs specific licenses. So for software there is another website you can use for choosing a license.</p>
+<p>https://choosealicense.com</p>
+<p>Again there is a license that works for most open projects: the MIT license.</p>
+<div class="captioned-image-container">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mit-license.png" class="img-fluid figure-img" alt="Screenshot of https://choosealicense.com section 'I want it simple and permissive'"></p>
+<figcaption class="figure-caption">https://choosealicense.com</figcaption>
+</figure>
+</div>
+</div>
+<p>That seems pretty simple, right? For more complex situations and when you have to worry about license compatibility of your code with software components that you use, please check out:</p>
+<ul>
+<li>The Turing Way chapter on <a href="https://the-turing-way.netlify.app/reproducible-research/licensing/licensing-compatibility">License Compatibility</a></li>
+<li>Talk “<a href="https://zenodo.org/record/8246557">All you need to know about Software Licenses</a>” by Tobias Schlauch</li>
+</ul>
+</section>
+<section id="other" class="level3">
+<h3 class="anchored" data-anchor-id="other">Other</h3>
+<p>For other licenses, such as for hardware, choosealicense.com also has help for you: <a href="https://choosealicense.com/non-software/">choosealicense.com/non-software</a></p>
+<p>I hope this short intro to licensing was helpful to you! Please note that I am not a legal expert but a self taught open science enthusiast.</p>
 
 
 </section>
@@ -574,13 +583,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./2-1-naming.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Naming things</span></span>
+      <a href="./4-publishing-research.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Publishing research outputs</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./2-3-documentation.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Documentation</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./4-2-where-to-publish.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Where to publish</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
