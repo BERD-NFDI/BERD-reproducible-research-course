@@ -10,8 +10,17 @@
 - You will know how to implement the FAIR principles in practice.
 :::
 
-## Licensing
 
-## Where to publish
 
-## FAIR revisited
+
+::: {.callout-caution}
+## Tasks
+
+Read this chapter and watch this week's videos. 
+Afterwards go through the following assignments:
+
+- Upload something (e.g. data or a slide deck) to a repository of your choice. How FAIR can you make it?
+
+Discuss your progress with your accountability buddy. Bring any questions and
+problems that you cannot solve with your buddy to the weekly meeting.
+:::

@@ -1,4 +1,5 @@
 # Computational workflows
+
 ::: {.callout-note}
 ## Learning targets
 
@@ -9,3 +10,23 @@
 - You will have a roadmap on how to automate your code. 
 :::
 
+::: {.callout-important}
+This week's assignments are a bit more difficult and will take longer to implement
+that the previous. Please plan for this.
+:::
+
+::: {.callout-caution}
+## Tasks
+
+Read this chapter and watch this week's videos. 
+Afterwards go through the following assignments:
+
+- Install git: For R users, I recommend following [these](https://gitlab.com/HeidiSeibold/setup-git-rstudio-gitlab) instructions. Otherwise the Carpentries have good [instructions](https://swcarpentry.github.io/git-novice/index.html) for all systems (follow along until end of `2. Setting up Git`)
+- Create a project on GitLab (or GitHub). Then `clone` it, edit a file, `add`, 
+`commit`, and `push` your changes.
+- View the open issues for our course booklet and choose one where you can make a contribution. Create a merge request with your contribution and mark it in the respective issue.
+- Optional: try using Make to automate something in your current research project.
+
+Discuss your progress with your accountability buddy. Bring any questions and
+problems that you cannot solve with your buddy to the weekly meeting.
+:::

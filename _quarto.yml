@@ -20,6 +20,10 @@ book:
     - 2-2-organisation.qmd
     - 2-3-documentation.qmd
   - part: 3-computational-workflows.qmd
+    chapters:
+    - 3-1-version-control.qmd
+    - 3-2-stabilize.qmd
+    - 3-3-automate.qmd
   - part: 4-publishing-research.qmd
   - part: summary.qmd
     chapters:

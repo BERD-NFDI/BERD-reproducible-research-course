@@ -1,0 +1,50 @@
+## Version control
+
+Version control is a big topic for me. It completely changed the way I work. I am happy that we get to talk about version control as part of this 6 step process towards reproducibility.
+
+### What is version control? 
+
+Let's say you are writing a paper. You will edit your paper and might want to keep different versions of it. A common way to handle that is by using different file names for different versions.
+
+
+
+::: captioned-image-container
+![http://www.phdcomics.com/comics/archive/phd101212s.gif](http://www.phdcomics.com/comics/archive/phd101212s.gif){fig-alt="http://www.phdcomics.com/comics/archive/phd101212s.gif"}
+:::
+
+This way of "version control" is outdated and error-prone (hence the pixelated image 😜). The most common proper version control system today is [Git](https://git-scm.com/), which I'd like to introduce to you now.
+
+### Git for version control
+
+Git is free and open source 😃🙌.
+
+With Git you can track different versions of your paper. For each version you can add a description ("commit message") and you even automatically track who made which change if you are working in a group. You can always go back to old versions.
+
+The way you work with Git is that you have the version database both on our computers and on a server. To get the changes from and to the server you use commands (`pull` = download stuff from server, `push` = upload stuff to server).
+
+::: captioned-image-container
+![](images/vc-server.jpg){fig-alt="Reproducibility scale: a scale showing **not reproducible** on one end and **reproducible** on the other end."}
+:::
+
+Most researchers use GitLab or GitHub as platforms for working with Git and they also serve as a neat front end for the server. GitLab and GitHub give us some extra neat features for collaboration (e.g. issues, Wiki, ...).
+
+Learning Git can be daunting 🙀. I recommend learning it with a group or in a class. I am always happy to teach version control. You can also check if there is a free [Software Carpentry](https://software-carpentry.org/) class in your area.
+
+### Other version control systems
+
+There are many other ways of doing version control out there.
+
+**Subversion:** Simpler systems like Subversion are used less these days as Git offers more flexibility.
+
+**Google docs and friends:** Many online text editors (Google Docs, OneDrive, ...) offer versioning now. It is not as advanced and versatile, but a nice way to work in a [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) (What You See Is What You Get) editor. Git really only works with real text files, so people usually use LaTeX or Markdown (not WYSIWYG) to write texts when using Git.
+
+**Versioning data:** Version control of data is a difficult task. Let's leave that for another day. See [here](https://the-turing-way.netlify.app/reproducible-research/vcs/vcs-data.html) for more info for now.
+
+
+## Further reading
+-   [Version Control](https://the-turing-way.netlify.app/reproducible-research/vcs.html), The Turing Way
+-   [Version Control with Git](https://swcarpentry.github.io/git-novice/), Software Carpentry
+-   [Version Control with Git](https://annakrystalli.me/rrresearchACCE20/version-control-with-git.html) (for R users), Anna Krystalli
+-   [Set up Git with RStudio & GitLab](https://gitlab.com/HeidiSeibold/setup-git-rstudio-gitlab), Heidi Seibold
+
+

@@ -1,0 +1,100 @@
+## Stabilize your computing environment and software
+
+This topic may sound technical and boring at first, but please bare
+with me 🙏. **It will be useful!**
+
+
+Have you ever had the problem that you ran an old code and it just did
+not work anymore? After hours of digging into the issue you find that it's because the
+software package you use has changed in the meantime 🧐
+
+Or have you tried to reproduce someone else's code, which seems to run on
+their machine but not on yours and you just don't know why.
+
+This chapter is all about avoiding such problems in the future
+by **stabilizing your computing environment and software**. ✅
+
+
+### What is a computing environment?
+
+Your computing environment is defined by your computer, the operating
+system and the software installed. If you update your operating system
+or your software, your computing environment changes. In R, for example,
+you can learn a lot about your computing environment by typing
+`sessionInfo()`.
+
+```{r}
+sessionInfo()
+```
+
+It tells the R version, operating system, loaded R packages as well as
+their versions.
+
+### Options for stabilizing your computing environment
+
+#### 1) Record your computing environment {.unnumbered}
+
+Document the software versions you used. For example if you use R, you
+could copy the output of `sessionInfo()` into your README or somewhere
+else where future you (and others) can find this information. This is
+not exactly "stabilizing" but it gives the possibility to install the
+same software versions again.
+
+#### 2) Use one virtual machine per research project {.unnumbered}
+
+You don't need to know what a virtual machine is or how to set it up to
+be able to do this. I used to ask the wonderful IT person at my
+institute to set up a virtual machine for me and if your IT supporters
+know their job, they'll be able to help you here.
+
+A virtual machine is essentially a virtual computer on another computer
+or server (To those nerds out there, I know I am probably explaining it
+incorrectly but for the purpose of what we want to achieve here, it's
+good enough). If you have one virtual machine for each project, you can
+keep the computing environment stable by not installing or updating
+software after you've finished the research project.
+
+The downside of this strategy is that this is only for future you and
+your collaborators, but not for other researchers who want to work with
+the same computing environment.
+
+#### 3) Use one container per research project {.unnumbered}
+
+Containers are similar to virtual machines (think little computer inside
+your computer). The big difference is that you can make them available
+for others. So you can send your container image (or the file describing
+it) to others.
+
+::: captioned-image-container
+![](images/docker-computers.jpg)
+:::
+
+Popular container tools are **Docker and Apptainer** (formerly
+Singularity). Learning to work with containers is not super easy, but it
+is worth the time and actually can be applied in so many other
+situations. So, a great skill to have even if you decide to quit
+research.
+
+#### 4) Other {.unnumbered}
+
+There are many other options out there. I wrote down the three that are
+least dependent on the actual software you use. For R users, check out
+packages `logrx`, `rang`, `packrat`, `versions`, and `renv`.
+
+
+### Further reading
+
+-   [Reproducible
+    Environments](https://the-turing-way.netlify.app/reproducible-research/renv.html),
+    The Turing Way
+-   Video: [How can software containers help your
+    research?](https://youtu.be/HelrQnm3v4g), Paula Andrea Martinez +
+    Australian Research Data Commons
+-   [R Docker tutorial](https://jsta.github.io/r-docker-tutorial/),
+    maintained by Jemma Stachelek
+
+That's all for this chapter. I hope it was helpful and not too technical. Happy
+researching! 🙌
+
+
+
