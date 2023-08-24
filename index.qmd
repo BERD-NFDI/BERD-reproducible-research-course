@@ -1,3 +1,8 @@
+![](images/Logo_BERD_Academy.png){width=60% fig-align="center" fig-alt="https://www.berd-nfdi.de/berd-academy/"}
+
+This course booklet is part of the [BERD Academy](https://www.berd-nfdi.de/berd-academy/)
+and was created in 2023.
+
 # Overview {.unnumbered}
 
 This booklet helps you implement impactful steps in **making your research reproducible** (and open). 
