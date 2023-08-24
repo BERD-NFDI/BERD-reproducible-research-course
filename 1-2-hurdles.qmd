@@ -1,0 +1,12 @@
+## Hurdles: reproducible research is hard
+
+From the definition above, reproducible research sounds really easy. It is a minimum standard. But still it is hard!
+
+Common hurdles that researchers face are:
+
+- Missing knowledge (What am I allowed to do? How to do it?)
+- Shame and fear
+- Time pressure
+- Data/code that cannot be shared openly
+
+What are your personal hurdles? What can you do to address them?

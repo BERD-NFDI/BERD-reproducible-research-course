@@ -5,13 +5,19 @@ book:
   title: "BERD Course: Make Your Research Reproducible"
   author: "Heidi Seibold"
   chapters:
-    - index.qmd
-    - intro.qmd
-    - 1-reproducible-research.qmd
-    - 2-project-organization.qmd
-    - 3-computational-workflows.qmd
-    - 4-publishing-research.qmd
-    - summary.qmd
+  - part: index.qmd
+    chapters:
+      - intro.qmd
+  - part: 1-reproducible-research.qmd
+    chapters:
+    - 1-2-hurdles.qmd
+    - 1-3-fair.qmd
+    - 1-4-team-work.qmd
+  - part: 2-project-organization.qmd
+  - part: 3-computational-workflows.qmd
+  - part: 4-publishing-research.qmd
+  - part: summary.qmd
+    chapters:
     - references.qmd
 
 bibliography: references.bib
@@ -19,6 +25,6 @@ bibliography: references.bib
 format:
   html:
     theme: flatly
-
-
+    
+number-depth: 2
 
