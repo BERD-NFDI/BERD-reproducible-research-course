@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "BERD Course: Make Your Research Reproducible"
+  title: "BERD Course Booklet: Make Your Research Reproducible"
   author: "Heidi Seibold"
   chapters:
   - part: index.qmd
