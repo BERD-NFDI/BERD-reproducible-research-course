@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BERD Course: Make Your Research Reproducible - 2&nbsp; Hurdles: reproducible research is hard</title>
+<title>BERD Course: Make Your Research Reproducible - 6&nbsp; File and folder organization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1-3-fair.html" rel="next">
-<link href="./1-1-what-is-reproducible-research.html" rel="prev">
+<link href="./2-3-documentation.html" rel="next">
+<link href="./2-1-naming.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-reproducible-research.html">Reproducible research and how to get there</a></li><li class="breadcrumb-item"><a href="./1-2-hurdles.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-project-organization.html">Get your research project organized</a></li><li class="breadcrumb-item"><a href="./2-2-organisation.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">File and folder organization</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -143,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1-2-hurdles.html" class="sidebar-item-text sidebar-link active">
+  <a href="./1-2-hurdles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></span></a>
   </div>
 </li>
@@ -178,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2-2-organisation.html" class="sidebar-item-text sidebar-link">
+  <a href="./2-2-organisation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">File and folder organization</span></span></a>
   </div>
 </li>
@@ -246,14 +246,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#how-to-organize-files-and-folders-well" id="toc-how-to-organize-files-and-folders-well" class="nav-link active" data-scroll-target="#how-to-organize-files-and-folders-well">How to organize files and folders well?</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">File and folder organization</span></h1>
 </div>
 
 
@@ -268,17 +275,43 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>From the definition above, reproducible research sounds really easy. It is a minimum standard. But still it is hard!</p>
-<p>Common hurdles that researchers face are:</p>
+<p><strong>My first research project was a mess 🙈.</strong> I had hundreds of files with dubious file names and sometimes several files with similar code written for computing on different infrastructures (my computer, the institute server, the cluster of the computing facility).</p>
+<p>I felt like the worst researcher of all times. But I wasn’t. <strong>Many struggle with organizing their files and folders in increasingly complex research projects.</strong></p>
+<section id="how-to-organize-files-and-folders-well" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-organize-files-and-folders-well">How to organize files and folders well?</h3>
+<p>It basically comes down to structuring folders and files <strong>systematically from the beginning</strong>.</p>
+<p>Think about what a good folder structure could be for your research project. A standard project of mine looks something like this:</p>
+<pre><code>.
+├── analysis            &lt;- all things data analysis
+│   └── src             &lt;- functions and other source files
+├── comm
+│   ├── internal_comm   &lt;- internal communication such as meeting notes
+│   └── journal_comm    &lt;- communication with the journal, e.g. peer review
+├── data
+│   ├── data_clean      &lt;- clean version of the data
+│   └── data_raw        &lt;- raw data (don't touch)
+├── dissemination
+│   ├── manuscripts
+│   ├── posters
+│   └── presentations
+├── documentation       &lt;- documentation, e.g. data management plan
+└── misc                &lt;- miscellaneous files that don't fit elsewhere</code></pre>
+<p>You can download this folder structure as a template from <a href="https://github.com/HeidiSeibold/research-project-template">https://github.com/HeidiSeibold/research-project-template</a>.<br>
+Not every project is the same and likely your project will be more complex than this. But if you think about good organization from the beginning, it will be easier in the long run.</p>
+<p>What do you think about file or folder organization? Is your folder structure similar to mine?</p>
+</section>
+<section id="further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
 <ul>
-<li>Missing knowledge (What am I allowed to do? How to do it?)</li>
-<li>Shame and fear</li>
-<li>Time pressure</li>
-<li>Data/code that cannot be shared openly</li>
+<li><a href="https://the-turing-way.netlify.app/reproducible-research/compendia.html">Research Compendia</a>, The Turing Way</li>
+<li><a href="https://genr.eu/wp/towards-a-standardized-research-folder-structure/">Towards a Standardized Research Folder Structure</a>, GenR blog</li>
+<li>Folder structure of R packages, <a href="https://swcarpentry.github.io/r-novice-inflammation/08-making-packages-R/">Making Packages in R</a>, Software Carpentry</li>
+<li><a href="https://github.com/HeidiSeibold/research-project-template">Research Project Template</a>, Heidi Seibold</li>
+<li><a href="http://projecttemplate.net/">Data Analysis Project Template</a>, a <a href="https://github.com/KentonWhite/ProjectTemplate/graphs/contributors">group of R users</a></li>
 </ul>
-<p>What are your personal hurdles? What can you do to address them?</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -516,13 +549,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./1-1-what-is-reproducible-research.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is reproducible research?</span></span>
+      <a href="./2-1-naming.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Naming things</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1-3-fair.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">FAIR principles for reproducible research</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./2-3-documentation.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Documentation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

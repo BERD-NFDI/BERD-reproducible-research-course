@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BERD Course: Make Your Research Reproducible - 2&nbsp; Hurdles: reproducible research is hard</title>
+<title>BERD Course: Make Your Research Reproducible - 7&nbsp; Documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1-3-fair.html" rel="next">
-<link href="./1-1-what-is-reproducible-research.html" rel="prev">
+<link href="./3-computational-workflows.html" rel="next">
+<link href="./2-2-organisation.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -89,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-reproducible-research.html">Reproducible research and how to get there</a></li><li class="breadcrumb-item"><a href="./1-2-hurdles.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-project-organization.html">Get your research project organized</a></li><li class="breadcrumb-item"><a href="./2-3-documentation.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Documentation</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -143,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1-2-hurdles.html" class="sidebar-item-text sidebar-link active">
+  <a href="./1-2-hurdles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></span></a>
   </div>
 </li>
@@ -184,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2-3-documentation.html" class="sidebar-item-text sidebar-link">
+  <a href="./2-3-documentation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Documentation</span></span></a>
   </div>
 </li>
@@ -246,14 +280,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#documenting-research-projects" id="toc-documenting-research-projects" class="nav-link active" data-scroll-target="#documenting-research-projects">Documenting research projects</a></li>
+  <li><a href="#documenting-data" id="toc-documenting-data" class="nav-link" data-scroll-target="#documenting-data">Documenting data</a></li>
+  <li><a href="#documenting-code" id="toc-documenting-code" class="nav-link" data-scroll-target="#documenting-code">Documenting code</a></li>
+  <li><a href="#documenting-other-things" id="toc-documenting-other-things" class="nav-link" data-scroll-target="#documenting-other-things">Documenting other things</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Documentation</span></h1>
 </div>
 
 
@@ -268,17 +312,55 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>From the definition above, reproducible research sounds really easy. It is a minimum standard. But still it is hard!</p>
-<p>Common hurdles that researchers face are:</p>
+<p>In this chapter we discuss research documentation for reproducible research.</p>
+<p><em>How can I document my research outputs?</em></p>
+<p>There is actually no super-clear catch all answer to this question. It really depends on your needs, on your audience as well as on the types of research outputs you generate. In the following you find a few ideas to start from.</p>
+<section id="documenting-research-projects" class="level3">
+<h3 class="anchored" data-anchor-id="documenting-research-projects">Documenting research projects</h3>
+<p>One thing that I always do is to add a README-Text-File to each project. In the README I write the <strong>most important info about the project</strong>: What is it about? Who is involved? Where to find files? How to cite it? Where to find the paper? …</p>
+<p>As an example, check out my project on <a href="https://github.com/HeidiSeibold/personalised_medicine">personalised medicine</a>.</p>
+<p>For more complex research projects, you can create a whole wiki or similar to describe the project. For most projects a README will be just fine.</p>
+</section>
+<section id="documenting-data" class="level3">
+<h3 class="anchored" data-anchor-id="documenting-data">Documenting data</h3>
+<p>Metadata is central to documentation of data. Metadata is information about your data. It’s information on the license of the data, who owns it, what information the data contain, … so essential data documentation.</p>
+<p>Many research fields have <strong>standards for metadata</strong>. If you can’t find one for your field you can use a common standard (e.g.&nbsp;<a href="https://www.dublincore.org/specifications/dublin-core/dces/">Dublin Core</a>) or just ask a data manager or librarian at your institution. You can write metadata similar to a README (see e.g.&nbsp;this <a href="https://data.research.cornell.edu/content/readme">guide from Cornell University</a>). If you upload your data to a data platform (e.g.&nbsp;<a href="https://datadryad.org/">Dryad</a>) you won’t have to think about it as the platform usually takes care of that (Dryad uses Dublin Core).</p>
+</section>
+<section id="documenting-code" class="level3">
+<h3 class="anchored" data-anchor-id="documenting-code">Documenting code</h3>
+<p>To make my code as understandable as possible for others, I use <strong>literate programming</strong> (mixing text and code to make it easier to read, e.g.&nbsp;<a href="https://quarto.org/">Quarto</a>) or add clear <strong>code comments</strong>. When writing functions in R I additionally use the standardized way to document R functions (via <a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html"><strong>Roxygen2</strong></a>).</p>
+<p>An example of code comments in R (<code>##</code>):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Load package + data</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"model4you"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"MathExam14W"</span>, <span class="at">package =</span> <span class="st">"psychotools"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="do">## scale points achieved to [0, 100] percent</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>MathExam14W<span class="sc">$</span>tests <span class="ot">&lt;-</span> <span class="dv">100</span> <span class="sc">*</span> MathExam14W<span class="sc">$</span>tests<span class="sc">/</span><span class="dv">26</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>MathExam14W<span class="sc">$</span>pcorrect <span class="ot">&lt;-</span> <span class="dv">100</span> <span class="sc">*</span> MathExam14W<span class="sc">$</span>nsolved<span class="sc">/</span><span class="dv">13</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="do">## select variables to be used</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>MathExam <span class="ot">&lt;-</span> MathExam14W[ , <span class="fu">c</span>(<span class="st">"pcorrect"</span>, <span class="st">"group"</span>, <span class="st">"tests"</span>, <span class="st">"study"</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"attempt"</span>, <span class="st">"semester"</span>, <span class="st">"gender"</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="documenting-other-things" class="level3">
+<h3 class="anchored" data-anchor-id="documenting-other-things">Documenting other things</h3>
+<p>Whatever you work on, there might be parts of your research project that are difficult to understand. Say you work in a lab, then your documentation is a <strong>lab notebook</strong>. Or you do interviews, then your documentation may be your interview strategy. <strong>Anything that might be useful for others is worth keeping and worth sharing</strong>. <em>After all, we all want to build on the work of others in order to make the world a little better.</em></p>
+</section>
+<section id="further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
+<p>Want to learn more? Check out:</p>
 <ul>
-<li>Missing knowledge (What am I allowed to do? How to do it?)</li>
-<li>Shame and fear</li>
-<li>Time pressure</li>
-<li>Data/code that cannot be shared openly</li>
+<li><a href="https://the-turing-way.netlify.app/project-design/project-repo/project-repo-readme.html?highlight=readme">Landing Page - README file</a>, The Turing Way</li>
+<li><a href="https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/">A beginner’s guide to writing documentation</a>, Write The Docs</li>
+<li><a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a>, Yihui Xie, J. J. Allaire, Garrett Grolemund</li>
+<li><a href="https://yihui.org/knitr/">knitr</a> - Elegant, flexible, and fast dynamic report generation with R, Yihui Xie</li>
+<li><a href="https://data.research.cornell.edu/content/readme">Guide to writing “readme” style metadata</a>, research data management service group, Cornell University</li>
 </ul>
-<p>What are your personal hurdles? What can you do to address them?</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -516,13 +598,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./1-1-what-is-reproducible-research.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is reproducible research?</span></span>
+      <a href="./2-2-organisation.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">File and folder organization</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1-3-fair.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">FAIR principles for reproducible research</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./3-computational-workflows.html" class="pagination-link">
+        <span class="nav-page-text">Computational workflows</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -18,7 +18,7 @@
     "href": "1-reproducible-research.html",
     "title": "Reproducible research and how to get there",
     "section": "",
-    "text": "Learning targets\n\n\n\n\nYou will know what reproducibility is, what the hurdles are, and why it is important for research.\nYou will know about the FAIR data principles and be able to discuss the issues in implementing them.\nYou will be able to discuss the complexity of collaboration in research and communicating and working more effectively is important for good research.\n\n\n\n\n\n\n\n\n\nTasks\n\n\n\nRead this chapter and watch this week’s videos. Afterwards go through the following assignments:\n\nviewof flavor = Inputs.checkbox([\n\"What questions came up for you while watching the videos and going through the booklet?\", \n\"What are your personal hurdles for reproducible research? What can you do to address them?\",\n\"What are hurdles for you in producing FAIR data? What can you do for the data you work with?\", \n\"Which of the points in the 8 steps for Planning a Community does your research team already check off? Which should be discussed? If possible, bring open points to your team meeting. \"\n])"
+    "text": "Learning targets\n\n\n\n\nYou will know what reproducibility is, what the hurdles are, and why it is important for research.\nYou will know about the FAIR data principles and be able to discuss the issues in implementing them.\nYou will be able to discuss the complexity of collaboration in research and communicating and working more effectively is important for good research.\n\n\n\n\n\n\n\n\n\nTasks\n\n\n\nRead this chapter and watch this week’s videos. Afterwards go through the following assignments:\n\nWhat questions came up for you while watching the videos and going through the booklet?\nWhat are your personal hurdles for reproducible research? What can you do to address them?\nWhat are hurdles for you in producing FAIR data? What can you do for the data you work with?\nWhich of the points in the 8 steps for Planning a Community does your research team already check off? Which should be discussed? If possible, bring open points to your team meeting.\n\nBring any questions and problems that come up to the weekly meeting."
   },
   {
     "objectID": "1-1-what-is-reproducible-research.html",
@@ -49,53 +49,67 @@
     "text": "Research is increasingly being conducted in teams. The bigger and more complex the team, the more complicated it can be to work in a reproducible fashion. Thinking about how to set up a team to foster reproducibility is essential, because a bigger team can also mean that reproducibility becomes easier. If the whole team works together, their diverse skills will help in creating a thriving and reproducible research project.\nIn The Turing Way’s Guide to Planning a Community they discuss 8 steps, that work well for a broad range of research teams:\n\nChoose a Communication Platform (e.g. GitHub + Chat + Website)\nProvide a Project Summary File (e.g. README.md)\nSelect a Code of Conduct\nProvide Contribution Guidelines and Interaction Pathways\nCreate a Basic Management/Leadership Structure (roles)\nProvide Contact Details Wherever Useful (email address to role)\nIdentify Failed Approaches, and Stop Them\nHave Documentation (e.g. a wiki) and Dissemination Plans for Your Project (e.g. publication on Zenodo)\n\nNote that there are two important parts fo thriving teams:\n\nDocuments (wiki, checklist, …)\nRoles of people (research software engineer, welcome team, …)\n\nHow is your team set up? Which of the 8 steps are unclear to you?"
   },
   {
-    "objectID": "2-project-organization.html#naming-things",
-    "href": "2-project-organization.html#naming-things",
+    "objectID": "2-project-organization.html",
+    "href": "2-project-organization.html",
     "title": "Get your research project organized",
-    "section": "Naming things",
-    "text": "Naming things"
+    "section": "",
+    "text": "Learning targets\n\n\n\n\nYou will be able to create a sensible folder structure for your research projects.\nYou will be able to use good names for files, folders, functions, …\nYou will have a good understanding of documentation requirements for your research project.\n\n\n\n\n\n\n\n\n\nTasks\n\n\n\nRead this chapter and watch this week’s videos. Afterwards go through the following assignments:\n\nCreate a folder structure template that would work for most of your projects. If possible, discuss it with your team.\nFor your current project, implement the organization and documentation practices that you learned about. Write down questions that come up in the process.\n\nDiscuss your progress with your accountability buddy. Bring any questions and problems that you cannot solve with your buddy to the weekly meeting."
   },
   {
-    "objectID": "2-project-organization.html#file-and-folder-organization",
-    "href": "2-project-organization.html#file-and-folder-organization",
-    "title": "Get your research project organized",
-    "section": "File and folder organization",
-    "text": "File and folder organization"
+    "objectID": "2-1-naming.html",
+    "href": "2-1-naming.html",
+    "title": "5  Naming things",
+    "section": "",
+    "text": "This chapter shows you how to pick good names.\nGood names for files, folders, functions and other things can make a research project (or any project on your computer, really) more pleasant. Both for yourself and any people you work with.\nLet’s be kind to ourselves and the people around us and get into naming 🙌!\nA few examples from Jenny Brian’s slides of bad and good file names:\n\nBAD ❌\n\nMyabstract.docx\nJoe’s Filenames Use Spaces and Punctuation.xlsx\nfigure 1.png\nfig 2.png\nJW7d^(2sl@deletethisandyourcareerisoverWx2*.txt\n\nGOOD ✅\n\n2014-06-08_abstract-for-sla.docx\nJoes-filenames-are-getting-better.xlsx\nFig01_scatterplot-talk-length-vs-interest.png\nFig02_histogram-talk-attendance.png\n1986-01-28_raw-data-from-challenger-o-rings.txt\n\n\nNames should be:\n\nMachine readable 💻\nHuman readable 🧐\nOptional: Consistent ⚙️ (decide how you use underscores _ and dashes -, if you want to use CamelCase or not, …)\nOptional: Play well with default ordering ⬇ (e.g. start your file names with the creation date YYYY-MM-DD)\n\n\nFurther reading\n\nNaming files, folders and other things, The Turing Way\nProject structure slides, Danielle Navarro\nFile naming slides, Jenny Brian\nISO 8601, a standard for dates, Wikipedia"
   },
   {
-    "objectID": "2-project-organization.html#documentation",
-    "href": "2-project-organization.html#documentation",
-    "title": "Get your research project organized",
-    "section": "Documentation",
-    "text": "Documentation\n\nDocumenting data\n\n\nDocumenting code\n\n\nDocumenting research projects"
+    "objectID": "2-2-organisation.html",
+    "href": "2-2-organisation.html",
+    "title": "6  File and folder organization",
+    "section": "",
+    "text": "My first research project was a mess 🙈. I had hundreds of files with dubious file names and sometimes several files with similar code written for computing on different infrastructures (my computer, the institute server, the cluster of the computing facility).\nI felt like the worst researcher of all times. But I wasn’t. Many struggle with organizing their files and folders in increasingly complex research projects.\n\nHow to organize files and folders well?\nIt basically comes down to structuring folders and files systematically from the beginning.\nThink about what a good folder structure could be for your research project. A standard project of mine looks something like this:\n.\n├── analysis            &lt;- all things data analysis\n│   └── src             &lt;- functions and other source files\n├── comm\n│   ├── internal_comm   &lt;- internal communication such as meeting notes\n│   └── journal_comm    &lt;- communication with the journal, e.g. peer review\n├── data\n│   ├── data_clean      &lt;- clean version of the data\n│   └── data_raw        &lt;- raw data (don't touch)\n├── dissemination\n│   ├── manuscripts\n│   ├── posters\n│   └── presentations\n├── documentation       &lt;- documentation, e.g. data management plan\n└── misc                &lt;- miscellaneous files that don't fit elsewhere\nYou can download this folder structure as a template from https://github.com/HeidiSeibold/research-project-template.\nNot every project is the same and likely your project will be more complex than this. But if you think about good organization from the beginning, it will be easier in the long run.\nWhat do you think about file or folder organization? Is your folder structure similar to mine?\n\n\nFurther reading\n\nResearch Compendia, The Turing Way\nTowards a Standardized Research Folder Structure, GenR blog\nFolder structure of R packages, Making Packages in R, Software Carpentry\nResearch Project Template, Heidi Seibold\nData Analysis Project Template, a group of R users"
+  },
+  {
+    "objectID": "2-3-documentation.html",
+    "href": "2-3-documentation.html",
+    "title": "7  Documentation",
+    "section": "",
+    "text": "In this chapter we discuss research documentation for reproducible research.\nHow can I document my research outputs?\nThere is actually no super-clear catch all answer to this question. It really depends on your needs, on your audience as well as on the types of research outputs you generate. In the following you find a few ideas to start from.\n\nDocumenting research projects\nOne thing that I always do is to add a README-Text-File to each project. In the README I write the most important info about the project: What is it about? Who is involved? Where to find files? How to cite it? Where to find the paper? …\nAs an example, check out my project on personalised medicine.\nFor more complex research projects, you can create a whole wiki or similar to describe the project. For most projects a README will be just fine.\n\n\nDocumenting data\nMetadata is central to documentation of data. Metadata is information about your data. It’s information on the license of the data, who owns it, what information the data contain, … so essential data documentation.\nMany research fields have standards for metadata. If you can’t find one for your field you can use a common standard (e.g. Dublin Core) or just ask a data manager or librarian at your institution. You can write metadata similar to a README (see e.g. this guide from Cornell University). If you upload your data to a data platform (e.g. Dryad) you won’t have to think about it as the platform usually takes care of that (Dryad uses Dublin Core).\n\n\nDocumenting code\nTo make my code as understandable as possible for others, I use literate programming (mixing text and code to make it easier to read, e.g. Quarto) or add clear code comments. When writing functions in R I additionally use the standardized way to document R functions (via Roxygen2).\nAn example of code comments in R (##):\n\n## Load package + data\nlibrary(\"model4you\")\ndata(\"MathExam14W\", package = \"psychotools\")\n\n## scale points achieved to [0, 100] percent\nMathExam14W$tests &lt;- 100 * MathExam14W$tests/26\nMathExam14W$pcorrect &lt;- 100 * MathExam14W$nsolved/13\n\n## select variables to be used\nMathExam &lt;- MathExam14W[ , c(\"pcorrect\", \"group\", \"tests\", \"study\",\n                             \"attempt\", \"semester\", \"gender\")]\n\n\n\nDocumenting other things\nWhatever you work on, there might be parts of your research project that are difficult to understand. Say you work in a lab, then your documentation is a lab notebook. Or you do interviews, then your documentation may be your interview strategy. Anything that might be useful for others is worth keeping and worth sharing. After all, we all want to build on the work of others in order to make the world a little better.\n\n\nFurther reading\nWant to learn more? Check out:\n\nLanding Page - README file, The Turing Way\nA beginner’s guide to writing documentation, Write The Docs\nR Markdown: The Definitive Guide, Yihui Xie, J. J. Allaire, Garrett Grolemund\nknitr - Elegant, flexible, and fast dynamic report generation with R, Yihui Xie\nGuide to writing “readme” style metadata, research data management service group, Cornell University"
   },
   {
     "objectID": "3-computational-workflows.html",
     "href": "3-computational-workflows.html",
     "title": "Computational workflows",
     "section": "",
-    "text": "Learning targets\n\n\n\n\nYou will have the version control system git installed on your computer and be able to run the important commands.\nYou will be able to keep your computing environment stable.\nYou will have a roadmap on how to automate your code."
+    "text": "Learning targets\n\n\n\n\nYou will have the version control system git installed on your computer and be able to run the important commands.\nYou will be able to keep your computing environment stable.\nYou will have a roadmap on how to automate your code.\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThis week’s assignments are a bit more difficult and will take longer to implement that the previous. Please plan for this.\n\n\n\n\n\n\n\n\nTasks\n\n\n\nRead this chapter and watch this week’s videos. Afterwards go through the following assignments:\n\nInstall git: For R users, I recommend following these instructions. Otherwise the Carpentries have good instructions for all systems (follow along until end of 2. Setting up Git)\nCreate a project on GitLab (or GitHub). Then clone it, edit a file, add, commit, and push your changes.\nView the open issues for our course booklet and choose one where you can make a contribution. Create a merge request with your contribution and mark it in the respective issue.\nOptional: try using Make to automate something in your current research project.\n\nDiscuss your progress with your accountability buddy. Bring any questions and problems that you cannot solve with your buddy to the weekly meeting."
   },
   {
-    "objectID": "4-publishing-research.html#licensing",
-    "href": "4-publishing-research.html#licensing",
-    "title": "Publishing research outputs",
-    "section": "Licensing",
-    "text": "Licensing"
+    "objectID": "3-1-version-control.html#further-reading",
+    "href": "3-1-version-control.html#further-reading",
+    "title": "8  Version control",
+    "section": "8.1 Further reading",
+    "text": "8.1 Further reading\n\nVersion Control, The Turing Way\nVersion Control with Git, Software Carpentry\nVersion Control with Git (for R users), Anna Krystalli\nSet up Git with RStudio & GitLab, Heidi Seibold"
   },
   {
-    "objectID": "4-publishing-research.html#where-to-publish",
-    "href": "4-publishing-research.html#where-to-publish",
-    "title": "Publishing research outputs",
-    "section": "Where to publish",
-    "text": "Where to publish"
+    "objectID": "3-2-stabilize.html",
+    "href": "3-2-stabilize.html",
+    "title": "9  Stabilize your computing environment and software",
+    "section": "",
+    "text": "This topic may sound technical and boring at first, but please bare with me 🙏. It will be useful!\nHave you ever had the problem that you ran an old code and it just did not work anymore? After hours of digging into the issue you find that it’s because the software package you use has changed in the meantime 🧐\nOr have you tried to reproduce someone else’s code, which seems to run on their machine but not on yours and you just don’t know why.\nThis chapter is all about avoiding such problems in the future by stabilizing your computing environment and software. ✅\n\nWhat is a computing environment?\nYour computing environment is defined by your computer, the operating system and the software installed. If you update your operating system or your software, your computing environment changes. In R, for example, you can learn a lot about your computing environment by typing sessionInfo().\n\nsessionInfo()\n\nR version 4.2.0 (2022-04-22)\nPlatform: x86_64-pc-linux-gnu (64-bit)\nRunning under: Ubuntu 22.04.3 LTS\n\nMatrix products: default\nBLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3\nLAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so\n\nlocale:\n [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       \n [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   \n [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          \n[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   \n\nattached base packages:\n[1] stats     graphics  grDevices datasets  utils     methods   base     \n\nloaded via a namespace (and not attached):\n [1] compiler_4.2.0  fastmap_1.1.1   cli_3.6.1       htmltools_0.5.5\n [5] tools_4.2.0     yaml_2.3.7      rmarkdown_2.21  knitr_1.42     \n [9] jsonlite_1.8.4  xfun_0.39       digest_0.6.31   rlang_1.1.1    \n[13] renv_1.0.0      evaluate_0.20  \n\n\nIt tells the R version, operating system, loaded R packages as well as their versions.\n\n\nOptions for stabilizing your computing environment\n\n1) Record your computing environment\nDocument the software versions you used. For example if you use R, you could copy the output of sessionInfo() into your README or somewhere else where future you (and others) can find this information. This is not exactly “stabilizing” but it gives the possibility to install the same software versions again.\n\n\n2) Use one virtual machine per research project\nYou don’t need to know what a virtual machine is or how to set it up to be able to do this. I used to ask the wonderful IT person at my institute to set up a virtual machine for me and if your IT supporters know their job, they’ll be able to help you here.\nA virtual machine is essentially a virtual computer on another computer or server (To those nerds out there, I know I am probably explaining it incorrectly but for the purpose of what we want to achieve here, it’s good enough). If you have one virtual machine for each project, you can keep the computing environment stable by not installing or updating software after you’ve finished the research project.\nThe downside of this strategy is that this is only for future you and your collaborators, but not for other researchers who want to work with the same computing environment.\n\n\n3) Use one container per research project\nContainers are similar to virtual machines (think little computer inside your computer). The big difference is that you can make them available for others. So you can send your container image (or the file describing it) to others.\n\n\n\nPopular container tools are Docker and Apptainer (formerly Singularity). Learning to work with containers is not super easy, but it is worth the time and actually can be applied in so many other situations. So, a great skill to have even if you decide to quit research.\n\n\n4) Other\nThere are many other options out there. I wrote down the three that are least dependent on the actual software you use. For R users, check out packages logrx, rang, packrat, versions, and renv.\n\n\n\nFurther reading\n\nReproducible Environments, The Turing Way\nVideo: How can software containers help your research?, Paula Andrea Martinez + Australian Research Data Commons\nR Docker tutorial, maintained by Jemma Stachelek\n\nThat’s all for this chapter. I hope it was helpful and not too technical. Happy researching! 🙌"
   },
   {
-    "objectID": "4-publishing-research.html#fair-revisited",
-    "href": "4-publishing-research.html#fair-revisited",
+    "objectID": "3-3-automate.html",
+    "href": "3-3-automate.html",
+    "title": "10  Automate your code",
+    "section": "",
+    "text": "TODO"
+  },
+  {
+    "objectID": "4-publishing-research.html",
+    "href": "4-publishing-research.html",
     "title": "Publishing research outputs",
-    "section": "FAIR revisited",
-    "text": "FAIR revisited"
+    "section": "",
+    "text": "Learning targets\n\n\n\n\nYou will know about licenses.\nYou will be able to pick the right platform to share your data.\nYou will know how to implement the FAIR principles in practice.\n\n\n\n\n\n\n\n\n\nTasks\n\n\n\nRead this chapter and watch this week’s videos. Afterwards go through the following assignments:\n\nUpload something (e.g. data or a slide deck) to a repository of your choice. How FAIR can you make it?\n\nDiscuss your progress with your accountability buddy. Bring any questions and problems that you cannot solve with your buddy to the weekly meeting."
   },
   {
     "objectID": "summary.html",

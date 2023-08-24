@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BERD Course: Make Your Research Reproducible - 2&nbsp; Hurdles: reproducible research is hard</title>
+<title>BERD Course: Make Your Research Reproducible - 5&nbsp; Naming things</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1-3-fair.html" rel="next">
-<link href="./1-1-what-is-reproducible-research.html" rel="prev">
+<link href="./2-2-organisation.html" rel="next">
+<link href="./2-project-organization.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-reproducible-research.html">Reproducible research and how to get there</a></li><li class="breadcrumb-item"><a href="./1-2-hurdles.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-project-organization.html">Get your research project organized</a></li><li class="breadcrumb-item"><a href="./2-1-naming.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Naming things</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -143,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1-2-hurdles.html" class="sidebar-item-text sidebar-link active">
+  <a href="./1-2-hurdles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></span></a>
   </div>
 </li>
@@ -172,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2-1-naming.html" class="sidebar-item-text sidebar-link">
+  <a href="./2-1-naming.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Naming things</span></span></a>
   </div>
 </li>
@@ -246,14 +246,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link active" data-scroll-target="#further-reading">Further reading</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Naming things</span></h1>
 </div>
 
 
@@ -268,17 +274,46 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>From the definition above, reproducible research sounds really easy. It is a minimum standard. But still it is hard!</p>
-<p>Common hurdles that researchers face are:</p>
+<p>This chapter shows you how to pick good names.</p>
+<p><strong>Good names for files, folders, functions</strong> and other things can make a research project (or any project on your computer, really) more pleasant. Both for yourself and any people you work with.</p>
+<p>Let’s be kind to ourselves and the people around us and get into naming 🙌!</p>
+<p>A few examples from <a href="https://speakerdeck.com/jennybc/how-to-name-files">Jenny Brian’s slides</a> of bad and good file names:</p>
+<blockquote class="blockquote">
+<h4 id="bad" class="unnumbered anchored">BAD ❌</h4>
 <ul>
-<li>Missing knowledge (What am I allowed to do? How to do it?)</li>
-<li>Shame and fear</li>
-<li>Time pressure</li>
-<li>Data/code that cannot be shared openly</li>
+<li><p>Myabstract.docx</p></li>
+<li><p>Joe’s Filenames Use Spaces and Punctuation.xlsx</p></li>
+<li><p>figure 1.png</p></li>
+<li><p>fig 2.png</p></li>
+<li><p>JW7d^(2sl@deletethisandyourcareerisoverWx2*.txt</p></li>
 </ul>
-<p>What are your personal hurdles? What can you do to address them?</p>
+<h4 id="good" class="unnumbered anchored">GOOD ✅</h4>
+<ul>
+<li><p>2014-06-08_abstract-for-sla.docx</p></li>
+<li><p>Joes-filenames-are-getting-better.xlsx</p></li>
+<li><p>Fig01_scatterplot-talk-length-vs-interest.png</p></li>
+<li><p>Fig02_histogram-talk-attendance.png</p></li>
+<li><p>1986-01-28_raw-data-from-challenger-o-rings.txt</p></li>
+</ul>
+</blockquote>
+<p>Names should be:</p>
+<ul>
+<li><strong>Machine readable</strong> 💻</li>
+<li><strong>Human readable</strong> 🧐</li>
+<li><strong>Optional: Consistent</strong> ⚙️ (decide how you use underscores _ and dashes -, if you want to use CamelCase or not, …)</li>
+<li><strong>Optional: Play well with default ordering</strong> ⬇ (e.g.&nbsp;start your file names with the creation date <code>YYYY-MM-DD</code>)</li>
+</ul>
+<section id="further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
+<ul>
+<li><a href="https://the-turing-way.netlify.app/project-design/filenaming.html">Naming files, folders and other things</a>, The Turing Way</li>
+<li><a href="https://djnavarro.net/slides-project-structure/#1">Project structure slides</a>, Danielle Navarro</li>
+<li><a href="https://speakerdeck.com/jennybc/how-to-name-files">File naming slides</a>, Jenny Brian</li>
+<li><a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601, a standard for dates</a>, Wikipedia</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -516,13 +551,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./1-1-what-is-reproducible-research.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is reproducible research?</span></span>
+      <a href="./2-project-organization.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Get your research project organized</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1-3-fair.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">FAIR principles for reproducible research</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./2-2-organisation.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">File and folder organization</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

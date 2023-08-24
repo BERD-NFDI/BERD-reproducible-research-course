@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BERD Course: Make Your Research Reproducible - 2&nbsp; Hurdles: reproducible research is hard</title>
+<title>BERD Course: Make Your Research Reproducible - 8&nbsp; Version control</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1-3-fair.html" rel="next">
-<link href="./1-1-what-is-reproducible-research.html" rel="prev">
+<link href="./3-2-stabilize.html" rel="next">
+<link href="./3-computational-workflows.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-reproducible-research.html">Reproducible research and how to get there</a></li><li class="breadcrumb-item"><a href="./1-2-hurdles.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-computational-workflows.html">Computational workflows</a></li><li class="breadcrumb-item"><a href="./3-1-version-control.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Version control</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -143,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1-2-hurdles.html" class="sidebar-item-text sidebar-link active">
+  <a href="./1-2-hurdles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></span></a>
   </div>
 </li>
@@ -201,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3-1-version-control.html" class="sidebar-item-text sidebar-link">
+  <a href="./3-1-version-control.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Version control</span></span></a>
   </div>
 </li>
@@ -246,14 +246,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-version-control" id="toc-what-is-version-control" class="nav-link active" data-scroll-target="#what-is-version-control">What is version control?</a></li>
+  <li><a href="#git-for-version-control" id="toc-git-for-version-control" class="nav-link" data-scroll-target="#git-for-version-control">Git for version control</a></li>
+  <li><a href="#other-version-control-systems" id="toc-other-version-control-systems" class="nav-link" data-scroll-target="#other-version-control-systems">Other version control systems</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">8.1</span> Further reading</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Version control</span></h1>
 </div>
 
 
@@ -268,17 +277,49 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>From the definition above, reproducible research sounds really easy. It is a minimum standard. But still it is hard!</p>
-<p>Common hurdles that researchers face are:</p>
+<p>Version control is a big topic for me. It completely changed the way I work. I am happy that we get to talk about version control as part of this 6 step process towards reproducibility.</p>
+<section id="what-is-version-control" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-version-control">What is version control?</h3>
+<p>Let’s say you are writing a paper. You will edit your paper and might want to keep different versions of it. A common way to handle that is by using different file names for different versions.</p>
+<div class="captioned-image-container">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://www.phdcomics.com/comics/archive/phd101212s.gif" class="img-fluid figure-img" alt="http://www.phdcomics.com/comics/archive/phd101212s.gif"></p>
+<figcaption class="figure-caption">http://www.phdcomics.com/comics/archive/phd101212s.gif</figcaption>
+</figure>
+</div>
+</div>
+<p>This way of “version control” is outdated and error-prone (hence the pixelated image 😜). The most common proper version control system today is <a href="https://git-scm.com/">Git</a>, which I’d like to introduce to you now.</p>
+</section>
+<section id="git-for-version-control" class="level3">
+<h3 class="anchored" data-anchor-id="git-for-version-control">Git for version control</h3>
+<p>Git is free and open source 😃🙌.</p>
+<p>With Git you can track different versions of your paper. For each version you can add a description (“commit message”) and you even automatically track who made which change if you are working in a group. You can always go back to old versions.</p>
+<p>The way you work with Git is that you have the version database both on our computers and on a server. To get the changes from and to the server you use commands (<code>pull</code> = download stuff from server, <code>push</code> = upload stuff to server).</p>
+<div class="captioned-image-container">
+<p><img src="images/vc-server.jpg" class="img-fluid" alt="Reproducibility scale: a scale showing **not reproducible** on one end and **reproducible** on the other end."></p>
+</div>
+<p>Most researchers use GitLab or GitHub as platforms for working with Git and they also serve as a neat front end for the server. GitLab and GitHub give us some extra neat features for collaboration (e.g.&nbsp;issues, Wiki, …).</p>
+<p>Learning Git can be daunting 🙀. I recommend learning it with a group or in a class. I am always happy to teach version control. You can also check if there is a free <a href="https://software-carpentry.org/">Software Carpentry</a> class in your area.</p>
+</section>
+<section id="other-version-control-systems" class="level3">
+<h3 class="anchored" data-anchor-id="other-version-control-systems">Other version control systems</h3>
+<p>There are many other ways of doing version control out there.</p>
+<p><strong>Subversion:</strong> Simpler systems like Subversion are used less these days as Git offers more flexibility.</p>
+<p><strong>Google docs and friends:</strong> Many online text editors (Google Docs, OneDrive, …) offer versioning now. It is not as advanced and versatile, but a nice way to work in a <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> (What You See Is What You Get) editor. Git really only works with real text files, so people usually use LaTeX or Markdown (not WYSIWYG) to write texts when using Git.</p>
+<p><strong>Versioning data:</strong> Version control of data is a difficult task. Let’s leave that for another day. See <a href="https://the-turing-way.netlify.app/reproducible-research/vcs/vcs-data.html">here</a> for more info for now.</p>
+</section>
+<section id="further-reading" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">8.1</span> Further reading</h2>
 <ul>
-<li>Missing knowledge (What am I allowed to do? How to do it?)</li>
-<li>Shame and fear</li>
-<li>Time pressure</li>
-<li>Data/code that cannot be shared openly</li>
+<li><a href="https://the-turing-way.netlify.app/reproducible-research/vcs.html">Version Control</a>, The Turing Way</li>
+<li><a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a>, Software Carpentry</li>
+<li><a href="https://annakrystalli.me/rrresearchACCE20/version-control-with-git.html">Version Control with Git</a> (for R users), Anna Krystalli</li>
+<li><a href="https://gitlab.com/HeidiSeibold/setup-git-rstudio-gitlab">Set up Git with RStudio &amp; GitLab</a>, Heidi Seibold</li>
 </ul>
-<p>What are your personal hurdles? What can you do to address them?</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -516,13 +557,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./1-1-what-is-reproducible-research.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is reproducible research?</span></span>
+      <a href="./3-computational-workflows.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Computational workflows</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1-3-fair.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">FAIR principles for reproducible research</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./3-2-stabilize.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Stabilize your computing environment and software</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
