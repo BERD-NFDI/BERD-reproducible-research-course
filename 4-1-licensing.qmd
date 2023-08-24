@@ -37,7 +37,7 @@ https://choosealicense.com
 Again there is a license that works for most open projects: the MIT license.
 
 ::: captioned-image-container
-![https://choosealicense.com](images/mit-license.png){fig-alt="Screenshot of https://choosealicense.com section 'I want it simple and permissive'"}
+![https://choosealicense.com](images/mit-license.png){width=50% fig-alt="Screenshot of https://choosealicense.com section 'I want it simple and permissive'"}
 :::
 
 That seems pretty simple, right? For more complex situations and when you have to worry about license compatibility of your code with software components that you use, please check out:
