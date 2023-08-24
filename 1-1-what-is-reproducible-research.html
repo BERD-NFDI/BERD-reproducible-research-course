@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BERD Course: Make Your Research Reproducible - Reproducible research and how to get there</title>
+<title>BERD Course: Make Your Research Reproducible - 1&nbsp; What is reproducible research?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -64,8 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1-1-what-is-reproducible-research.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./1-2-hurdles.html" rel="next">
+<link href="./1-reproducible-research.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -95,8 +61,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 </head>
@@ -110,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-reproducible-research.html">Reproducible research and how to get there</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-reproducible-research.html">Reproducible research and how to get there</a></li><li class="breadcrumb-item"><a href="./1-1-what-is-reproducible-research.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is reproducible research?</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -154,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./1-reproducible-research.html" class="sidebar-item-text sidebar-link active">
+            <a href="./1-reproducible-research.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Reproducible research and how to get there</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -163,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1-1-what-is-reproducible-research.html" class="sidebar-item-text sidebar-link">
+  <a href="./1-1-what-is-reproducible-research.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is reproducible research?</span></span></a>
   </div>
 </li>
@@ -229,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reproducible research and how to get there</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is reproducible research?</span></h1>
 </div>
 
 
@@ -244,64 +208,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Learning targets
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><p>You will know what reproducibility is, what the hurdles are, and why it is important for research.</p></li>
-<li><p>You will know about the FAIR data principles and be able to discuss the issues in implementing them.</p></li>
-<li><p>You will be able to discuss the complexity of collaboration in research and communicating and working more effectively is important for good research.</p></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tasks
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Read this chapter and watch this week’s videos. Afterwards go through the following assignments:</p>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="22" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 21;"><span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>viewof flavor <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>([</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="st">"What questions came up for you while watching the videos and going through the booklet?"</span><span class="op">,</span> </span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="st">"What are your personal hurdles for reproducible research? What can you do to address them?"</span><span class="op">,</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="st">"What are hurdles for you in producing FAIR data? What can you do for the data you work with?"</span><span class="op">,</span> </span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="st">"Which of the points in the 8 steps for Planning a Community does your research team already check off? Which should be discussed? If possible, bring open points to your team meeting. "</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
+<p>A popular definition of reproducibility comes from <a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html">The Turing Way Book</a>:</p>
+<blockquote class="blockquote">
+<p>At <em>The Turing Way</em>, we define <strong>reproducible research</strong> as work that can be independently recreated from the same data and the same code that the original team used. Reproducible is distinct from replicable, robust and generalisable as described in the figure below.</p>
+</blockquote>
+<div class="captioned-image-container">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/reproducible-matrix.jpg" class="img-fluid figure-img" alt="Reproducibility scale: a scale showing **not reproducible** on one end and **reproducible** on the other end."></p>
+<figcaption class="figure-caption">Matrix defining reproducible research (from The Turing Way)</figcaption>
+</figure>
 </div>
 </div>
 
 
 
 </main> <!-- /main -->
-<script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"\nviewof flavor = Inputs.checkbox([\n\"What questions came up for you while watching the videos and going through the booklet?\", \n\"What are your personal hurdles for reproducible research? What can you do to address them?\",\n\"What are hurdles for you in producing FAIR data? What can you do for the data you work with?\", \n\"Which of the points in the 8 steps for Planning a Community does your research team already check off? Which should be discussed? If possible, bring open points to your team meeting. \"\n])\n"},{"methodName":"interpretQuiet","source":"shinyInput('flavor')"}]}
-</script>
-<script type="module">
-if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-window._ojs.paths.runtimeToDoc = "../..";
-window._ojs.paths.runtimeToRoot = "../..";
-window._ojs.paths.docToRoot = "";
-window._ojs.selfContained = false;
-window._ojs.runtime.interpretFromScriptTags();
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -537,13 +459,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      <a href="./1-reproducible-research.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Reproducible research and how to get there</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1-1-what-is-reproducible-research.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is reproducible research?</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./1-2-hurdles.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hurdles: reproducible research is hard</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
