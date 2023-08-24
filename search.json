@@ -7,11 +7,11 @@
     "text": "Overview\nThis booklet helps you implement impactful steps in making your research reproducible (and open).\nMaking your work reproducible may seem daunting right now, but we’ll take it step by step and you can choose what you want to implement now and what you want to keep for later. This is a process and there is no need to take all the steps at once. Let’s just try to move towards reproducible on the reproducibility scale.\n\n\n\n\nReproducibility scale"
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
+    "objectID": "intro.html#course-format",
+    "href": "intro.html#course-format",
     "title": "Introduction",
-    "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "section": "Course format",
+    "text": "Course format\nThis is an online course. Each week you will..\n\nwatch the weekly videos (~45 min),\nreview one of the booklet chapters,\nhave a short session with your accountability buddy* (15-20 minutes),\nimplement the tasks of the week, and\ndiscuss your progress in the weekly online meeting with the instructor and fellow course participants (1-1.5 hours).\nYou will choose your accountability buddy during the course. You and your buddy will help each other in implementing the tasks of each week.\n\nWeekly Meetings:\n\nTuesday, October 17, 3 pm – 4:30 pm CET\nTuesday, October 24, 3 pm – 4:30 pm CET\nTuesday, October 31, NO MEETING but self-paced learning\nTuesday, November 7, 3 pm – 4:30 pm CET\nTuesday, November 14, 3 pm – 4:30 pm CET"
   },
   {
     "objectID": "1-reproducible-research.html#what-is-reproducible-research",
@@ -96,12 +96,5 @@
     "title": "5  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   }
 ]
