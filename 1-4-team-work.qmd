@@ -1,4 +1,4 @@
-## Team work that fosters reproducibility
+## Team work that fosters reproducibility {#sec-team-work}
 
 Research is increasingly being conducted in teams. The bigger and more complex
 the team, the more complicated it can be to work in a reproducible fashion.

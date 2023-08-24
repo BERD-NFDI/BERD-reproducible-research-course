@@ -11,17 +11,25 @@
 :::
 
 
-## What is reproducible research?
 
-A popular definition of reproducibility comes from [The Turing Way Book](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html):
+::: {.callout-caution}
+## Tasks
 
-> At *The Turing Way*, we define **reproducible research** as work that can be independently recreated from the same data and the same code that the original team used. Reproducible is distinct from replicable, robust and generalisable as described in the figure below.
+Read this chapter and watch this week's videos. 
+Afterwards go through the following assignments:
 
-::: captioned-image-container
-![Matrix defining reproducible research (from The Turing Way)](images/reproducible-matrix.jpg){fig-alt="Reproducibility scale: a scale showing **not reproducible** on one end and **reproducible** on the other end."}
+```{ojs}
+//| echo: false
+
+viewof flavor = Inputs.checkbox([
+"What questions came up for you while watching the videos and going through the booklet?", 
+"What are your personal hurdles for reproducible research? What can you do to address them?",
+"What are hurdles for you in producing FAIR data? What can you do for the data you work with?", 
+"Which of the points in the 8 steps for Planning a Community does your research team already check off? Which should be discussed? If possible, bring open points to your team meeting. "
+])
+```
+
 :::
-
-
 
 
 
