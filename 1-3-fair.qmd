@@ -10,11 +10,11 @@ The FAIR principles are at the core of many current initiatives in research and 
 :::
 
 This chapter is based on ressources from the University of Mannheim, that I 
-recommend to check out: https://github.com/UB-Mannheim/FAIR-Data-Week.
+recommend to check out: [https://github.com/UB-Mannheim/FAIR-Data-Week](https://github.com/UB-Mannheim/FAIR-Data-Week).
 In the following I will use these and my own experience to give you a bit of a 
 guidance on how to get started.
 
-### Generally for all FAIR principles 
+### What are the FAIR principles for?
 
 The FAIR principles try to help you answer the most common questions people have about data.
 
@@ -24,7 +24,7 @@ The FAIR principles try to help you answer the most common questions people have
 
 By the way, "data" in this context can mean many different things. Of course things like regular tabular data sets, but also images and other research materials.
 
-#### How to get started {.unnumbered}
+### How to get started {.unnumbered}
 
 Store your data somewhere that makes sense. If you can make your data openly available regular data platforms such as [Zenodo](https://zenodo.org/) or the [Open Science Framework (OSF)](https://osf.io) will do. Of course also field specific or institutional platforms/repositories are good options. 
 
@@ -37,26 +37,26 @@ Making your data known in the community increases not only your chance of creati
 
 And then additionally...
 
-#### F for Findable
+### F for Findable
 
 (Three ingredients: data, metadata and infrastructure)
 
 - Attach a DOI to your data. Many data platforms (e.g. Zenodo) make that really easy for you.
 - Provide rich machine-readable metadata. If you upload your data to a good data platform, the most relevant metadata will be asked from you anyhow. So it's easy to do things right.
 
-#### A for Accessible
+### A for Accessible
 
 (FAIR is not the same as Open 👉 the point is to provide the exact conditions of accessibility)
 
 - Explain how someone can access your data. May that be via accessing it through a data platform or through an application that is evaluated by a data-use-and-access committee. 
 
-#### I for Interoperable
+### I for Interoperable
 
 - Use common data formats. For tabular data that could for example be csv, for images jpeg. What's best in your community might be decided through a community standard.
 - Use words that others will understand or define them. For example if the column names in your table are not self explanatory, explain them.
 - Provide context for your data. Is it connected with other data or papers? You can also add your metadata to public knowledge graphs, e.g. [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page).
 
-#### R for Reusable
+### R for Reusable
 
 - Include rich machine-readable metadata according to the community standards.
 - Attach a license to your data (license is part of the metadata) that makes it clear, what others can do with your data. You can for example use the Creative Commons license [CC-BY](https://creativecommons.org/licenses/by/4.0/) (more on [how to choose a license](https://creativecommons.org/choose/)).
