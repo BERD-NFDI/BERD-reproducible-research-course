@@ -1,0 +1,63 @@
+## Documentation
+
+In this chapter we discuss research documentation for reproducible research.
+
+*How can I document my research outputs?*
+
+There is actually no super-clear catch all answer to this question. It really depends on your needs, on your audience as well as on the types of research outputs you generate. In the following you find a few ideas to start from.
+
+
+### Documenting research projects
+
+One thing that I always do is to add a README-Text-File to each project. In the README I write the **most important info about the project**: What is it about? Who is involved? Where to find files? How to cite it? Where to find the paper? ...
+
+As an example, check out my project on [personalised medicine](https://github.com/HeidiSeibold/personalised_medicine).
+
+For more complex research projects, you can create a whole wiki or similar to
+describe the project. For most projects a README will be just fine.
+
+### Documenting data
+
+Metadata is central to documentation of data. Metadata is information about your data. It's information on the license of the data, who owns it, what information the data contain, ... so essential data documentation.
+
+Many research fields have **standards for metadata**. If you can't find one for your field you can use a common standard (e.g. [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dces/)) or just ask a data manager or librarian at your institution. You can write metadata similar to a README (see e.g. this [guide from Cornell University](https://data.research.cornell.edu/content/readme)). If you upload your data to a data platform (e.g. [Dryad](https://datadryad.org/)) you won't have to think about it as the platform usually takes care of that (Dryad uses Dublin Core).
+
+
+### Documenting code
+
+To make my code as understandable as possible for others, I use **literate programming** (mixing text and code to make it easier to read, e.g. [Quarto](https://quarto.org/)) or add clear **code comments**. When writing functions in R I additionally use the standardized way to document R functions (via [**Roxygen2**](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html)).
+
+An example of code comments in R (`##`):
+```{r}
+#| eval: false
+
+## Load package + data
+library("model4you")
+data("MathExam14W", package = "psychotools")
+
+## scale points achieved to [0, 100] percent
+MathExam14W$tests <- 100 * MathExam14W$tests/26
+MathExam14W$pcorrect <- 100 * MathExam14W$nsolved/13
+
+## select variables to be used
+MathExam <- MathExam14W[ , c("pcorrect", "group", "tests", "study",
+                             "attempt", "semester", "gender")]
+```
+
+
+
+### Documenting other things
+
+Whatever you work on, there might be parts of your research project that are difficult to understand. Say you work in a lab, then your documentation is a **lab notebook**. Or you do interviews, then your documentation may be your interview strategy. **Anything that might be useful for others is worth keeping and worth sharing**. *After all, we all want to build on the work of others in order to make the world a little better.*
+
+
+### Further reading
+
+Want to learn more? Check out:
+
+-   [Landing Page - README file](https://the-turing-way.netlify.app/project-design/project-repo/project-repo-readme.html?highlight=readme), The Turing Way
+-   [A beginner's guide to writing documentation](https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/), Write The Docs
+-   [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/), Yihui Xie, J. J. Allaire, Garrett Grolemund
+-   [knitr](https://yihui.org/knitr/) - Elegant, flexible, and fast dynamic report generation with R, Yihui Xie
+-   [Guide to writing "readme" style metadata](https://data.research.cornell.edu/content/readme), research data management service group, Cornell University
+

@@ -1,0 +1,43 @@
+## File and folder organization
+
+**My first research project was a mess 🙈.** I had hundreds of files with dubious file names and sometimes several files with similar code written for computing on different infrastructures (my computer, the institute server, the cluster of the computing facility).
+
+I felt like the worst researcher of all times. But I wasn't. **Many struggle with organizing their files and folders in increasingly complex research projects.**
+
+
+### How to organize files and folders well?
+
+It basically comes down to structuring folders and files **systematically from the beginning**.
+
+Think about what a good folder structure could be for your research project. A standard project of mine looks something like this:
+
+```
+.
+├── analysis            <- all things data analysis
+│   └── src             <- functions and other source files
+├── comm
+│   ├── internal_comm   <- internal communication such as meeting notes
+│   └── journal_comm    <- communication with the journal, e.g. peer review
+├── data
+│   ├── data_clean      <- clean version of the data
+│   └── data_raw        <- raw data (don't touch)
+├── dissemination
+│   ├── manuscripts
+│   ├── posters
+│   └── presentations
+├── documentation       <- documentation, e.g. data management plan
+└── misc                <- miscellaneous files that don't fit elsewhere
+```
+
+You can download this folder structure as a template from [https://github.com/HeidiSeibold/research-project-template](https://github.com/HeidiSeibold/research-project-template).  
+Not every project is the same and likely your project will be more complex than this. But if you think about good organization from the beginning, it will be easier in the long run. 
+
+What do you think about file or folder organization? Is your folder structure similar to mine? 
+
+### Further reading
+
+-   [Research Compendia](https://the-turing-way.netlify.app/reproducible-research/compendia.html), The Turing Way
+- [Towards a Standardized Research Folder Structure](https://genr.eu/wp/towards-a-standardized-research-folder-structure/), GenR blog
+-   Folder structure of R packages, [Making Packages in R](https://swcarpentry.github.io/r-novice-inflammation/08-making-packages-R/), Software Carpentry
+- [Research Project Template](https://github.com/HeidiSeibold/research-project-template), Heidi Seibold
+- [Data Analysis Project Template](http://projecttemplate.net/), a [group of R users](https://github.com/KentonWhite/ProjectTemplate/graphs/contributors)

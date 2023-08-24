@@ -18,17 +18,13 @@
 Read this chapter and watch this week's videos. 
 Afterwards go through the following assignments:
 
-```{ojs}
-//| echo: false
+- What questions came up for you while watching the videos and going through the booklet?
+- What are your personal hurdles for reproducible research? What can you do to address them?
+- What are hurdles for you in producing FAIR data? What can you do for the data you work with?
+- Which of the points in the 8 steps for Planning a Community does your research team already check off? Which should be discussed? If possible, bring open points to your team meeting. 
 
-viewof flavor = Inputs.checkbox([
-"What questions came up for you while watching the videos and going through the booklet?", 
-"What are your personal hurdles for reproducible research? What can you do to address them?",
-"What are hurdles for you in producing FAIR data? What can you do for the data you work with?", 
-"Which of the points in the 8 steps for Planning a Community does your research team already check off? Which should be discussed? If possible, bring open points to your team meeting. "
-])
-```
-
+Discuss your progress with your accountability buddy. Bring any questions and
+problems that you cannot solve with your buddy to the weekly meeting.
 :::
 
 

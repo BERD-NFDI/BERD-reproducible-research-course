@@ -15,6 +15,10 @@ book:
     - 1-3-fair.qmd
     - 1-4-team-work.qmd
   - part: 2-project-organization.qmd
+    chapters:
+    - 2-1-naming.qmd
+    - 2-2-organisation.qmd
+    - 2-3-documentation.qmd
   - part: 3-computational-workflows.qmd
   - part: 4-publishing-research.qmd
   - part: summary.qmd

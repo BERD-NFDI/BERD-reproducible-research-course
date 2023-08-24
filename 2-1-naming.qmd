@@ -1,0 +1,49 @@
+## Naming things
+
+This chapter shows you how to pick good names.
+
+**Good names for files, folders, functions** and other things can make a research project (or any project on your computer, really) more pleasant. Both for yourself and any people you work with.
+
+Let's be kind to ourselves and the people around us and get into naming 🙌!
+
+
+A few examples from [Jenny Brian's slides](https://speakerdeck.com/jennybc/how-to-name-files) of bad and good file names:
+
+> #### BAD ❌ {.unnumbered}
+>
+> -   Myabstract.docx
+>
+> -   Joe's Filenames Use Spaces and Punctuation.xlsx
+>
+> -   figure 1.png
+>
+> -   fig 2.png
+>
+> -   JW7d\^(2sl\@deletethisandyourcareerisoverWx2\*.txt
+>
+> #### GOOD ✅ {.unnumbered}
+>
+> -   2014-06-08_abstract-for-sla.docx
+>
+> -   Joes-filenames-are-getting-better.xlsx
+>
+> -   Fig01_scatterplot-talk-length-vs-interest.png
+>
+> -   Fig02_histogram-talk-attendance.png
+>
+> -   1986-01-28_raw-data-from-challenger-o-rings.txt
+
+Names should be:
+
+-   **Machine readable** 💻
+-   **Human readable** 🧐
+-   **Optional: Consistent** ⚙️ (decide how you use underscores \_ and dashes -, if you want to use CamelCase or not, ...)
+-   **Optional: Play well with default ordering** ⬇ (e.g. start your file names with the creation date `YYYY-MM-DD`)
+
+
+### Further reading
+
+-   [Naming files, folders and other things](https://the-turing-way.netlify.app/project-design/filenaming.html), The Turing Way
+- [Project structure slides](https://djnavarro.net/slides-project-structure/#1), Danielle Navarro
+- [File naming slides](https://speakerdeck.com/jennybc/how-to-name-files), Jenny Brian
+- [ISO 8601, a standard for dates](https://en.wikipedia.org/wiki/ISO_8601), Wikipedia
