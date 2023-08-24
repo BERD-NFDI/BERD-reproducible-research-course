@@ -33,6 +33,7 @@ book:
     chapters:
     - references.qmd
   navbar: 
+    background: none
     logo: images/Logo_BERD_Academy.png
 
 bibliography: references.bib
