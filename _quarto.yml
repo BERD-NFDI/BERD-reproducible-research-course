@@ -20,6 +20,8 @@ book:
   - part: summary.qmd
     chapters:
     - references.qmd
+  navbar: 
+    logo: images/Logo_BERD_Academy.png
 
 bibliography: references.bib
 
