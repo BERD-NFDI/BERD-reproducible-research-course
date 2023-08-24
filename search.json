@@ -11,89 +11,89 @@
     "href": "intro.html#course-format",
     "title": "Introduction",
     "section": "Course format",
-    "text": "Course format\nThis is an online course. Each week you will..\n\nwatch the weekly videos (~45 min),\nreview one of the booklet chapters,\nhave a short session with your accountability buddy* (15-20 minutes),\nimplement the tasks of the week, and\ndiscuss your progress in the weekly online meeting with the instructor and fellow course participants (1-1.5 hours).\nYou will choose your accountability buddy during the course. You and your buddy will help each other in implementing the tasks of each week.\n\nWeekly Meetings:\n\nTuesday, October 17, 3 pm – 4:30 pm CET\nTuesday, October 24, 3 pm – 4:30 pm CET\nTuesday, October 31, NO MEETING but self-paced learning\nTuesday, November 7, 3 pm – 4:30 pm CET\nTuesday, November 14, 3 pm – 4:30 pm CET"
+    "text": "Course format\nThis is an online course. Each week you will..\n\nwatch the weekly videos (~45 min),\nreview one of the booklet chapters,\nhave a short session with your accountability buddy (15-20 minutes),\nimplement the tasks of the week, and\ndiscuss your progress in the weekly online meeting with the instructor and fellow course participants (1-1.5 hours).\n\nYou will choose your accountability buddy during the course. You and your buddy will help each other in implementing the tasks of each week.\nWeekly Meetings:\n\nTuesday, October 17, 3 pm – 4:30 pm CET\nTuesday, October 24, 3 pm – 4:30 pm CET\nTuesday, October 31, NO MEETING but self-paced learning\nTuesday, November 7, 3 pm – 4:30 pm CET\nTuesday, November 14, 3 pm – 4:30 pm CET"
   },
   {
     "objectID": "1-reproducible-research.html#what-is-reproducible-research",
     "href": "1-reproducible-research.html#what-is-reproducible-research",
-    "title": "1  Reproducible research and how to get there",
-    "section": "1.1 What is reproducible research?",
-    "text": "1.1 What is reproducible research?\nA popular definition of reproducibility comes from The Turing Way Book:\n\nAt The Turing Way, we define reproducible research as work that can be independently recreated from the same data and the same code that the original team used. Reproducible is distinct from replicable, robust and generalisable as described in the figure below.\n\n\n\n\n\nMatrix defining reproducible research (from The Turing Way)"
+    "title": "Reproducible research and how to get there",
+    "section": "What is reproducible research?",
+    "text": "What is reproducible research?\nA popular definition of reproducibility comes from The Turing Way Book:\n\nAt The Turing Way, we define reproducible research as work that can be independently recreated from the same data and the same code that the original team used. Reproducible is distinct from replicable, robust and generalisable as described in the figure below.\n\n\n\n\n\nMatrix defining reproducible research (from The Turing Way)"
   },
   {
-    "objectID": "1-reproducible-research.html#hurdles-reproducible-research-is-hard",
-    "href": "1-reproducible-research.html#hurdles-reproducible-research-is-hard",
-    "title": "1  Reproducible research and how to get there",
-    "section": "1.2 Hurdles: reproducible research is hard",
-    "text": "1.2 Hurdles: reproducible research is hard\nFrom the definition above, reproducible research sounds really easy. It is a minimum standard. But still it is hard!\nTODO: more on hurdles"
+    "objectID": "1-2-hurdles.html",
+    "href": "1-2-hurdles.html",
+    "title": "1  Hurdles: reproducible research is hard",
+    "section": "",
+    "text": "From the definition above, reproducible research sounds really easy. It is a minimum standard. But still it is hard!\nCommon hurdles that researchers face are:\n\nMissing knowledge (What am I allowed to do? How to do it?)\nShame and fear\nTime pressure\nData/code that cannot be shared openly\n\nWhat are your personal hurdles? What can you do to address them?"
   },
   {
-    "objectID": "1-reproducible-research.html#fair-principles-for-reproducible-research",
-    "href": "1-reproducible-research.html#fair-principles-for-reproducible-research",
-    "title": "1  Reproducible research and how to get there",
-    "section": "1.3 FAIR principles for reproducible research",
-    "text": "1.3 FAIR principles for reproducible research\nTODO: see also https://data.research.cornell.edu/content/preparing-fair-data-reuse-and-reproducibility"
+    "objectID": "1-3-fair.html",
+    "href": "1-3-fair.html",
+    "title": "2  FAIR principles for reproducible research",
+    "section": "",
+    "text": "TODO: see also https://data.research.cornell.edu/content/preparing-fair-data-reuse-and-reproducibility\nFAIR stands for Findable, Accessible, Interoperable and Reusable. Implementing the FAIR principles for data can be a challenge though. Let’s talk about how to do it in practice.\nThe FAIR principles are at the core of many current initiatives in research and beyond. For example the German National Research Data Infrastructure (NFDI) consortia are working on making research data (and sometimes software) FAIR. There is even a special FAIR Data Spaces project. But what does FAIR mean for you?\n\n\n\n\nFAIR prinicples\n\n\n\nThis chapter is based on ressources from the University of Mannheim, that I recommend to check out: https://github.com/UB-Mannheim/FAIR-Data-Week. In the following I will use these and my own experience to give you a bit of a guidance on how to get started.\n\nGenerally for all FAIR principles\nThe FAIR principles try to help you answer the most common questions people have about data.\n\n\n\n\nFAIR questions\n\n\n\nBy the way, “data” in this context can mean many different things. Of course things like regular tabular data sets, but also images and other research materials.\n\nHow to get started\nStore your data somewhere that makes sense. If you can make your data openly available regular data platforms such as Zenodo or the Open Science Framework (OSF) will do. Of course also field specific or institutional platforms/repositories are good options.\n\n\n\nView the images of this chapter on Zenodo\n\n\nIf you cannot make them openly available, you can usually still make the metadata available. Metadata is information about your data such as the author(s), how to cite it, what the data set contains, and so on.\nMaking your data known in the community increases not only your chance of creating an impact with your work but also your work’s FAIRness. You can do so by publishing a data paper or otherwise sharing more info with the community (social media, podcasts, conferences, …).\nAnd then additionally…\n\n\nF for Findable\n(Three ingredients: data, metadata and infrastructure)\n\nAttach a DOI to your data. Many data platforms (e.g. Zenodo) make that really easy for you.\nProvide rich machine-readable metadata. If you upload your data to a good data platform, the most relevant metadata will be asked from you anyhow. So it’s easy to do things right.\n\n\n\nA for Accessible\n(FAIR is not the same as Open 👉 the point is to provide the exact conditions of accessibility)\n\nExplain how someone can access your data. May that be via accessing it through a data platform or through an application that is evaluated by a data-use-and-access committee.\n\n\n\nI for Interoperable\n\nUse common data formats. For tabular data that could for example be csv, for images jpeg. What’s best in your community might be decided through a community standard.\nUse words that others will understand or define them. For example if the column names in your table are not self explanatory, explain them.\nProvide context for your data. Is it connected with other data or papers? You can also add your metadata to public knowledge graphs, e.g. Wikidata.\n\n\n\nR for Reusable\n\nInclude rich machine-readable metadata according to the community standards.\nAttach a license to your data (license is part of the metadata) that makes it clear, what others can do with your data. You can for example use the Creative Commons license CC-BY (more on how to choose a license)."
   },
   {
-    "objectID": "1-reproducible-research.html#teams-work-that-fosters-reproducibility",
-    "href": "1-reproducible-research.html#teams-work-that-fosters-reproducibility",
-    "title": "1  Reproducible research and how to get there",
-    "section": "1.4 Teams work that fosters reproducibility",
-    "text": "1.4 Teams work that fosters reproducibility\nTODO: …"
+    "objectID": "1-4-team-work.html",
+    "href": "1-4-team-work.html",
+    "title": "3  Team work that fosters reproducibility",
+    "section": "",
+    "text": "TODO: …"
   },
   {
     "objectID": "2-project-organization.html#naming-things",
     "href": "2-project-organization.html#naming-things",
-    "title": "2  Get your research project organized",
-    "section": "2.1 Naming things",
-    "text": "2.1 Naming things"
+    "title": "Get your research project organized",
+    "section": "Naming things",
+    "text": "Naming things"
   },
   {
     "objectID": "2-project-organization.html#file-and-folder-organization",
     "href": "2-project-organization.html#file-and-folder-organization",
-    "title": "2  Get your research project organized",
-    "section": "2.2 File and folder organization",
-    "text": "2.2 File and folder organization"
+    "title": "Get your research project organized",
+    "section": "File and folder organization",
+    "text": "File and folder organization"
   },
   {
     "objectID": "2-project-organization.html#documentation",
     "href": "2-project-organization.html#documentation",
-    "title": "2  Get your research project organized",
-    "section": "2.3 Documentation",
-    "text": "2.3 Documentation\n\n2.3.1 Documenting data\n\n\n2.3.2 Documenting code\n\n\n2.3.3 Documenting research projects"
+    "title": "Get your research project organized",
+    "section": "Documentation",
+    "text": "Documentation\n\nDocumenting data\n\n\nDocumenting code\n\n\nDocumenting research projects"
   },
   {
     "objectID": "3-computational-workflows.html",
     "href": "3-computational-workflows.html",
-    "title": "3  Computational workflows",
+    "title": "Computational workflows",
     "section": "",
     "text": "Learning targets\n\n\n\n\nYou will have the version control system git installed on your computer and be able to run the important commands.\nYou will be able to keep your computing environment stable.\nYou will have a roadmap on how to automate your code."
   },
   {
     "objectID": "4-publishing-research.html#licensing",
     "href": "4-publishing-research.html#licensing",
-    "title": "4  Publishing research outputs",
-    "section": "4.1 Licensing",
-    "text": "4.1 Licensing"
+    "title": "Publishing research outputs",
+    "section": "Licensing",
+    "text": "Licensing"
   },
   {
     "objectID": "4-publishing-research.html#where-to-publish",
     "href": "4-publishing-research.html#where-to-publish",
-    "title": "4  Publishing research outputs",
-    "section": "4.2 Where to publish",
-    "text": "4.2 Where to publish"
+    "title": "Publishing research outputs",
+    "section": "Where to publish",
+    "text": "Where to publish"
   },
   {
     "objectID": "4-publishing-research.html#fair-revisited",
     "href": "4-publishing-research.html#fair-revisited",
-    "title": "4  Publishing research outputs",
-    "section": "4.3 FAIR revisited",
-    "text": "4.3 FAIR revisited"
+    "title": "Publishing research outputs",
+    "section": "FAIR revisited",
+    "text": "FAIR revisited"
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "5  Summary",
+    "title": "Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
   }
