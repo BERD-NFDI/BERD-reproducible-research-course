@@ -1,3 +1,43 @@
 ## Automate your code
 
-TODO
+Research projects that deal with data and code can be imagined as a pipeline.
+Data comes in at certain points and then they are processed in several steps.
+We do some data cleaning, an overview of the data, create figures, do some 
+modelling with the data (simulation, statistics, machine learning, etc.) and
+in the end we write some text (usually a paper).
+
+::: captioned-image-container
+![Research pipeline](images/pipeline-simple.jpg){fig-alt="A pipeline."}
+:::
+
+Of course, this is a simplified view of what really happens. Most research 
+projects are quite complex and it is really hard to keep track of everything.
+What data should be used for which analysis? What code should be used for what?
+
+::: captioned-image-container
+![Research pipeline (more realistic)](images/pipeline.jpg){fig-alt="A complex pipeline with many pipes and forks."}
+:::
+
+Good organisation and version control help us tremendously to keep track of all
+the complexity. But what if the pipes of our pipeline would stick together nicely
+and we would not have to execute everything manually? What if we could 
+automate stuff? Well, we can!
+
+### Make for automation
+
+There are many automation tools out there that researchers use for their research
+pipelines. The probably oldest among them is called *Make*. It is not only old,
+but still very functional, useful, and versatile.
+
+Here is an example `Makefile`, that could be used by an R user:
+```{makefile}
+data_clean/PlantGrowth_new.csv: data_raw/PlantGrowth.csv preprocess.R
+	Rscript preprocess.R
+
+boxplot_weight-group.pdf: data_clean/PlantGrowth_new.csv overview.R
+	Rscript overview.R
+
+all: boxplot_weight-group.pdf
+```
+
+TODO explain and visualize
