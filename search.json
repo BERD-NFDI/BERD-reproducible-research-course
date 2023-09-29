@@ -102,7 +102,7 @@
     "href": "3-3-automate.html",
     "title": "10  Automate your code",
     "section": "",
-    "text": "TODO"
+    "text": "Research projects that deal with data and code can be imagined as a pipeline. Data comes in at certain points and then they are processed in several steps. We do some data cleaning, an overview of the data, create figures, do some modelling with the data (simulation, statistics, machine learning, etc.) and in the end we write some text (usually a paper).\n\n\n\n\nResearch pipeline\n\n\n\nOf course, this is a simplified view of what really happens. Most research projects are quite complex and it is really hard to keep track of everything. What data should be used for which analysis? What code should be used for what?\n\n\n\n\nResearch pipeline (more realistic)\n\n\n\nGood organisation and version control help us tremendously to keep track of all the complexity. But what if the pipes of our pipeline would stick together nicely and we would not have to execute everything manually? What if we could automate stuff? Well, we can!\n\nMake for automation\nThere are many automation tools out there that researchers use for their research pipelines. The probably oldest among them is called Make. It is not only old, but still very functional, useful, and versatile.\nHere is an example Makefile, that could be used by an R user:\n\ndata_clean/PlantGrowth_new.csv: data_raw/PlantGrowth.csv preprocess.R\n    Rscript preprocess.R\n\nboxplot_weight-group.pdf: data_clean/PlantGrowth_new.csv overview.R\n    Rscript overview.R\n\nall: boxplot_weight-group.pdf\n\nTODO explain and visualize\n\ntarget: dependency1 dependency2\n    code to create target from dependencies"
   },
   {
     "objectID": "4-publishing-research.html",

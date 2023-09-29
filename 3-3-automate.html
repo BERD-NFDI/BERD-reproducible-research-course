@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -271,7 +305,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#make-for-automation" id="toc-make-for-automation" class="nav-link active" data-scroll-target="#make-for-automation">Make for automation</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -293,9 +333,46 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>TODO</p>
+<p>Research projects that deal with data and code can be imagined as a pipeline. Data comes in at certain points and then they are processed in several steps. We do some data cleaning, an overview of the data, create figures, do some modelling with the data (simulation, statistics, machine learning, etc.) and in the end we write some text (usually a paper).</p>
+<div class="captioned-image-container">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pipeline-simple.jpg" class="img-fluid figure-img" alt="A pipeline."></p>
+<figcaption class="figure-caption">Research pipeline</figcaption>
+</figure>
+</div>
+</div>
+<p>Of course, this is a simplified view of what really happens. Most research projects are quite complex and it is really hard to keep track of everything. What data should be used for which analysis? What code should be used for what?</p>
+<div class="captioned-image-container">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pipeline.jpg" class="img-fluid figure-img" alt="A complex pipeline with many pipes and forks."></p>
+<figcaption class="figure-caption">Research pipeline (more realistic)</figcaption>
+</figure>
+</div>
+</div>
+<p>Good organisation and version control help us tremendously to keep track of all the complexity. But what if the pipes of our pipeline would stick together nicely and we would not have to execute everything manually? What if we could automate stuff? Well, we can!</p>
+<section id="make-for-automation" class="level3">
+<h3 class="anchored" data-anchor-id="make-for-automation">Make for automation</h3>
+<p>There are many automation tools out there that researchers use for their research pipelines. The probably oldest among them is called <em>Make</em>. It is not only old, but still very functional, useful, and versatile.</p>
+<p>Here is an example <code>Makefile</code>, that could be used by an R user:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode makefile code-with-copy"><code class="sourceCode makefile"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">data_clean/PlantGrowth_new.csv:</span><span class="dt"> data_raw/PlantGrowth.csv preprocess.R</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    Rscript preprocess.R</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dv">boxplot_weight-group.pdf:</span><span class="dt"> data_clean/PlantGrowth_new.csv overview.R</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    Rscript overview.R</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="dv">all:</span><span class="dt"> boxplot_weight-group.pdf</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>TODO explain and visualize</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode makefile code-with-copy"><code class="sourceCode makefile"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">target:</span><span class="dt"> dependency1 dependency2</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    code to create target from dependencies</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
