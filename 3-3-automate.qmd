@@ -24,20 +24,24 @@ and we would not have to execute everything manually? What if we could
 automate stuff? Well, we can!
 
 ### Make for automation
+```{r, echo=FALSE}
+# this ensures that this is not rendered with jupyter :D
+```
 
 There are many automation tools out there that researchers use for their research
 pipelines. The probably oldest among them is called *Make*. It is not only old,
 but still very functional, useful, and versatile.
 
-Here is an example `Makefile`, that could be used by an R user:
+Let's say we work on a project and have the following folders and files:
 
-```{r, echo=FALSE, eval=FALSE}
-## for some reason makefile highlighting only works if there was R code first... :D
-1+1
+```{sh, echo=FALSE}
+tree make-example
 ```
 
+Here is an example `Makefile`, that could be used by an R user:
 
-```{makefile}
+
+```{.makefile filename="Makefile"}
 data_clean/PlantGrowth_new.csv: data_raw/PlantGrowth.csv preprocess.R
 	Rscript preprocess.R
 
@@ -49,7 +53,7 @@ all: boxplot_weight-group.pdf
 
 TODO explain and visualize
 
-```{makefile}
+```{.makefile}
 target: dependency1 dependency2
 	code to create target from dependencies
 ```
