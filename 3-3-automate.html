@@ -355,21 +355,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="make-for-automation" class="level3">
 <h3 class="anchored" data-anchor-id="make-for-automation">Make for automation</h3>
 <p>There are many automation tools out there that researchers use for their research pipelines. The probably oldest among them is called <em>Make</em>. It is not only old, but still very functional, useful, and versatile.</p>
-<p>Here is an example <code>Makefile</code>, that could be used by an R user:</p>
+<p>Let’s say we work on a project and have the following folders and files:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode makefile code-with-copy"><code class="sourceCode makefile"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">data_clean/PlantGrowth_new.csv:</span><span class="dt"> data_raw/PlantGrowth.csv preprocess.R</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    Rscript preprocess.R</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dv">boxplot_weight-group.pdf:</span><span class="dt"> data_clean/PlantGrowth_new.csv overview.R</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    Rscript overview.R</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="dv">all:</span><span class="dt"> boxplot_weight-group.pdf</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>make-example
+├── Makefile
+├── PlantGrowth_new.csv
+├── boxplot_weight-group.pdf
+├── data_clean
+│&nbsp;&nbsp; └── PlantGrowth_new.csv
+├── data_raw
+│&nbsp;&nbsp; └── PlantGrowth.csv
+├── overview.R
+└── preprocess.R
+
+2 directories, 7 files</code></pre>
+</div>
+</div>
+<p>Here is an example <code>Makefile</code>, that could be used by an R user:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Makefile</strong></pre>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode makefile code-with-copy"><code class="sourceCode makefile"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">data_clean/PlantGrowth_new.csv:</span><span class="dt"> data_raw/PlantGrowth.csv preprocess.R</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    Rscript preprocess.R</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="dv">boxplot_weight-group.pdf:</span><span class="dt"> data_clean/PlantGrowth_new.csv overview.R</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    Rscript overview.R</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="dv">all:</span><span class="dt"> boxplot_weight-group.pdf</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>TODO explain and visualize</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode makefile code-with-copy"><code class="sourceCode makefile"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">target:</span><span class="dt"> dependency1 dependency2</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    code to create target from dependencies</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode makefile code-with-copy"><code class="sourceCode makefile"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">target:</span><span class="dt"> dependency1 dependency2</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    code to create target from dependencies</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
