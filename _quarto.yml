@@ -44,3 +44,4 @@ format:
     
 number-depth: 2
 
+highlight-style: breeze #needed for nice makefile highlighting

@@ -30,6 +30,13 @@ pipelines. The probably oldest among them is called *Make*. It is not only old,
 but still very functional, useful, and versatile.
 
 Here is an example `Makefile`, that could be used by an R user:
+
+```{r, echo=FALSE, eval=FALSE}
+## for some reason makefile highlighting only works if there was R code first... :D
+1+1
+```
+
+
 ```{makefile}
 data_clean/PlantGrowth_new.csv: data_raw/PlantGrowth.csv preprocess.R
 	Rscript preprocess.R
@@ -41,3 +48,8 @@ all: boxplot_weight-group.pdf
 ```
 
 TODO explain and visualize
+
+```{makefile}
+target: dependency1 dependency2
+	code to create target from dependencies
+```
