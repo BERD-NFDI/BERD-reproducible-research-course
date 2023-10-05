@@ -5,8 +5,8 @@ by(data = pg$weight, INDICES = pg$group, FUN = summary)
 
 
 ## Show visual summary of plant weight by group and save as pdf
-pdf("boxplot_weight-group.pdf")
-(p <- boxplot(weight ~ group, data = PlantGrowth))
+png("boxplot_weight-group.png", width = 800, height = 600, res = 120)
+(p <- boxplot(weight ~ group, data = PlantGrowth, title = "Weight by treatment condition"))
 dev.off()
 
 
