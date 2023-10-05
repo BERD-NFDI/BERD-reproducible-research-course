@@ -1,3 +1,83 @@
 ## FAIR revisited
 
-TODO
+The FAIR principles were among the first topics we touched in this course.
+
+Now, with all the knowledge gained since then, let's revisit them: Do all
+the steps in project organization, computational workflows, and publishing 
+bring us closer to FAIR or do they "just" help us with making our work more
+reproducible? Can we apply FAIR principles also for our code?
+
+### FAIR code
+
+The FAIR principles can not only be used in the context of classical data. 
+In particular, we discussed code as one of the key parts of our research
+projects besides data.
+The research software community has established, what the FAIR principles mean in the context of code and software (see [Introducing the FAIR Principles for research software](https://www.nature.com/articles/s41597-022-01710-x), 2022, Barker et al). 
+
+#### F for Findable
+Software, and its associated metadata, is easy for both humans and machines to find.
+
+- F1. Software is assigned a globally unique and persistent identifier.
+  * F1.1. Components of the software representing levels of granularity are assigned distinct identifiers.
+  * F1.2. Different versions of the software are assigned distinct identifiers.
+- F2. Software is described with rich metadata.
+- F3. Metadata clearly and explicitly include the identifier of the software they describe.
+- F4. Metadata are FAIR, searchable and indexable.
+
+#### A for Accessible
+Software, and its metadata, is retrievable via standardised protocols.
+
+- A1. Software is retrievable by its identifier using a standardised communications protocol.
+  * A1.1. The protocol is open, free, and universally implementable.
+  * A1.2. The protocol allows for an authentication and authorization procedure, where necessary.
+- A2. Metadata are accessible, even when the software is no longer available.
+
+#### I for Interoperable
+Software interoperates with other software by exchanging data and/or metadata, and/or through interaction via application programming interfaces (APIs), described through standards.
+
+- I1. Software reads, writes and exchanges data in a way that meets domain-relevant community standards.
+- I2. Software includes qualified references to other objects.
+
+
+#### R for Reusable
+Software is both usable (can be executed) and reusable (can be understood, modified, built upon, or incorporated into other software).
+
+- R1. Software is described with a plurality of accurate and relevant attributes.
+  * R1.1. Software is given a clear and accessible license.
+  * R1.2. Software is associated with detailed provenance.
+- R2. Software includes qualified references to other software.
+- R3. Software meets domain-relevant community standards.
+
+
+### Reproducbile research practices support FAIRness
+
+In the following we want ot look at the practices we learned about and discuss,
+if the help us with FAIRness.
+
+#### Project organization
+If your project is well organized with a nice folder structure, good names and 
+documentation... 
+
+- ...it is much easier (and less scary) to upload everything to a repository.
+- ...people will easily be able to understand the project and reuse parts or all of it.
+- ...you already have the needed metadata right at your fingertips.
+
+#### Computational workflows
+If you use version control, stabilize your computing environment and maybe even automate your code...
+
+- ...you already have a git repository that you can easily publish, e.g. on Zenodo.
+- ...your confidence in your work will be higher and you'll be more likely to share and promote your work.
+- ...it is easy for others to automatically produce the same results as you and thus reuse is improved.
+
+#### Publishing research outputs
+If you have a clear license and publish your work...
+
+- ...you can get a DOI from the platform you published on.
+- ...others know what they are allowed to do with your materials.
+
+#### In summary: FAIR and reproducible research go hand in hand
+
+The cool thing about this course is, that you learned about reproducible research, but on the side you also learned how to make your work FAIR and maybe even open. 
+
+In the points above, we probaly even missed a few more that could be added. Any other points that come to your mind?
+

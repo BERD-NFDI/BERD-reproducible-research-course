@@ -1,12 +1,11 @@
 ## Version control
 
-Version control is a big topic for me. It completely changed the way I work. I am happy that we get to talk about version control as part of this 6 step process towards reproducibility.
+Version control systems can help us stay on top of our complex research projects, and in particular on changes
+in code and text. Version control can help with reproducibility in several ways.
 
 ### What is version control? 
 
 Let's say you are writing a paper. You will edit your paper and might want to keep different versions of it. A common way to handle that is by using different file names for different versions.
-
-
 
 ::: captioned-image-container
 ![http://www.phdcomics.com/comics/archive/phd101212s.gif](http://www.phdcomics.com/comics/archive/phd101212s.gif){fig-alt="http://www.phdcomics.com/comics/archive/phd101212s.gif"}
@@ -28,7 +27,9 @@ The way you work with Git is that you have the version database both on our comp
 
 Most researchers use GitLab or GitHub as platforms for working with Git and they also serve as a neat front end for the server. GitLab and GitHub give us some extra neat features for collaboration (e.g. issues, Wiki, ...).
 
-Learning Git can be daunting 🙀. I recommend learning it with a group or in a class. I am always happy to teach version control. You can also check if there is a free [Software Carpentry](https://software-carpentry.org/) class in your area.
+Learning Git can be daunting 🙀. Historically it was developed by software engineers for other software engineers.
+That makes it particularly useful for us when writing code, but it can also feel a bit too nerdy in the beginning.
+I promise though, once you've got the hang of it, you'll love it!
 
 ### Other version control systems
 

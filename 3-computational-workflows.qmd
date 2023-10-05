@@ -1,5 +1,12 @@
 # Computational workflows
 
+This chapter is about turining your research project into a well organised
+pipeline.
+
+::: captioned-image-container
+![Research pipeline](images/pipeline-simple.jpg){fig-alt="A pipeline."}
+:::
+
 ::: {.callout-note}
 ## Learning targets
 
