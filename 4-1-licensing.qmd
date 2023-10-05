@@ -16,7 +16,7 @@ I really like the Creative Commons licenses for most research outputs (and other
 
 They are easy to understand and to pick. On the CC-website you can find a simple tool to help you choose your license:
 
-https://creativecommons.org/choose/
+**[creativecommons.org/choose](https://creativecommons.org/choose)**
 
 In research we want to almost always use the CC-BY or CC0 license.
 
@@ -32,7 +32,7 @@ In research we want to almost always use the CC-BY or CC0 license.
 
 Software needs specific licenses. So for software there is another website you can use for choosing a license.
 
-https://choosealicense.com
+**[choosealicense.com](https://choosealicense.com)**
 
 Again there is a license that works for most open projects: the MIT license.
 
