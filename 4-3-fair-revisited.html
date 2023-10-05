@@ -258,7 +258,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#fair-code" id="toc-fair-code" class="nav-link active" data-scroll-target="#fair-code">FAIR code</a></li>
+  <li><a href="#reproducbile-research-practices-support-fairness" id="toc-reproducbile-research-practices-support-fairness" class="nav-link" data-scroll-target="#reproducbile-research-practices-support-fairness">Reproducbile research practices support FAIRness</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -280,9 +287,96 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>TODO</p>
+<p>The FAIR principles were among the first topics we touched in this course.</p>
+<p>Now, with all the knowledge gained since then, let’s revisit them: Do all the steps in project organization, computational workflows, and publishing bring us closer to FAIR or do they “just” help us with making our work more reproducible? Can we apply FAIR principles also for our code?</p>
+<section id="fair-code" class="level3">
+<h3 class="anchored" data-anchor-id="fair-code">FAIR code</h3>
+<p>The FAIR principles can not only be used in the context of classical data. In particular, we discussed code as one of the key parts of our research projects besides data. The research software community has established, what the FAIR principles mean in the context of code and software (see <a href="https://www.nature.com/articles/s41597-022-01710-x">Introducing the FAIR Principles for research software</a>, 2022, Barker et al).</p>
+<section id="f-for-findable" class="level4">
+<h4 class="anchored" data-anchor-id="f-for-findable">F for Findable</h4>
+<p>Software, and its associated metadata, is easy for both humans and machines to find.</p>
+<ul>
+<li>F1. Software is assigned a globally unique and persistent identifier.
+<ul>
+<li>F1.1. Components of the software representing levels of granularity are assigned distinct identifiers.</li>
+<li>F1.2. Different versions of the software are assigned distinct identifiers.</li>
+</ul></li>
+<li>F2. Software is described with rich metadata.</li>
+<li>F3. Metadata clearly and explicitly include the identifier of the software they describe.</li>
+<li>F4. Metadata are FAIR, searchable and indexable.</li>
+</ul>
+</section>
+<section id="a-for-accessible" class="level4">
+<h4 class="anchored" data-anchor-id="a-for-accessible">A for Accessible</h4>
+<p>Software, and its metadata, is retrievable via standardised protocols.</p>
+<ul>
+<li>A1. Software is retrievable by its identifier using a standardised communications protocol.
+<ul>
+<li>A1.1. The protocol is open, free, and universally implementable.</li>
+<li>A1.2. The protocol allows for an authentication and authorization procedure, where necessary.</li>
+</ul></li>
+<li>A2. Metadata are accessible, even when the software is no longer available.</li>
+</ul>
+</section>
+<section id="i-for-interoperable" class="level4">
+<h4 class="anchored" data-anchor-id="i-for-interoperable">I for Interoperable</h4>
+<p>Software interoperates with other software by exchanging data and/or metadata, and/or through interaction via application programming interfaces (APIs), described through standards.</p>
+<ul>
+<li>I1. Software reads, writes and exchanges data in a way that meets domain-relevant community standards.</li>
+<li>I2. Software includes qualified references to other objects.</li>
+</ul>
+</section>
+<section id="r-for-reusable" class="level4">
+<h4 class="anchored" data-anchor-id="r-for-reusable">R for Reusable</h4>
+<p>Software is both usable (can be executed) and reusable (can be understood, modified, built upon, or incorporated into other software).</p>
+<ul>
+<li>R1. Software is described with a plurality of accurate and relevant attributes.
+<ul>
+<li>R1.1. Software is given a clear and accessible license.</li>
+<li>R1.2. Software is associated with detailed provenance.</li>
+</ul></li>
+<li>R2. Software includes qualified references to other software.</li>
+<li>R3. Software meets domain-relevant community standards.</li>
+</ul>
+</section>
+</section>
+<section id="reproducbile-research-practices-support-fairness" class="level3">
+<h3 class="anchored" data-anchor-id="reproducbile-research-practices-support-fairness">Reproducbile research practices support FAIRness</h3>
+<p>In the following we want ot look at the practices we learned about and discuss, if the help us with FAIRness.</p>
+<section id="project-organization" class="level4">
+<h4 class="anchored" data-anchor-id="project-organization">Project organization</h4>
+<p>If your project is well organized with a nice folder structure, good names and documentation…</p>
+<ul>
+<li>…it is much easier (and less scary) to upload everything to a repository.</li>
+<li>…people will easily be able to understand the project and reuse parts or all of it.</li>
+<li>…you already have the needed metadata right at your fingertips.</li>
+</ul>
+</section>
+<section id="computational-workflows" class="level4">
+<h4 class="anchored" data-anchor-id="computational-workflows">Computational workflows</h4>
+<p>If you use version control, stabilize your computing environment and maybe even automate your code…</p>
+<ul>
+<li>…you already have a git repository that you can easily publish, e.g.&nbsp;on Zenodo.</li>
+<li>…your confidence in your work will be higher and you’ll be more likely to share and promote your work.</li>
+<li>…it is easy for others to automatically produce the same results as you and thus reuse is improved.</li>
+</ul>
+</section>
+<section id="publishing-research-outputs" class="level4">
+<h4 class="anchored" data-anchor-id="publishing-research-outputs">Publishing research outputs</h4>
+<p>If you have a clear license and publish your work…</p>
+<ul>
+<li>…you can get a DOI from the platform you published on.</li>
+<li>…others know what they are allowed to do with your materials.</li>
+</ul>
+</section>
+<section id="in-summary-fair-and-reproducible-research-go-hand-in-hand" class="level4">
+<h4 class="anchored" data-anchor-id="in-summary-fair-and-reproducible-research-go-hand-in-hand">In summary: FAIR and reproducible research go hand in hand</h4>
+<p>The cool thing about this course is, that you learned about reproducible research, but on the side you also learned how to make your work FAIR and maybe even open.</p>
+<p>In the points above, we probaly even missed a few more that could be added. Any other points that come to your mind?</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
