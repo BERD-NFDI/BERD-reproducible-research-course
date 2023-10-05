@@ -30,11 +30,16 @@ book:
     - 4-2-where-to-publish.qmd
     - 4-3-fair-revisited.qmd
   - part: summary.qmd
-    chapters:
-    - references.qmd
   navbar: 
     background: white
     logo: images/Logo_BERD_Academy.png
+  page-footer:
+    center: 
+      - text: "License"
+        href: license.qmd
+      - text: "Booklet source"
+        href: https://github.com/BERD-NFDI/BERD-reproducible-research-course
+
 
 bibliography: references.bib
 

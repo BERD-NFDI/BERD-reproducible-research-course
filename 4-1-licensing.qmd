@@ -12,7 +12,7 @@ Most of the time choosing a license is actually quite simple. So let me help you
 
 ### Choosing a license for texts, data, media, ...
 
-I really like the Creative Commons licenses for most research outputs (and other things I produce, like this newsletter).
+I really like the Creative Commons licenses for most research outputs (and other things I produce, like [this booklet](/license.qmd)).
 
 They are easy to understand and to pick. On the CC-website you can find a simple tool to help you choose your license:
 

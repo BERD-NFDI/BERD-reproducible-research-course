@@ -41,7 +41,7 @@ There are many other ways of doing version control out there.
 **Versioning data:** Version control of data is a difficult task. Let's leave that for another day. See [here](https://the-turing-way.netlify.app/reproducible-research/vcs/vcs-data.html) for more info for now.
 
 
-## Further reading
+### Further reading
 -   [Version Control](https://the-turing-way.netlify.app/reproducible-research/vcs.html), The Turing Way
 -   [Version Control with Git](https://swcarpentry.github.io/git-novice/), Software Carpentry
 -   [Version Control with Git](https://annakrystalli.me/rrresearchACCE20/version-control-with-git.html) (for R users), Anna Krystalli
