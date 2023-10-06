@@ -1,7 +1,8 @@
 # Summary
 
-In summary, this book has no content whatsoever.
+I hope, you enjoyed this course as well as the booklet. 
 
-```{r}
-1 + 1
-```
+If you implement what you've learned in your day to day research work, you will
+be among the top researchers when it comes to reproducibility. 
+
+So let's go and do great research!
