@@ -25,6 +25,11 @@ options here:
 -   A field or project specific service (e.g. a specific repository for
     [high throughput sequencing data](https://www.ncbi.nlm.nih.gov/sra)
     or [CRAN](https://cran.r-project.org/) for R-Packages)
+    
+A field specific service that is currently being built for the BERD community is
+the BERD Portal (see video).
+
+{{< video https://youtu.be/nfNz83Wde0k?si=YL2vIP6_LESe8mmi >}}
 
 Please make sure to use a trustworthy service. How to check if a service
 is trustworthy? My rule of thumb is that services that have investor

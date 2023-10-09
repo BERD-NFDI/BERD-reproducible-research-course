@@ -15,6 +15,8 @@ This way of "version control" is outdated and error-prone (hence the pixelated i
 
 ### Git for version control
 
+{{< video https://youtu.be/HMqUFlu0gFc?si=bRwXodcwrKhHxLlA >}}
+
 Git is free and open source 😃🙌.
 
 With Git you can track different versions of your paper. For each version you can add a description ("commit message") and you even automatically track who made which change if you are working in a group. You can always go back to old versions.

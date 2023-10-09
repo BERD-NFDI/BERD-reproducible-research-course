@@ -21,9 +21,10 @@ book:
     - 2-3-documentation.qmd
   - part: 3-computational-workflows.qmd
     chapters:
-    - 3-1-version-control.qmd
-    - 3-2-stabilize.qmd
-    - 3-3-automate.qmd
+    - 3-1-pipeline.qmd
+    - 3-2-version-control.qmd
+    - 3-3-stabilize.qmd
+    - 3-4-automate.qmd
   - part: 4-publishing-research.qmd
     chapters:
     - 4-1-licensing.qmd

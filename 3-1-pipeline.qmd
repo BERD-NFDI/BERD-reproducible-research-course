@@ -1,0 +1,11 @@
+## The workflow as a pipeline
+
+This chapter is about turning your research project into a well organised
+pipeline.
+
+::: captioned-image-container
+![Research pipeline](images/pipeline-simple.jpg){fig-alt="A pipeline."}
+:::
+
+
+{{< video https://youtu.be/JNYBnSAFuiM?si=1Dh-BeDHQEZY-UYg >}}

@@ -16,12 +16,16 @@ As an example, check out my project on [personalised medicine](https://github.co
 For more complex research projects, you can create a whole wiki or similar to
 describe the project. For most projects a README will be just fine.
 
+{{< video https://youtu.be/BD_3s_IIcvE?si=aIY1ms30Ptq7I1Jm >}}
+
+
 ### Documenting data
 
 Metadata is central to documentation of data. Metadata is information about your data. It's information on the license of the data, who owns it, what information the data contain, ... so essential data documentation.
 
 Many research fields have **standards for metadata**. If you can't find one for your field you can use a common standard (e.g. [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dces/)) or just ask a data manager or librarian at your institution. You can write metadata similar to a README (see e.g. this [guide from Cornell University](https://data.research.cornell.edu/content/readme)). If you upload your data to a data platform (e.g. [Dryad](https://datadryad.org/)) you won't have to think about it as the platform usually takes care of that (Dryad uses Dublin Core).
 
+{{< video https://youtu.be/IXfgK1NNNYg?si=0vgcnAVa5lVU_K8H >}}
 
 ### Documenting code
 
@@ -44,6 +48,7 @@ MathExam <- MathExam14W[ , c("pcorrect", "group", "tests", "study",
                              "attempt", "semester", "gender")]
 ```
 
+{{< video https://youtu.be/E52ou43Qoww?si=AFyJnHXnXsHNqa2r >}}
 
 
 ### Documenting other things

@@ -2,7 +2,7 @@
 
 Reusing other researcher's work is inherent in science. Licensing plays a central role for reuse, so we should know how it works.
 	
-	
+{{< video https://youtu.be/JNYBnSAFuiM?si=AyHekzttfs_N2gal >}}
 
 In my workshops on open and reproducible research licensing often comes up as a topic of fear.
 

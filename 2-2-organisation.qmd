@@ -5,6 +5,8 @@
 I felt like the worst researcher of all times. But I wasn't. **Many struggle with organizing their files and folders in increasingly complex research projects.**
 
 
+{{< video https://youtu.be/dh7hJay3l8M?si=JxdRMmIEuc-tebKn >}}
+
 ### How to organize files and folders well?
 
 It basically comes down to structuring folders and files **systematically from the beginning**.

@@ -1,6 +1,9 @@
 ## FAIR principles for reproducible research
 
 FAIR stands for Findable, Accessible, Interoperable and Reusable. Implementing the FAIR principles for data can be a challenge though. Let's talk about how to do it in practice.
+
+
+{{< video https://youtu.be/ekVagp2LOV0?si=3vp8YS1gjdCYaKPg >}}
 	
 The FAIR principles are at the core of many current initiatives in research and beyond. For example the German National Research Data Infrastructure (NFDI) consortia are working on making research data (and sometimes software) FAIR. There is even a special FAIR Data Spaces project. But what does FAIR mean for you?
 
@@ -60,4 +63,3 @@ And then additionally...
 
 - Include rich machine-readable metadata according to the community standards.
 - Attach a license to your data (license is part of the metadata) that makes it clear, what others can do with your data. You can for example use the Creative Commons license [CC-BY](https://creativecommons.org/licenses/by/4.0/) (more on [how to choose a license](https://creativecommons.org/choose/)).
-
