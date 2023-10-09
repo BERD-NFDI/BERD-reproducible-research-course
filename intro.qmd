@@ -25,3 +25,5 @@ Weekly Meetings:
 - Tuesday, October 31, NO MEETING but self-paced learning
 - Tuesday, November 7, 3 pm – 4:30 pm CET
 - Tuesday, November 14, 3 pm – 4:30 pm CET
+
+![](images/reproducible-research-neon.jpg){width=50%}

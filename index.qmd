@@ -12,3 +12,11 @@ Making your work reproducible may seem daunting right now, but we'll take it **s
 ::: captioned-image-container
 ![Reproducibility scale](images/repro-scale.jpg){fig-alt="Reproducibility scale: a scale showing **not reproducible** on one end and **reproducible** on the other end."}
 :::
+
+::: {.callout-note}
+## Reuse
+
+If you want to reuse the course materials, you are welcome to do so. 
+Please review our [license](license.qmd) information.  
+You can find the booklet source on [GitHub](https://github.com/BERD-NFDI/BERD-reproducible-research-course).
+:::

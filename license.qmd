@@ -1,5 +1,16 @@
 ## Booklet licence
 
+### CC-BY 4.0
+
 Unless otherwise noted, all materials in this booklet are licensed under [CC-BY
 4.0](https://creativecommons.org/licenses/by/4.0/) Heidi Seibold and the BERD
 Academy. 
+
+That means, if you reuse the booklet materials please cite it as follows (or similar):
+
+::: {.callout-note}
+## Citation
+
+BERD Course: Make Your Research Reproducible, 2023, Heidi Seibold,
+[https://berd-nfdi.github.io/BERD-reproducible-research-course/](https://berd-nfdi.github.io/BERD-reproducible-research-course/)
+:::

@@ -7,4 +7,12 @@ be among the top researchers when it comes to reproducibility.
 
 So let's go and do great research!
 
-![](images/reproducible-research-neon.jpg)
+![](images/reproducible-research-neon.jpg){width=50%}
+
+::: {.callout-note}
+## Reuse
+
+If you want to reuse the course materials, you are welcome to do so. 
+Please review our [license](license.qmd) information.  
+You can find the booklet source on [GitHub](https://github.com/BERD-NFDI/BERD-reproducible-research-course).
+:::
