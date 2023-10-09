@@ -235,20 +235,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3-1-version-control.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Version control</span></span></a>
+  <a href="./3-1-pipeline.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The workflow as a pipeline</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3-2-stabilize.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Stabilize your computing environment and software</span></span></a>
+  <a href="./3-2-version-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Version control</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3-3-automate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Automate your code</span></span></a>
+  <a href="./3-3-stabilize.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Stabilize your computing environment and software</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-4-automate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Automate your code</span></span></a>
   </div>
 </li>
       </ul>
@@ -265,19 +271,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./4-1-licensing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Licensing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Licensing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./4-2-where-to-publish.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Where to publish</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Where to publish</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./4-3-fair-revisited.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">FAIR revisited</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">FAIR revisited</span></span></a>
   </div>
 </li>
       </ul>
@@ -332,11 +338,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>One thing that I always do is to add a README-Text-File to each project. In the README I write the <strong>most important info about the project</strong>: What is it about? Who is involved? Where to find files? How to cite it? Where to find the paper? …</p>
 <p>As an example, check out my project on <a href="https://github.com/HeidiSeibold/personalised_medicine">personalised medicine</a>.</p>
 <p>For more complex research projects, you can create a whole wiki or similar to describe the project. For most projects a README will be just fine.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/BD_3s_IIcvE?si=aIY1ms30Ptq7I1Jm" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="documenting-data" class="level3">
 <h3 class="anchored" data-anchor-id="documenting-data">Documenting data</h3>
 <p>Metadata is central to documentation of data. Metadata is information about your data. It’s information on the license of the data, who owns it, what information the data contain, … so essential data documentation.</p>
 <p>Many research fields have <strong>standards for metadata</strong>. If you can’t find one for your field you can use a common standard (e.g.&nbsp;<a href="https://www.dublincore.org/specifications/dublin-core/dces/">Dublin Core</a>) or just ask a data manager or librarian at your institution. You can write metadata similar to a README (see e.g.&nbsp;this <a href="https://data.research.cornell.edu/content/readme">guide from Cornell University</a>). If you upload your data to a data platform (e.g.&nbsp;<a href="https://datadryad.org/">Dryad</a>) you won’t have to think about it as the platform usually takes care of that (Dryad uses Dublin Core).</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/IXfgK1NNNYg?si=0vgcnAVa5lVU_K8H" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="documenting-code" class="level3">
 <h3 class="anchored" data-anchor-id="documenting-code">Documenting code</h3>
@@ -355,6 +363,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>MathExam <span class="ot">&lt;-</span> MathExam14W[ , <span class="fu">c</span>(<span class="st">"pcorrect"</span>, <span class="st">"group"</span>, <span class="st">"tests"</span>, <span class="st">"study"</span>,</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"attempt"</span>, <span class="st">"semester"</span>, <span class="st">"gender"</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/E52ou43Qoww?si=AFyJnHXnXsHNqa2r" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="documenting-other-things" class="level3">
 <h3 class="anchored" data-anchor-id="documenting-other-things">Documenting other things</h3>

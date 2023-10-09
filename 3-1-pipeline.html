@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BERD Course Booklet: Make Your Research Reproducible - 13&nbsp; Where to publish</title>
+<title>BERD Course Booklet: Make Your Research Reproducible - 8&nbsp; The workflow as a pipeline</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./4-3-fair-revisited.html" rel="next">
-<link href="./4-1-licensing.html" rel="prev">
+<link href="./3-2-version-control.html" rel="next">
+<link href="./3-computational-workflows.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4-publishing-research.html">Publishing research outputs</a></li><li class="breadcrumb-item"><a href="./4-2-where-to-publish.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Where to publish</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-computational-workflows.html">Computational workflows</a></li><li class="breadcrumb-item"><a href="./3-1-pipeline.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The workflow as a pipeline</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -201,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3-1-pipeline.html" class="sidebar-item-text sidebar-link">
+  <a href="./3-1-pipeline.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The workflow as a pipeline</span></span></a>
   </div>
 </li>
@@ -242,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4-2-where-to-publish.html" class="sidebar-item-text sidebar-link active">
+  <a href="./4-2-where-to-publish.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Where to publish</span></span></a>
   </div>
 </li>
@@ -264,23 +264,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#publish-in-a-repository" id="toc-publish-in-a-repository" class="nav-link active" data-scroll-target="#publish-in-a-repository">Publish in a repository</a></li>
-  <li><a href="#publish-with-the-paper" id="toc-publish-with-the-paper" class="nav-link" data-scroll-target="#publish-with-the-paper">Publish with the paper</a></li>
-  <li><a href="#if-your-research-outputs-cannot-be-shared-openly" id="toc-if-your-research-outputs-cannot-be-shared-openly" class="nav-link" data-scroll-target="#if-your-research-outputs-cannot-be-shared-openly">If your research outputs cannot be shared openly</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Where to publish</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The workflow as a pipeline</span></h1>
 </div>
 
 
@@ -295,52 +286,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>When people write the following:</p>
-<blockquote class="blockquote">
-<p><em>The data/code will be made available upon request.</em></p>
-</blockquote>
-<p>This usually means:</p>
-<blockquote class="blockquote">
-<p><em>Once the PhD student who wrote this paper leaves their position, the data/code will be lost in space.</em></p>
-</blockquote>
-<p>Am I right? But how can you do better? How can you make your research outputs available?</p>
-<section id="publish-in-a-repository" class="level3">
-<h3 class="anchored" data-anchor-id="publish-in-a-repository">Publish in a repository</h3>
-<p>Publish your research outputs in a repository. You basically have three options here:</p>
-<ul>
-<li>A general purpose service (e.g.&nbsp;<a href="https://zenodo.org/">Zenodo</a> or <a href="https://osf.io/">Open Science Framework</a>),</li>
-<li>The service of your institution (e.g.&nbsp;<a href="https://data.ub.uni-muenchen.de/">Open Data LMU</a> or <a href="https://www.research-collection.ethz.ch/?locale-attribute=en">ETH Zurich’s Research Collection</a>),</li>
-<li>A field or project specific service (e.g.&nbsp;a specific repository for <a href="https://www.ncbi.nlm.nih.gov/sra">high throughput sequencing data</a> or <a href="https://cran.r-project.org/">CRAN</a> for R-Packages)</li>
-</ul>
-<p>A field specific service that is currently being built for the BERD community is the BERD Portal (see video).</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/nfNz83Wde0k?si=YL2vIP6_LESe8mmi" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Please make sure to use a trustworthy service. How to check if a service is trustworthy? My rule of thumb is that services that have investor backing (e.g.&nbsp;Figshare) are less trustworthy than services backed by the research community (e.g.&nbsp;Zenodo, which is developed by OpenAIRE and CERN). Why? Well, I think an Open Science service should not be driven primarily by commercial goals. At some point commercial services will take money from you, if that may be by selling your data, by locking your uploaded material behind a pay wall, or in another way.</p>
-</section>
-<section id="publish-with-the-paper" class="level3">
-<h3 class="anchored" data-anchor-id="publish-with-the-paper">Publish with the paper</h3>
-<p>Some journals offer to publish your research outputs with your paper. I will be honest, I have mixed feelings about this. Not all journals which offer this, really have the expertise to do so and they don’t necessarily have the possibility to store data long term. For one of my papers we uploaded the material with the journal, but the link to the material keeps vanishing and I keep getting the confused emails of interested readers. So, make sure the journal you upload your material to, ensures long term storage and availability 🧐.</p>
-</section>
-<section id="if-your-research-outputs-cannot-be-shared-openly" class="level3">
-<h3 class="anchored" data-anchor-id="if-your-research-outputs-cannot-be-shared-openly">If your research outputs cannot be shared openly</h3>
-<p>What should you do if you cannot publish your research outputs openly?</p>
-<p>If you have sensitive data (e.g.&nbsp;patient data) and no consent, do not publish the data! There are other options for you.</p>
-<p>If for any reason you cannot share your research outputs, think of options how you can still ensure that others can trust in the reproducibility of your research.</p>
-<ul>
-<li>Can you maybe publish the metadata and the code?</li>
-<li>Can you publish a synthetic version of your data?</li>
-<li>Can you share the data with specific people (e.g.&nbsp;researchers in the same field)?</li>
-</ul>
-<p>Brainstorm with your peers, librarians, or IT support. There are always solutions that are better than publishing nothing.</p>
-</section>
-<section id="further-reading" class="level3">
-<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
-<ul>
-<li><a href="https://www.openaire.eu/zenodo-guide">Zenodo Guide</a></li>
-<li><a href="https://help.osf.io/article/252-create-a-project">How create an OSF project</a></li>
-</ul>
+<p>This chapter is about turning your research project into a well organised pipeline.</p>
+<div class="captioned-image-container">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pipeline-simple.jpg" class="img-fluid figure-img" alt="A pipeline."></p>
+<figcaption class="figure-caption">Research pipeline</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/JNYBnSAFuiM?si=1Dh-BeDHQEZY-UYg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -578,13 +535,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./4-1-licensing.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Licensing</span></span>
+      <a href="./3-computational-workflows.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Computational workflows</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./4-3-fair-revisited.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">FAIR revisited</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./3-2-version-control.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Version control</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
