@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "BERD Course Booklet: Make Your Research Reproducible",
     "section": "",
-    "text": "This course booklet is part of the BERD Academy and was created in 2023.\n\nOverview\nThis booklet helps you implement impactful steps in making your research reproducible (and open).\nMaking your work reproducible may seem daunting right now, but we’ll take it step by step and you can choose what you want to implement now and what you want to keep for later. This is a process and there is no need to take all the steps at once. Let’s just try to move towards reproducible on the reproducibility scale.\n\n\n\n\nReproducibility scale"
+    "text": "This course booklet is part of the BERD Academy and was created in 2023.\n\nOverview\nThis booklet helps you implement impactful steps in making your research reproducible (and open).\nMaking your work reproducible may seem daunting right now, but we’ll take it step by step and you can choose what you want to implement now and what you want to keep for later. This is a process and there is no need to take all the steps at once. Let’s just try to move towards reproducible on the reproducibility scale.\n\n\n\n\nReproducibility scale\n\n\n\n\n\n\n\n\n\nReuse\n\n\n\nIf you want to reuse the course materials, you are welcome to do so. Please review our license information.\nYou can find the booklet source on GitHub."
   },
   {
     "objectID": "intro.html#course-format",
@@ -144,13 +144,13 @@
     "href": "summary.html",
     "title": "Summary",
     "section": "",
-    "text": "I hope, you enjoyed this course as well as the booklet.\nIf you implement what you’ve learned in your day to day research work, you will be among the top researchers when it comes to reproducibility.\nSo let’s go and do great research!"
+    "text": "I hope, you enjoyed this course as well as the booklet.\nIf you implement what you’ve learned in your day to day research work, you will be among the top researchers when it comes to reproducibility.\nSo let’s go and do great research!\n\n\n\n\n\n\n\nReuse\n\n\n\nIf you want to reuse the course materials, you are welcome to do so. Please review our license information.\nYou can find the booklet source on GitHub."
   },
   {
     "objectID": "license.html",
     "href": "license.html",
     "title": "Booklet licence",
     "section": "",
-    "text": "Unless otherwise noted, all materials in this booklet are licensed under CC-BY 4.0 Heidi Seibold and the BERD Academy."
+    "text": "CC-BY 4.0\nUnless otherwise noted, all materials in this booklet are licensed under CC-BY 4.0 Heidi Seibold and the BERD Academy.\nThat means, if you reuse the booklet materials please cite it as follows (or similar):\n\n\n\n\n\n\nCitation\n\n\n\nBERD Course: Make Your Research Reproducible, 2023, Heidi Seibold, https://berd-nfdi.github.io/BERD-reproducible-research-course/"
   }
 ]
