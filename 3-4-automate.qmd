@@ -122,5 +122,3 @@ deeper:
 
 - [Make](https://the-turing-way.netlify.app/reproducible-research/make.html), The Turing Way 
 - [Automating data-analysis pipelines](https://stat545.com/automating-pipeline.html), STAT 454 for R users
-
-- 
