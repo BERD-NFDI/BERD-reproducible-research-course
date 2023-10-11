@@ -302,7 +302,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#make-for-automation" id="toc-make-for-automation" class="nav-link active" data-scroll-target="#make-for-automation">Make for automation</a></li>
+  <li><a href="#make-for-automation" id="toc-make-for-automation" class="nav-link active" data-scroll-target="#make-for-automation"><code>Make</code> for automation</a></li>
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
   </ul>
 </nav>
@@ -347,8 +347,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Good organisation and version control help us tremendously to keep track of all the complexity. But what if the pipes of our pipeline would stick together nicely and we would not have to execute everything manually? What if we could automate stuff? Well, we can!</p>
 <section id="make-for-automation" class="level3">
-<h3 class="anchored" data-anchor-id="make-for-automation">Make for automation</h3>
-<p>There are many automation tools out there that researchers use for their research pipelines. The probably oldest among them is called <em>Make</em>. It is not only old, but still very functional, useful, and versatile.</p>
+<h3 class="anchored" data-anchor-id="make-for-automation"><code>Make</code> for automation</h3>
+<p>There are many automation tools out there that researchers use for their research pipelines. The probably oldest among them is called <code>Make</code>. It is not only old, but still very functional, useful, and versatile.</p>
 <section id="a-simple-example" class="level4">
 <h4 class="anchored" data-anchor-id="a-simple-example">A simple example</h4>
 <p>Let’s say we work on a project and have the following folders and files:</p>
@@ -389,8 +389,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 <section id="makefile-structure" class="level4">
-<h4 class="anchored" data-anchor-id="makefile-structure">Makefile structure</h4>
-<p>How does this Makefile work. A rule in make consists of three components:</p>
+<h4 class="anchored" data-anchor-id="makefile-structure"><code>Makefile</code> structure</h4>
+<p>How does this <code>Makefile</code> work. A rule in <code>Make</code> consists of three components:</p>
 <ol type="1">
 <li><strong>The target</strong>: <em>What do I want to generate?</em></li>
 <li><strong>The dependencies</strong>: <em>What files are needed to generate the target?</em></li>
@@ -404,30 +404,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    code to create target from dependencies</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The structure is always the same: 1. The target is before the “<code>:</code>” in line 1. 2. The dependencies are after the “<code>:</code>” in line 1. 3. The code is in line 2 and indented by a tab.</p>
-<p>Keeping the structure this way is crucial for the Makefile to run properly.</p>
+<p>Keeping the structure this way is crucial for the <code>Makefile</code> to run properly.</p>
 </section>
 <section id="running-make" class="level4">
-<h4 class="anchored" data-anchor-id="running-make">Running make</h4>
-<p>Make runs in the terminal/console. To generate your target, you run:</p>
+<h4 class="anchored" data-anchor-id="running-make">Running <code>Make</code></h4>
+<p><code>Make</code> runs in the terminal/console. To generate your target, you run:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> target</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>so for our example that would be</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> data_clean/PlantGrowth_new.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>to generate the clean data or</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> boxplot_weight-group.png</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>to generate the boxplot.</p>
-<p>You may have noticed that the Makefile for our project also contains a target called <code>all</code>. We use that in longer Makefiles to indicate what needs to be done to create all targets.</p>
-<p>In our case, all targets are generated by generating <code>boxplot_weight-group.png</code>, because <code>boxplot_weight-group.png</code> depends on our other target <code>data_clean/PlantGrowth_new.csv</code> and thus make automatically knows to generate <code>data_clean/PlantGrowth_new.csv</code> (if needed) when running</p>
+<p>You may have noticed that the <code>Makefile</code> for our project also contains a target called <code>all</code>. We use that in longer <code>Makefiles</code> to indicate what needs to be done to create all targets.</p>
+<p>In our case, all targets are generated by generating <code>boxplot_weight-group.png</code>, because <code>boxplot_weight-group.png</code> depends on our other target <code>data_clean/PlantGrowth_new.csv</code> and thus <code>Make</code> automatically knows to generate <code>data_clean/PlantGrowth_new.csv</code> (if needed) when running</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> all</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>If needed? Yes. Make only runs the code, if the dependencies of the target have changed since the code was run the last time. This is a particularly useful thing if you have long running computations and want to still ensure that everything gets updated if needed.</p>
+<p>If needed? Yes. <code>Make</code> only runs the code, if the dependencies of the target have changed since the code was run the last time. This is a particularly useful thing if you have long running computations and want to still ensure that everything gets updated if needed.</p>
 </section>
 </section>
 <section id="further-reading" class="level3">
 <h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
-<p>We just showed a very simple example in this chapter. Make can become much more complex and versatile. Check out the following ressources if you’d like to dive deeper:</p>
+<p>We just showed a very simple example in this chapter. <code>Make</code> can become much more complex and versatile. Check out the following ressources if you’d like to dive deeper:</p>
 <ul>
-<li><p><a href="https://the-turing-way.netlify.app/reproducible-research/make.html">Make</a>, The Turing Way</p></li>
-<li><p><a href="https://stat545.com/automating-pipeline.html">Automating data-analysis pipelines</a>, STAT 454 for R users</p></li>
-<li></li>
+<li><a href="https://the-turing-way.netlify.app/reproducible-research/make.html">Make</a>, The Turing Way</li>
+<li><a href="https://stat545.com/automating-pipeline.html">Automating data-analysis pipelines</a>, STAT 454 for R users</li>
 </ul>
 
 
