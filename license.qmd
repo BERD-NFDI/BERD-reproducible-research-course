@@ -1,4 +1,4 @@
-## Booklet licence
+## Booklet licence {.unnumbered}
 
 ### CC-BY 4.0
 
