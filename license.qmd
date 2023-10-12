@@ -1,4 +1,4 @@
-## Booklet licence
+## Booklet licence {.unnumbered}
 
 ### CC-BY 4.0
 
@@ -14,3 +14,6 @@ That means, if you reuse the booklet materials please cite it as follows (or sim
 BERD Course: Make Your Research Reproducible, 2023, Heidi Seibold,
 [https://berd-nfdi.github.io/BERD-reproducible-research-course/](https://berd-nfdi.github.io/BERD-reproducible-research-course/)
 :::
+
+The course materials are available on [OSF](https://osf.io/rupt7/) and 
+[GitHub](https://github.com/BERD-NFDI/BERD-reproducible-research-course).
