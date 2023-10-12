@@ -2,6 +2,9 @@
 
 Welcome to the course booklet repository! :wave:
 
+To make this booklet FAIR (finable, accessible, interoperable, and reusable),
+we have created an OSF entry: https://osf.io/rupt7/
+
 ## Viewing the booklet
 To view the booklet, please run
 
