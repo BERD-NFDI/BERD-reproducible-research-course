@@ -12,7 +12,8 @@ That means, if you reuse the booklet materials please cite it as follows (or sim
 ## Citation
 
 BERD Course: Make Your Research Reproducible, 2023, Heidi Seibold,
-[https://berd-nfdi.github.io/BERD-reproducible-research-course/](https://berd-nfdi.github.io/BERD-reproducible-research-course/)
+[https://berd-nfdi.github.io/BERD-reproducible-research-course/](https://berd-nfdi.github.io/BERD-reproducible-research-course/), 
+https://doi.org/10.17605/OSF.IO/RUPT7.
 :::
 
 The course materials are available on [OSF](https://osf.io/rupt7/) and 
