@@ -35,6 +35,8 @@ I promise though, once you've got the hang of it, you'll love it!
 
 ### Install git on your computer 💻
 
+{{< video https://youtu.be/Y4VwIEVfZsY >}}
+
 Depending on the system you are working on, there are different ways to install git.
 
 For the latest stable version for Linux Ubuntu run this command in your terminal:
