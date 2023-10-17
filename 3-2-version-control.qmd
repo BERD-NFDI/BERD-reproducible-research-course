@@ -33,7 +33,7 @@ Learning Git can be daunting 🙀. Historically it was developed by software eng
 That makes it particularly useful for us when writing code, but it can also feel a bit too nerdy in the beginning.
 I promise though, once you've got the hang of it, you'll love it!
 
-### Installing git on your computer 💻
+### Install git on your computer 💻
 
 Depending on the system you are working on, there are different ways to install git.
 
@@ -53,7 +53,7 @@ If you are working on Windows, I recommend installing Git Bash. This provides yo
 
 You can visit [git-scm.com](https://git-scm.com/downloads) to get more information on how you can download git for your system.
 
-For R users, I recommend following [these](https://gitlab.com/HeidiSeibold/setup-git-rstudio-gitlab) instructions.
+For R users, I recommend following [these](https://gitlab.com/HeidiSeibold/setup-git-rstudio-gitlab) instructions (up to "Test Installation" as we will use GitHub instead of GitLab in the following).
 
 ### Create a new Repository on GitHub
 
