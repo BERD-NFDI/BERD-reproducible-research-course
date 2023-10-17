@@ -11,7 +11,7 @@ Let's say you are writing a paper. You will edit your paper and might want to ke
 ![http://www.phdcomics.com/comics/archive/phd101212s.gif](http://www.phdcomics.com/comics/archive/phd101212s.gif){fig-alt="http://www.phdcomics.com/comics/archive/phd101212s.gif"}
 :::
 
-This way of "version control" is outdated and error-prone (hence the pixelated image 😜). The most common proper version control system today is [Git](https://git-scm.com/), which I'd like to introduce to you now.
+This way of "version control" is outdated and error-prone. The most common proper version control system today is [Git](https://git-scm.com/), which I'd like to introduce to you now.
 
 ### Git for version control
 
