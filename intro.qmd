@@ -18,6 +18,8 @@ fellow course participants (1-1.5 hours).
 You will choose your accountability buddy during the course. You and your 
 buddy will help each other in implementing the tasks of each week.
 
+![](images/course-concept.jpg){width=90%}
+
 Weekly Meetings:
 
 - Tuesday, October 17, 3 pm – 4:30 pm CET
