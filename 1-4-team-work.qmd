@@ -19,7 +19,7 @@ they discuss 8 steps, that work well for a broad range of research teams:
 7. Identify Failed Approaches, and Stop Them
 8. Have Documentation (e.g. a wiki) and Dissemination Plans for Your Project (e.g. publication on Zenodo)
 
-Note that there are two important parts fo thriving teams:
+Note that there are two important parts for thriving teams:
 
 - Documents (wiki, checklist, ...)
 - Roles of people (research software engineer, welcome team, ...)

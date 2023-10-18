@@ -117,7 +117,7 @@ gets updated if needed.
 
 ### Further reading
 We just showed a very simple example in this chapter. `Make` can become much more
-complex and versatile. Check out the following ressources if you'd like to dive
+complex and versatile. Check out the following resources if you'd like to dive
 deeper:
 
 - [Make](https://the-turing-way.netlify.app/reproducible-research/make.html), The Turing Way 

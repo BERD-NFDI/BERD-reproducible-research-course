@@ -12,7 +12,7 @@ The FAIR principles are at the core of many current initiatives in research and 
 ![FAIR prinicples](images/fair.jpg){fig-alt="F=findable, A=accessible, I=interoperable, R=reusable"}
 :::
 
-This chapter is based on ressources from the University of Mannheim, that I 
+This chapter is based on resources from the University of Mannheim, that I 
 recommend to check out: [https://github.com/UB-Mannheim/FAIR-Data-Week](https://github.com/UB-Mannheim/FAIR-Data-Week).
 In the following I will use these and my own experience to give you a bit of a 
 guidance on how to get started.

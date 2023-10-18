@@ -51,7 +51,7 @@ Software is both usable (can be executed) and reusable (can be understood, modif
 
 ### Reproducbile research practices support FAIRness
 
-In the following we want ot look at the practices we learned about and discuss,
+In the following we want to look at the practices we learned about and discuss,
 if the help us with FAIRness.
 
 #### Project organization
@@ -79,5 +79,5 @@ If you have a clear license and publish your work...
 
 The cool thing about this course is, that you learned about reproducible research, but on the side you also learned how to make your work FAIR and maybe even open. 
 
-In the points above, we probaly even missed a few more that could be added. Any other points that come to your mind?
+In the points above, we probably even missed a few more that could be added. Any other points that come to your mind?
 
