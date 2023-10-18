@@ -5,6 +5,30 @@ Welcome to the course booklet repository! :wave:
 To make this booklet FAIR (finable, accessible, interoperable, and reusable),
 we have created an OSF entry: https://osf.io/rupt7/
 
+## Requirements
+
+This repo uses [`renv`](https://rstudio.github.io/renv/articles/renv.html) for dependency management.
+
+If you haven't used `renv` before, install it using:
+
+```R
+install.packages("renv")
+```
+
+If you open the R project `berd-reproducible-research-course.Rproj` for the first time in RStudio, `renv` should be automatically activated.
+You are asked to install the packages listed in [`renv.lock`](renv.lock):
+
+```R
+# Bootstrapping renv 1.0.0 ---------------------------------------------------
+- Downloading renv ... OK
+- Installing renv  ... OK
+
+- Project '~/edu/berd-reproducible-research-course' loaded. [renv 1.0.0]
+- None of the packages recorded in the lockfile are installed.
+- Using `renv::restore()` to restore the project library.
+Do you want to proceed? [Y/n]: Y
+```
+
 ## Viewing the booklet
 To view the booklet, please run
 
