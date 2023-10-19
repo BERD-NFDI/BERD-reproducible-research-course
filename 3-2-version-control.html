@@ -317,7 +317,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#what-is-version-control" id="toc-what-is-version-control" class="nav-link active" data-scroll-target="#what-is-version-control">What is version control?</a></li>
   <li><a href="#git-for-version-control" id="toc-git-for-version-control" class="nav-link" data-scroll-target="#git-for-version-control">Git for version control</a></li>
-  <li><a href="#install-git-on-your-computer" id="toc-install-git-on-your-computer" class="nav-link" data-scroll-target="#install-git-on-your-computer">Install git on your computer 💻</a></li>
+  <li><a href="#the-difference-between-git-github-and-gitlab" id="toc-the-difference-between-git-github-and-gitlab" class="nav-link" data-scroll-target="#the-difference-between-git-github-and-gitlab">The difference between Git, GitHub and GitLab</a></li>
+  <li><a href="#install-and-work-with-git-and-github-video-tutorial" id="toc-install-and-work-with-git-and-github-video-tutorial" class="nav-link" data-scroll-target="#install-and-work-with-git-and-github-video-tutorial">Install and work with git and GitHub (Video Tutorial)</a></li>
+  <li><a href="#install-git-on-your-computer" id="toc-install-git-on-your-computer" class="nav-link" data-scroll-target="#install-git-on-your-computer">Install Git on your computer 💻</a></li>
   <li><a href="#create-a-new-repository-on-github" id="toc-create-a-new-repository-on-github" class="nav-link" data-scroll-target="#create-a-new-repository-on-github">Create a new Repository on GitHub</a></li>
   <li><a href="#clone-a-github-repository-to-your-local-machine" id="toc-clone-a-github-repository-to-your-local-machine" class="nav-link" data-scroll-target="#clone-a-github-repository-to-your-local-machine">Clone a GitHub Repository to your local machine</a></li>
   <li><a href="#other-version-control-systems" id="toc-other-version-control-systems" class="nav-link" data-scroll-target="#other-version-control-systems">Other version control systems</a></li>
@@ -346,6 +348,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <p>Version control systems can help us stay on top of our complex research projects, and in particular on changes in code and text. Version control can help with reproducibility in several ways.</p>
+<ul>
+<li><p><strong>Reproducible Collaboration</strong>: Git enables collaboration among multiple contributors, ensuring that changes are tracked, documented, and reproducible, promoting transparency and teamwork</p></li>
+<li><p><strong>Traceable Versioning</strong>: Git provides a detailed version history, allowing users to trace back every change made to the project, ensuring transparency and facilitating the reproduction of specific project states</p></li>
+<li><p><strong>Error Reversal</strong>: Git allows for reversal of errors, enabling researchers to quickly identify and correct mistakes, ensuring that the project remains consistent and reproducible</p></li>
+<li><p><strong>Attributable Contributions</strong>: Git records the contributions made by each team member, attributing specific changes to individuals. This transparency aids in understanding who contributed what, ensuring accountability and facilitating collaboration</p></li>
+<li><p><strong>Documentation and Context</strong>: Git commits contain detailed messages, providing context for changes made. This documentation enhances the reproducibility of the project by allowing others to understand the reasoning behind specific alterations</p></li>
+</ul>
 <section id="what-is-version-control" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-version-control">What is version control?</h3>
 <p>Let’s say you are writing a paper. You will edit your paper and might want to keep different versions of it. A common way to handle that is by using different file names for different versions.</p>
@@ -371,17 +380,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Most researchers use GitLab or GitHub as platforms for working with Git and they also serve as a neat front end for the server. GitLab and GitHub give us some extra neat features for collaboration (e.g.&nbsp;issues, Wiki, …).</p>
 <p>Learning Git can be daunting 🙀. Historically it was developed by software engineers for other software engineers. That makes it particularly useful for us when writing code, but it can also feel a bit too nerdy in the beginning. I promise though, once you’ve got the hang of it, you’ll love it!</p>
 </section>
-<section id="install-git-on-your-computer" class="level3">
-<h3 class="anchored" data-anchor-id="install-git-on-your-computer">Install git on your computer 💻</h3>
+<section id="the-difference-between-git-github-and-gitlab" class="level3">
+<h3 class="anchored" data-anchor-id="the-difference-between-git-github-and-gitlab">The difference between Git, GitHub and GitLab</h3>
+<ul>
+<li><p><strong>Git</strong>: A distributed version control system enabling local tracking of code changes, allowing collaboration and version management.</p></li>
+<li><p><strong>GitHub</strong>: A web-based platform hosting Git repositories, offering collaborative features like pull requests, issues, and wikis. It provides tools for team collaboration and project management.</p></li>
+<li><p><strong>GitLab</strong>: A Git repository manager providing source code management, CI/CD pipelines, issue tracking, and more. GitLab can be self-hosted or used as a cloud-based service, giving users control over their infrastructure and development process.</p></li>
+</ul>
+<p>You can use GitHub or GitLab alongside Git when you need centralized collaboration, project management, community engagement, remote backup, and automated continuous integration and deployment workflows. But you can also use the command line tool Git independently if you only work locally. In this example, we use Git together with GitHub. However, the process would also be very similar if you use GitLab.</p>
+</section>
+<section id="install-and-work-with-git-and-github-video-tutorial" class="level3">
+<h3 class="anchored" data-anchor-id="install-and-work-with-git-and-github-video-tutorial">Install and work with git and GitHub (Video Tutorial)</h3>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Y4VwIEVfZsY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Depending on the system you are working on, there are different ways to install git.</p>
+</section>
+<section id="install-git-on-your-computer" class="level3">
+<h3 class="anchored" data-anchor-id="install-git-on-your-computer">Install Git on your computer 💻</h3>
+<p>Depending on the system you are working on, there are different ways to install Git.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Linux</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Mac</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Windows</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>For the latest stable version for Linux Ubuntu run this command in your terminal:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apt-get</span> install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>If you are on Mac you can use homebrew to install it in your terminal. Install <a href="https://brew.sh/">homebrew</a> if you don’t already have it, then type:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Usually on Mac Git is already installed by default. To see if it’s already there you can open your terminal and type:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The Output should show you a version of Git.</p>
+<p>If not you can use homebrew to install it in your terminal. Install <a href="https://brew.sh/">homebrew</a> if you don’t already have it, then type:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>If you are working on Windows, I recommend installing Git Bash. This provides you with a terminal where you can work similarly to the terminal on Mac and Linux, using the same commands. Git Bash also automatically installs Git for you. You can download Git for Windows <a href="https://gitforwindows.org/">here</a>.</p>
-<p>You can visit <a href="https://git-scm.com/downloads">git-scm.com</a> to get more information on how you can download git for your system.</p>
-<p>For R users, I recommend following <a href="https://gitlab.com/HeidiSeibold/setup-git-rstudio-gitlab">these</a> instructions (up to “Test Installation” as we will use GitHub instead of GitLab in the following).</p>
+<p>You can visit <a href="https://git-scm.com/downloads">git-scm.com</a> to get more information on how you can download Git for your system.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="create-a-new-repository-on-github" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-new-repository-on-github">Create a new Repository on GitHub</h3>
@@ -394,11 +428,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Enter a <strong>Repository name</strong>: Choose a name for your repository. This name will be part of your repository’s URL.</p></li>
 <li><p>Enter a <strong>Description</strong>: Optionally, you can add a description of your repository.</p></li>
 <li><p>Choose <strong>Public</strong> or <strong>Private</strong>: Decide whether you want your repository to be public (visible to everyone) or private (accessible only to people you specify).</p></li>
-<li><p>Initialize this repository with a <strong>README</strong>: Check this option to create a README file for your repository. A README file provides information about your project.</p></li>
-<li><p>Choose a <strong>.gitignore</strong> file: If your project involves specific programming languages or frameworks, you can select a <code>.gitignore</code> template to exclude certain files from version control. You don’t have to it for now.</p></li>
+<li><p>Initialize this repository with a <strong>README</strong>: Check this option to create a README file for your repository. A README file provides information about your project. Including a README.md file in your repository provides essential project information such as a brief description, installation instructions, usage guidelines, and contribution guidelines. It acts as a guide for users and contributors, enhancing the understanding and adoption of your project.</p></li>
+<li><p>Choose a <strong>.gitignore</strong> file: If your project involves specific programming languages or frameworks, you can select a <code>.gitignore</code> template to exclude certain files from version control. The .gitignore file is crucial for excluding specific files or directories from version control. This ensures that sensitive or irrelevant files (like configuration files, logs, or compiled binaries) are not inadvertently shared or committed. It keeps your repository clean, reduces clutter, and avoids potential security risks. <strong>You don’t have to it for now.</strong></p></li>
 <li><p>Choose a <strong>license</strong>: If you want to add an open-source license to your repository, you can choose one from the provided options. You don’t have to it for now.</p></li>
 </ul>
 <p><strong>Create the Repository:</strong> - Click the green “Create repository” button. Your new repository is now created.</p>
+<blockquote class="blockquote">
+<p><strong>Note</strong>: Starting from a local repository and pushing it to GitHub later is a common approach. However, it’s important to note that for successful pushing, you need to initialize an empty repository on GitHub first to avoid divergence issues when the initial commit history differs between your local repository and the remote repository on GitHub. This ensures seamless syncing and collaboration between local and remote versions of your project.</p>
+</blockquote>
 </section>
 <section id="clone-a-github-repository-to-your-local-machine" class="level3">
 <h3 class="anchored" data-anchor-id="clone-a-github-repository-to-your-local-machine">Clone a GitHub Repository to your local machine</h3>
@@ -406,31 +443,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Clone GitHub Repository with SSH URL:</strong></p>
 <p>Open the terminal on your computer.</p>
 <p>Use the <code>git clone</code> command with the SSH URL of your GitHub repository to clone your repository to your local machine:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:username/repository.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:username/repository.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Make sure to replace <code>username</code> with your GitHub username and <code>repository</code> with your repository name.</p>
 <p>Navigate into the newly created directory:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> repository</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> repository</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Make Changes:</strong></p>
-<p>Add files, modify existing files, or create new files in your local repository as needed.</p>
+<p>Make a change to your README.md file. You can use your favorite editor for this, e.g.&nbsp;Notepad ++, nano, or vim. In the video tutorial you can see how to make the change with the nano editor.</p>
+<p><strong>The command <code>git status</code></strong></p>
+<p>When you run the <code>git status</code> command, Git provides you with information about the current state of your repository. Here’s what the typical output messages mean:</p>
+<ol type="1">
+<li><p><strong>On branch [branch name]:</strong> Indicates the name of the branch you are currently on. Branches allow you to work on different features or versions of your project simultaneously.</p></li>
+<li><p><strong>Changes not staged for commit:</strong> Git detects modifications in your working directory that haven’t been staged yet. These changes won’t be included in the next commit unless you explicitly add them.</p></li>
+<li><p><strong>Changes to be committed:</strong> Lists the changes that are staged and ready to be included in the next commit. These changes will be part of the commit when you run <code>git commit</code>.</p></li>
+<li><p><strong>Untracked files:</strong> Shows files in your working directory that Git is not tracking. These files are not included in version control until you explicitly add them using <code>git add</code>.</p></li>
+<li><p><strong>Your branch is ahead of ‘origin/[branch]’ by [number] commits:</strong> Indicates that your local branch has commits that haven’t been pushed to the remote repository (origin). It suggests that you might want to push these changes to keep the remote repository up-to-date.</p></li>
+<li><p><strong>nothing to commit, working tree clean:</strong> This message appears when there are no changes in your working directory or staged changes waiting to be committed. Your repository is in a clean state.</p></li>
+</ol>
+<p>These messages help you understand the status of your repository, indicating which files have been modified, which changes are staged for commit, and if your local branch is ahead or behind the corresponding branch on the remote repository. Understanding <code>git status</code> output is essential for effective version control and collaboration.</p>
 <p><strong>Check Status and Stage Changes:</strong></p>
 <p>Check the status of your repository to see which files have been changed:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Stage the changed files:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Your output from <code>git status</code> should look something like this:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> $ <span class="fu">git</span> status                                                                               [±master ●]</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">On</span> branch master</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Changes</span> not staged for commit:</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">(</span><span class="ex">use</span> <span class="st">"git add &lt;file&gt;..."</span> to update what will be committed<span class="kw">)</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">(</span><span class="ex">use</span> <span class="st">"git restore &lt;file&gt;..."</span> to discard changes in working directory<span class="kw">)</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="ex">modified:</span>   README.md</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="ex">no</span> changes added to commit <span class="er">(</span><span class="ex">use</span> <span class="st">"git add"</span> and/or <span class="st">"git commit -a"</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This message means there are changes in the <code>README.md</code> file that have not been staged for commit. You need to use <code>git add README.md</code> to stage the changes, and then <code>git commit -m "Your message"</code> to commit them.</p>
+<p>Stage the changed file:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Commit Changes:</strong></p>
 <p>Commit the changes with a descriptive message:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Description of the changes made"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Replace <code>"Description of the changes made"</code> with a brief description of the changes you made.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Description of the changes made"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Replace <code>"Description of the changes made"</code> with a brief description of the changes you made. The <code>-m</code> flag in <code>git commit</code> is used to add a commit message directly from the command line. When you use <code>git commit -m "Your message"</code>, you can include a brief description of the changes you are committing without opening a text editor, making the commit process quicker and more efficient.</p>
 <p><strong>Push Changes to GitHub:</strong></p>
 <p>Push your changes to your GitHub repository:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>After this step is successful, your changes are published to your GitHub repository! 🎉</p>
 </section>
 <section id="other-version-control-systems" class="level3">
 <h3 class="anchored" data-anchor-id="other-version-control-systems">Other version control systems</h3>
 <p>There are many other ways of doing version control out there.</p>
 <p><strong>Subversion:</strong> Simpler systems like Subversion are used less these days as Git offers more flexibility.</p>
-<p><strong>Google docs and friends:</strong> Many online text editors (Google Docs, OneDrive, …) offer versioning now. It is not as advanced and versatile, but a nice way to work in a <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> (What You See Is What You Get) editor. Git really only works with real text files, so people usually use LaTeX or Markdown (not WYSIWYG) to write texts when using Git.</p>
+<p><strong>Google docs and friends:</strong> Many online text editors (Google Docs, OneDrive, …) offer versioning now. It is not as advanced and versatile, but a nice way to work in a <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> (What You See Is What You Get) editor. Git works in its entirety only with plain-text files, such as Markdown, HTML, JSON or LaTeX. For formats that are not plain-text, such as PDF or Word files, some features that git brings with it do not work. You can still commit these files to git, but e.g.&nbsp;the highlighting of line-by-line changes does not work with these files.</p>
 <p><strong>Versioning data:</strong> Version control of data is a difficult task. Let’s leave that for another day. See <a href="https://the-turing-way.netlify.app/reproducible-research/vcs/vcs-data.html">here</a> for more info for now.</p>
 </section>
 <section id="further-reading" class="level3">
@@ -700,7 +758,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link active" href="./license.html" aria-current="page">License</a>
+    <a class="nav-link" href="./license.html">License</a>
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="https://github.com/BERD-NFDI/BERD-reproducible-research-course">Booklet source</a>
