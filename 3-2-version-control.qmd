@@ -3,6 +3,17 @@
 Version control systems can help us stay on top of our complex research projects, and in particular on changes
 in code and text. Version control can help with reproducibility in several ways.
 
+- **Reproducible Collaboration**: Git enables collaboration among multiple contributors, ensuring that changes are tracked, documented, and reproducible, promoting transparency and teamwork
+
+- **Traceable Versioning**: Git provides a detailed version history, allowing users to trace back every change made to the project, ensuring transparency and facilitating the reproduction of specific project states
+
+- **Error Reversal**: Git allows for reversal of errors, enabling researchers to quickly identify and correct mistakes, ensuring that the project remains consistent and reproducible
+
+- **Attributable Contributions**: Git records the contributions made by each team member, attributing specific changes to individuals. This transparency aids in understanding who contributed what, ensuring accountability and facilitating collaboration
+
+- **Documentation and Context**: Git commits contain detailed messages, providing context for changes made. This documentation enhances the reproducibility of the project by allowing others to understand the reasoning behind specific alterations
+
+
 ### What is version control? 
 
 Let's say you are writing a paper. You will edit your paper and might want to keep different versions of it. A common way to handle that is by using different file names for different versions.
@@ -33,29 +44,55 @@ Learning Git can be daunting 🙀. Historically it was developed by software eng
 That makes it particularly useful for us when writing code, but it can also feel a bit too nerdy in the beginning.
 I promise though, once you've got the hang of it, you'll love it!
 
-### Install git on your computer 💻
+### The difference between Git, GitHub and GitLab
+
+- **Git**: A distributed version control system enabling local tracking of code changes, allowing collaboration and version management.
+
+- **GitHub**: A web-based platform hosting Git repositories, offering collaborative features like pull requests, issues, and wikis. It provides tools for team collaboration and project management.
+
+- **GitLab**: A Git repository manager providing source code management, CI/CD pipelines, issue tracking, and more. GitLab can be self-hosted or used as a cloud-based service, giving users control over their infrastructure and development process.
+
+You can use GitHub or GitLab alongside Git when you need centralized collaboration, project management, community engagement, remote backup, and automated continuous integration and deployment workflows. But you can also use the command line tool Git independently if you only work locally. In this example, we use Git together with GitHub. However, the process would also be very similar if you use GitLab.
+
+### Install and work with git and GitHub (Video Tutorial)
 
 {{< video https://youtu.be/Y4VwIEVfZsY >}}
 
-Depending on the system you are working on, there are different ways to install git.
 
+### Install Git on your computer 💻
+
+Depending on the system you are working on, there are different ways to install Git.
+
+::: {.panel-tabset}
+## Linux
 For the latest stable version for Linux Ubuntu run this command in your terminal:
 
 ```bash
 apt-get install git
 ```
-If you are on Mac you can use homebrew to install it in your terminal. 
+
+## Mac
+
+Usually on Mac Git is already installed by default. To see if it's already there you 
+can open your terminal and type:
+
+```bash
+git --version
+```
+The Output should show you a version of Git.
+
+If not you can use homebrew to install it in your terminal. 
 Install [homebrew](https://brew.sh/) if you don't already have it, then type:
 
 ```bash
 brew install git
 ```
-
+## Windows
 If you are working on Windows, I recommend installing Git Bash. This provides you with a terminal where you can work similarly to the terminal on Mac and Linux, using the same commands. Git Bash also automatically installs Git for you. You can download Git for Windows [here](https://gitforwindows.org/).
 
-You can visit [git-scm.com](https://git-scm.com/downloads) to get more information on how you can download git for your system.
+You can visit [git-scm.com](https://git-scm.com/downloads) to get more information on how you can download Git for your system.
 
-For R users, I recommend following [these](https://gitlab.com/HeidiSeibold/setup-git-rstudio-gitlab) instructions (up to "Test Installation" as we will use GitHub instead of GitLab in the following).
+:::
 
 ### Create a new Repository on GitHub
 
@@ -76,14 +113,16 @@ Alternatively, on your GitHub profile page, click on the "Repositories" tab, and
 
 - Choose **Public** or **Private**: Decide whether you want your repository to be public (visible to everyone) or private (accessible only to people you specify).
 
-- Initialize this repository with a **README**: Check this option to create a README file for your repository. A README file provides information about your project.
+- Initialize this repository with a **README**: Check this option to create a README file for your repository. A README file provides information about your project. Including a README.md file in your repository provides essential project information such as a brief description, installation instructions, usage guidelines, and contribution guidelines. It acts as a guide for users and contributors, enhancing the understanding and adoption of your project.
 
-- Choose a **.gitignore** file: If your project involves specific programming languages or frameworks, you can select a `.gitignore` template to exclude certain files from version control. You don't have to it for now.
+- Choose a **.gitignore** file: If your project involves specific programming languages or frameworks, you can select a `.gitignore` template to exclude certain files from version control. The .gitignore file is crucial for excluding specific files or directories from version control. This ensures that sensitive or irrelevant files (like configuration files, logs, or compiled binaries) are not inadvertently shared or committed. It keeps your repository clean, reduces clutter, and avoids potential security risks. **You don't have to it for now.**
 
 - Choose a **license**: If you want to add an open-source license to your repository, you can choose one from the provided options. You don't have to it for now.
 
 **Create the Repository:**
 - Click the green "Create repository" button. Your new repository is now created.
+
+> **Note**: Starting from a local repository and pushing it to GitHub later is a common approach. However, it's important to note that for successful pushing, you need to initialize an empty repository on GitHub first to avoid divergence issues when the initial commit history differs between your local repository and the remote repository on GitHub. This ensures seamless syncing and collaboration between local and remote versions of your project.
 
 ### Clone a GitHub Repository to your local machine 
 
@@ -109,7 +148,26 @@ cd repository
 
 **Make Changes:**
 
-Add files, modify existing files, or create new files in your local repository as needed.
+Make a change to your README.md file. You can use your favorite editor for this, e.g. Notepad ++, nano, or vim. In the video tutorial you can see how to make the change with the nano editor.
+
+**The command `git status`**
+
+When you run the `git status` command, Git provides you with information about the current state of your repository. Here's what the typical output messages mean:
+
+1. **On branch [branch name]:** Indicates the name of the branch you are currently on. Branches allow you to work on different features or versions of your project simultaneously.
+
+2. **Changes not staged for commit:** Git detects modifications in your working directory that haven't been staged yet. These changes won't be included in the next commit unless you explicitly add them.
+
+3. **Changes to be committed:** Lists the changes that are staged and ready to be included in the next commit. These changes will be part of the commit when you run `git commit`.
+
+4. **Untracked files:** Shows files in your working directory that Git is not tracking. These files are not included in version control until you explicitly add them using `git add`.
+
+5. **Your branch is ahead of 'origin/[branch]' by [number] commits:** Indicates that your local branch has commits that haven't been pushed to the remote repository (origin). It suggests that you might want to push these changes to keep the remote repository up-to-date.
+
+6. **nothing to commit, working tree clean:** This message appears when there are no changes in your working directory or staged changes waiting to be committed. Your repository is in a clean state.
+
+These messages help you understand the status of your repository, indicating which files have been modified, which changes are staged for commit, and if your local branch is ahead or behind the corresponding branch on the remote repository. Understanding `git status` output is essential for effective version control and collaboration.
+
 
 **Check Status and Stage Changes:**
 
@@ -118,11 +176,25 @@ Check the status of your repository to see which files have been changed:
 ```bash
 git status
 ```
-
-Stage the changed files:
+Your output from `git status` should look something like this:
 
 ```bash
-git add .
+> $ git status                                                                               [±master ●]
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+This message means there are changes in the `README.md` file that have not been staged for commit. You need to use `git add README.md` to stage the changes, and then `git commit -m "Your message"` to commit them.
+
+
+Stage the changed file:
+
+```bash
+git add README.md
 ```
 
 **Commit Changes:**
@@ -133,7 +205,7 @@ Commit the changes with a descriptive message:
 git commit -m "Description of the changes made"
 ```
 
-Replace `"Description of the changes made"` with a brief description of the changes you made.
+Replace `"Description of the changes made"` with a brief description of the changes you made. The `-m` flag in `git commit` is used to add a commit message directly from the command line. When you use `git commit -m "Your message"`, you can include a brief description of the changes you are committing without opening a text editor, making the commit process quicker and more efficient.
 
 **Push Changes to GitHub:**
 
@@ -152,7 +224,7 @@ There are many other ways of doing version control out there.
 
 **Subversion:** Simpler systems like Subversion are used less these days as Git offers more flexibility.
 
-**Google docs and friends:** Many online text editors (Google Docs, OneDrive, ...) offer versioning now. It is not as advanced and versatile, but a nice way to work in a [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) (What You See Is What You Get) editor. Git really only works with real text files, so people usually use LaTeX or Markdown (not WYSIWYG) to write texts when using Git.
+**Google docs and friends:** Many online text editors (Google Docs, OneDrive, ...) offer versioning now. It is not as advanced and versatile, but a nice way to work in a [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) (What You See Is What You Get) editor. Git works in its entirety only with plain-text files, such as Markdown, HTML, JSON or LaTeX. For formats that are not plain-text, such as PDF or Word files, some features that git brings with it do not work. You can still commit these files to git, but e.g. the highlighting of line-by-line changes does not work with these files.
 
 **Versioning data:** Version control of data is a difficult task. Let's leave that for another day. See [here](https://the-turing-way.netlify.app/reproducible-research/vcs/vcs-data.html) for more info for now.
 
