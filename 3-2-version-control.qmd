@@ -1,7 +1,6 @@
 ## Version control
 
-Version control systems can help us stay on top of our complex research projects, and in particular on changes
-in code and text. Version control can help with reproducibility in several ways.
+Version control systems (VCS) are essential for managing intricate research projects, tracking changes in code and text systematically. Distributed version control systems (DVCS) like Git preserve different versions of content, offering significant advantages over local or centralized VCS. In Git, every user possesses a complete repository copy, ensuring redundancy and flexibility. This decentralized approach enhances collaboration, enabling multiple contributors to work independently on the same project, ensuring data integrity and maintaining the project's reproducibility. Git's flexibility and redundancy make it an ideal choice for researchers and developers, facilitating organization and preserving the integrity of their work.
 
 - **Reproducible Collaboration**: Git enables collaboration among multiple contributors, ensuring that changes are tracked, documented, and reproducible, promoting transparency and teamwork
 
@@ -217,7 +216,21 @@ git push origin main
 
 After this step is successful, your changes are published to your GitHub repository! 🎉
 
+### Most common commands in Git
 
+| Command              | Description                                                                      |
+|----------------------|----------------------------------------------------------------------------------|
+| `git init`           | Initiates a new git repository                                                  |
+| `git status`         | Shows the status of all files in the working directory and the staging area      |
+| `git add`            | Add a new file or changes made to a file to the staging area                      |
+| `git commit`         | Creates a new commit that contains all changes from the staging area and adds it to the project's history |
+| `git push`           | Adds commits from a local repository to a remote repository (e.g. GitHub or GitLab) |
+| `git log`            | Shows the history of all commits                                                |
+| `git diff`           | Shows changes made to files since the last commit                                |
+| `git pull`           | Adds commits from a remote repository (e.g. GitHub or GitLab) to a local repository |
+| `git remote add origin` | Connects a local repository with a remote repository                            |
+| `git clone`          | Creates a local copy of a remote repository                                      |
+| `git config`         | Can be used to show or change general options of a repository                    |
 ### Other version control systems
 
 There are many other ways of doing version control out there.
