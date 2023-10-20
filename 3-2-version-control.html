@@ -322,6 +322,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#install-git-on-your-computer" id="toc-install-git-on-your-computer" class="nav-link" data-scroll-target="#install-git-on-your-computer">Install Git on your computer 💻</a></li>
   <li><a href="#create-a-new-repository-on-github" id="toc-create-a-new-repository-on-github" class="nav-link" data-scroll-target="#create-a-new-repository-on-github">Create a new Repository on GitHub</a></li>
   <li><a href="#clone-a-github-repository-to-your-local-machine" id="toc-clone-a-github-repository-to-your-local-machine" class="nav-link" data-scroll-target="#clone-a-github-repository-to-your-local-machine">Clone a GitHub Repository to your local machine</a></li>
+  <li><a href="#most-common-commands-in-git" id="toc-most-common-commands-in-git" class="nav-link" data-scroll-target="#most-common-commands-in-git">Most common commands in Git</a></li>
   <li><a href="#other-version-control-systems" id="toc-other-version-control-systems" class="nav-link" data-scroll-target="#other-version-control-systems">Other version control systems</a></li>
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
   </ul>
@@ -347,7 +348,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>Version control systems can help us stay on top of our complex research projects, and in particular on changes in code and text. Version control can help with reproducibility in several ways.</p>
+<p>Version control systems (VCS) are essential for managing intricate research projects, tracking changes in code and text systematically. Distributed version control systems (DVCS) like Git preserve different versions of content, offering significant advantages over local or centralized VCS. In Git, every user possesses a complete repository copy, ensuring redundancy and flexibility. This decentralized approach enhances collaboration, enabling multiple contributors to work independently on the same project, ensuring data integrity and maintaining the project’s reproducibility. Git’s flexibility and redundancy make it an ideal choice for researchers and developers, facilitating organization and preserving the integrity of their work.</p>
 <ul>
 <li><p><strong>Reproducible Collaboration</strong>: Git enables collaboration among multiple contributors, ensuring that changes are tracked, documented, and reproducible, promoting transparency and teamwork</p></li>
 <li><p><strong>Traceable Versioning</strong>: Git provides a detailed version history, allowing users to trace back every change made to the project, ensuring transparency and facilitating the reproduction of specific project states</p></li>
@@ -483,6 +484,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Push your changes to your GitHub repository:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>After this step is successful, your changes are published to your GitHub repository! 🎉</p>
+</section>
+<section id="most-common-commands-in-git" class="level3">
+<h3 class="anchored" data-anchor-id="most-common-commands-in-git">Most common commands in Git</h3>
+<table class="table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>git init</code></td>
+<td>Initiates a new git repository</td>
+</tr>
+<tr class="even">
+<td><code>git status</code></td>
+<td>Shows the status of all files in the working directory and the staging area</td>
+</tr>
+<tr class="odd">
+<td><code>git add</code></td>
+<td>Add a new file or changes made to a file to the staging area</td>
+</tr>
+<tr class="even">
+<td><code>git commit</code></td>
+<td>Creates a new commit that contains all changes from the staging area and adds it to the project’s history</td>
+</tr>
+<tr class="odd">
+<td><code>git push</code></td>
+<td>Adds commits from a local repository to a remote repository (e.g.&nbsp;GitHub or GitLab)</td>
+</tr>
+<tr class="even">
+<td><code>git log</code></td>
+<td>Shows the history of all commits</td>
+</tr>
+<tr class="odd">
+<td><code>git diff</code></td>
+<td>Shows changes made to files since the last commit</td>
+</tr>
+<tr class="even">
+<td><code>git pull</code></td>
+<td>Adds commits from a remote repository (e.g.&nbsp;GitHub or GitLab) to a local repository</td>
+</tr>
+<tr class="odd">
+<td><code>git remote add origin</code></td>
+<td>Connects a local repository with a remote repository</td>
+</tr>
+<tr class="even">
+<td><code>git clone</code></td>
+<td>Creates a local copy of a remote repository</td>
+</tr>
+<tr class="odd">
+<td><code>git config</code></td>
+<td>Can be used to show or change general options of a repository</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="other-version-control-systems" class="level3">
 <h3 class="anchored" data-anchor-id="other-version-control-systems">Other version control systems</h3>
