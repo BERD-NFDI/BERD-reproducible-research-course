@@ -1,0 +1,4 @@
+[codespell]
+skip = .git,renv.lock,renv,impressum.qmd
+#
+# ignore-words-list =
