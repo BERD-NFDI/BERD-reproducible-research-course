@@ -24,7 +24,7 @@ Afterwards go through the following assignments:
 - Install git: For R users, I recommend following [these](https://gitlab.com/HeidiSeibold/setup-git-rstudio-gitlab) instructions. Otherwise the Carpentries have good [instructions](https://swcarpentry.github.io/git-novice/index.html) for all systems (follow along until end of `2. Setting up Git`)
 - Create a project on GitLab (or GitHub). Then `clone` it, edit a file, `add`, 
 `commit`, and `push` your changes.
-- View the open issues for our course booklet and choose one where you can make a contribution. Create a merge request with your contribution and mark it in the respective issue.
+- View the open issues for our course booklet and choose one where you can make a contribution. Create a [fork](https://github.com/BERD-NFDI/BERD-reproducible-research-course/fork) of the [booklet project](https://github.com/BERD-NFDI/BERD-reproducible-research-course) and then a [pull request](https://github.com/BERD-NFDI/BERD-reproducible-research-course/pulls) with your contribution and mark it in the respective issue.
 - Optional: try using Make to automate something in your current research project.
 
 Discuss your progress with your accountability buddy. Bring any questions and
