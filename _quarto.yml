@@ -3,7 +3,7 @@ project:
 
 book:
   title: "BERD Course Booklet: Make Your Research Reproducible"
-  author: "Heidi Seibold, Rabea Müller and the Digital Research Academy community"
+  author: "Heidi Seibold, Rabea Müller, the Digital Research Academy community and the BERD academy"
   chapters:
   - part: index.qmd
     chapters:
