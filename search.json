@@ -4,14 +4,21 @@
     "href": "index.html",
     "title": "BERD Course Booklet: Make Your Research Reproducible",
     "section": "",
-    "text": "This course booklet is part of the BERD Academy and was created in 2023.\n\nOverview\nThis booklet helps you implement impactful steps in making your research reproducible (and open).\nMaking your work reproducible may seem daunting right now, but we’ll take it step by step and you can choose what you want to implement now and what you want to keep for later. This is a process and there is no need to take all the steps at once. Let’s just try to move towards reproducible on the reproducibility scale.\n\n\n\n\nReproducibility scale\n\n\n\n\n\n\n\n\n\nReuse\n\n\n\nIf you want to reuse the course materials, you are welcome to do so. Please review our license information.\nYou can find the booklet source on GitHub."
+    "text": "This course booklet is part of the BERD Academy and was created in 2023.\n\nOverview\nThis booklet helps you implement impactful steps in making your research reproducible, FAIR and open. If you don’t know what these terms mean, no problem: We will go through them step by step.\nMaking your work reproducible may seem daunting right now, but we’ll take it step by step and you can choose what you want to implement now and what you want to keep for later. This is a process and there is no need to take all the steps at once. Let’s just try to move towards reproducible on the reproducibility scale.\n\n\n\n\nReproducibility scale\n\n\n\n\n\n\n\n\n\nReuse\n\n\n\nIf you want to reuse the course materials, you are welcome to do so. Please review our license information.\nYou can find the booklet source on GitHub."
+  },
+  {
+    "objectID": "intro.html#prerequisites",
+    "href": "intro.html#prerequisites",
+    "title": "Introduction",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nIn order to get the most out of this course, we recommend that you bring the following skills:\n\nBasic programming knowledge (R, python, …)\nWillingness to learn new technical skills"
   },
   {
     "objectID": "intro.html#course-format",
     "href": "intro.html#course-format",
     "title": "Introduction",
     "section": "Course format",
-    "text": "Course format\nThis is an online course. Each week you will..\n\nwatch the weekly videos (~45 min),\nreview one of the booklet chapters,\nhave a short session with your accountability buddy (15-20 minutes),\nimplement the tasks of the week, and\ndiscuss your progress in the weekly online meeting with the instructor and fellow course participants (1-1.5 hours).\n\nYou will choose your accountability buddy during the course. You and your buddy will help each other in implementing the tasks of each week.\n\nWeekly Meetings:\n\nTuesday, October 17, 3 pm – 4:30 pm CET\nTuesday, October 24, 3 pm – 4:30 pm CET\nTuesday, October 31, NO MEETING but self-paced learning\nTuesday, November 7, 3 pm – 4:30 pm CET\nTuesday, November 14, 3 pm – 4:30 pm CET"
+    "text": "Course format\nThis is an online course. In each part, you will…\n\nwatch the videos,\nreview booklet,\nhave a short session with your accountability buddy (15-30 minutes),\nimplement the tasks of the week\n\nWe recommend to take 1-2 weeks for each part.\nYou can go through this course without an accountability buddy, but we recommend that you go through it with one.\nWhat is an accountability buddy?\nAn accountability buddy is a learning partner. Together you ensure that you continue the course and achieve the learning goals. Choose someone as your accountability partner who also wants to take this course. Because learning together is just more fun!"
   },
   {
     "objectID": "1-reproducible-research.html",
@@ -152,6 +159,27 @@
     "title": "Booklet licence",
     "section": "",
     "text": "CC-BY 4.0\nUnless otherwise noted, all materials in this booklet are licensed under CC-BY 4.0 Heidi Seibold and the BERD Academy.\nThat means, if you reuse the booklet materials please cite it as follows (or similar):\n\n\n\n\n\n\nCitation\n\n\n\nBERD Course: Make Your Research Reproducible, 2023, Heidi Seibold, https://berd-nfdi.github.io/BERD-reproducible-research-course/, https://doi.org/10.17605/OSF.IO/RUPT7.\n\n\nThe course materials are available on OSF and GitHub."
+  },
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Courses",
+    "section": "",
+    "text": "This booklet can be used both for self-guided learning or as part of a flipped classroom course. In this part of the book we show the courses that have been run based on these materials."
+  },
+  {
+    "objectID": "2023-course.html#introduction",
+    "href": "2023-course.html#introduction",
+    "title": "BERD Academy course 2023",
+    "section": "Introduction",
+    "text": "Introduction\nWelcome to the course “Make your research reproducible”! We will have 5 exciting weeks together in which you will implement reproducible research practices into your daily work."
+  },
+  {
+    "objectID": "2023-course.html#course-format",
+    "href": "2023-course.html#course-format",
+    "title": "BERD Academy course 2023",
+    "section": "Course format",
+    "text": "Course format\nThis is an online course. Each week you will..\n\nwatch the weekly videos (~45 min),\nreview one of the booklet chapters,\nhave a short session with your accountability buddy (15-20 minutes),\nimplement the tasks of the week, and\ndiscuss your progress in the weekly online meeting with the instructor and fellow course participants (1-1.5 hours).\n\nYou will choose your accountability buddy during the course. You and your buddy will help each other in implementing the tasks of each week.\n\nWeekly Meetings:\n\nTuesday, October 17, 3 pm – 4:30 pm CET\nTuesday, October 24, 3 pm – 4:30 pm CET\nTuesday, October 31, NO MEETING but self-paced learning\nTuesday, November 7, 3 pm – 4:30 pm CET\nTuesday, November 14, 3 pm – 4:30 pm CET"
   },
   {
     "objectID": "impressum.html#kontakt",
