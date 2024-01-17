@@ -1,31 +1,39 @@
 # Introduction {.unnumbered}
 
 Welcome to the course "Make your research reproducible"!
-We will have 5 exciting weeks together in which you will implement reproducible
-research practices into your daily work.
+
+You can go through the materials in this booklet by yourself, with an accountability buddy,
+or join a course. We will announce upcoming courses [here](courses.html).
+
+## Prerequisites
+
+In order to get the most out of this course, we recommend that you bring the
+following skills:
+
+- Basic programming knowledge (R, python, …)
+- Willingness to learn new technical skills
 
 ## Course format
 
-This is an online course. Each week you will..
+This is an online course. In each part, you will...
 
-- watch the weekly videos (~45 min),
-- review one of the booklet chapters,
-- have a short session with your accountability buddy (15-20 minutes), 
-- implement the tasks of the week, and
-- discuss your progress in the weekly online meeting with the instructor and 
-fellow course participants (1-1.5 hours).
+- watch the videos,
+- review booklet,
+- have a short session with your accountability buddy (15-30 minutes), 
+- implement the tasks of the week
 
-You will choose your accountability buddy during the course. You and your 
-buddy will help each other in implementing the tasks of each week.
+We recommend to take 1-2 weeks for each part.
 
-![](images/course-concept.jpg){width=90%}
+You can go through this course without an accountability buddy, but we recommend
+that you go through it with one.
 
-Weekly Meetings:
+**What is an accountability buddy?**   
+An accountability buddy is a learning partner. Together you ensure that you 
+continue the course and achieve the learning goals. Choose someone as your
+accountability partner who also wants to take this course. Because learning 
+together is just more fun!
 
-- Tuesday, October 17, 3 pm – 4:30 pm CET
-- Tuesday, October 24, 3 pm – 4:30 pm CET
-- Tuesday, October 31, NO MEETING but self-paced learning
-- Tuesday, November 7, 3 pm – 4:30 pm CET
-- Tuesday, November 14, 3 pm – 4:30 pm CET
+
+
 
 ![](images/reproducible-research-neon.jpg){width=50%}

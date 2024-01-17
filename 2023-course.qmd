@@ -1,0 +1,34 @@
+# BERD Academy course 2023 {.unnumbered}
+
+This course was run as a flipped-classroom online course via the [BERD Academy](https://www.berd-nfdi.de/berd-academy).
+For more information see [here](https://www.berd-nfdi.de/berd-academy/reproducibility-2023/).
+
+## Introduction
+
+Welcome to the course "Make your research reproducible"!
+We will have 5 exciting weeks together in which you will implement reproducible
+research practices into your daily work.
+
+## Course format
+
+This is an online course. Each week you will..
+
+- watch the weekly videos (~45 min),
+- review one of the booklet chapters,
+- have a short session with your accountability buddy (15-20 minutes), 
+- implement the tasks of the week, and
+- discuss your progress in the weekly online meeting with the instructor and 
+fellow course participants (1-1.5 hours).
+
+You will choose your accountability buddy during the course. You and your 
+buddy will help each other in implementing the tasks of each week.
+
+![](images/course-concept.jpg){width=90%}
+
+Weekly Meetings:
+
+- Tuesday, October 17, 3 pm – 4:30 pm CET
+- Tuesday, October 24, 3 pm – 4:30 pm CET
+- Tuesday, October 31, NO MEETING but self-paced learning
+- Tuesday, November 7, 3 pm – 4:30 pm CET
+- Tuesday, November 14, 3 pm – 4:30 pm CET

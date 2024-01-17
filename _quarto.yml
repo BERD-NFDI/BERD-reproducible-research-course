@@ -33,6 +33,9 @@ book:
   - part: summary.qmd
     chapters:
     - license.qmd
+  - part: courses.qmd
+    chapters:
+    - 2023-course.qmd
   
   
   navbar: 

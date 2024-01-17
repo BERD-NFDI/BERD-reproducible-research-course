@@ -1,0 +1,7 @@
+# Courses {.unnumbered}
+
+This booklet can be used both for self-guided learning or as part of a flipped 
+classroom course. In this part of the book we show the courses that have been 
+run based on these materials.
+
+![](images/reproducible-research-neon.jpg){width=50%}

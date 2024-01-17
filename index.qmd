@@ -5,7 +5,9 @@ and was created in 2023.
 
 # Overview {.unnumbered}
 
-This booklet helps you implement impactful steps in **making your research reproducible** (and open). 
+This booklet helps you implement impactful steps in **making your research reproducible**, FAIR and open. 
+If you don't know what these terms mean, no problem: We will go through them step by step.
+
 
 Making your work reproducible may seem daunting right now, but we'll take it **step by step** and you can choose what you want to implement now and what you want to keep for later. This is a process and there is no need to take all the steps at once. Let's just try to move towards reproducible on the reproducibility scale.
 
