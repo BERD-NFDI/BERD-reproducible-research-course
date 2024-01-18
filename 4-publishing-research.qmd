@@ -23,6 +23,5 @@ Afterwards go through the following assignments:
     your data, code and other research outputs in your field?
 - Upload something (e.g. data or a slide deck) to a repository of your choice. How FAIR can you make it?
 
-Discuss your progress with your accountability buddy. Bring any questions and
-problems that you cannot solve with your buddy to the weekly meeting.
+Discuss your progress with your accountability buddy. 
 :::

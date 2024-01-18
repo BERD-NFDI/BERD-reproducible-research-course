@@ -2,6 +2,8 @@
 
 Welcome to the course "Make your research reproducible"!
 
+![](images/reproducible-research-neon.jpg){width=50%}
+
 You can go through the materials in this booklet by yourself, with an accountability buddy,
 or join a course. We will announce upcoming courses [here](courses.html).
 
@@ -18,8 +20,8 @@ following skills:
 This is an online course. In each part, you will...
 
 - watch the videos,
-- review booklet,
-- have a short session with your accountability buddy (15-30 minutes), 
+- review the booklet,
+- have a session with your accountability buddy (15-30 minutes), 
 - implement the tasks of the week
 
 We recommend to take 1-2 weeks for each part.
@@ -27,13 +29,12 @@ We recommend to take 1-2 weeks for each part.
 You can go through this course without an accountability buddy, but we recommend
 that you go through it with one.
 
-**What is an accountability buddy?**   
-An accountability buddy is a learning partner. Together you ensure that you 
+### Accountability buddy  
+An accountability buddy is a learning partner. 
+
+Together you ensure that you 
 continue the course and achieve the learning goals. Choose someone as your
 accountability partner who also wants to take this course. Because learning 
 together is just more fun!
 
 
-
-
-![](images/reproducible-research-neon.jpg){width=50%}

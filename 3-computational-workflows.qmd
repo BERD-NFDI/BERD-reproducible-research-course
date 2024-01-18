@@ -27,6 +27,5 @@ Afterwards go through the following assignments:
 - Optional: Think of things you would like to see improved in our course booklet (Alternatively: view the [open issues](https://github.com/BERD-NFDI/BERD-reproducible-research-course/issues)) and choose one thing where you can make a contribution. Create a [fork](https://github.com/BERD-NFDI/BERD-reproducible-research-course/fork) of the [booklet project](https://github.com/BERD-NFDI/BERD-reproducible-research-course) and then a [pull request](https://github.com/BERD-NFDI/BERD-reproducible-research-course/pulls) with your contribution and mark it in the respective issue.
 - Optional: try using Make to automate something in your current research project.
 
-Discuss your progress with your accountability buddy. Bring any questions and
-problems that you cannot solve with your buddy to the weekly meeting.
+Discuss your progress with your accountability buddy. 
 :::
