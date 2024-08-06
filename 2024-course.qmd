@@ -1,6 +1,6 @@
 # BERD Academy course 2024 {.unnumbered}
 
-This course was run as a flipped-classroom online course via the [BERD Academy](https://www.berd-nfdi.de/berd-academy).
+This course is a flipped-classroom online course via the [BERD Academy](https://www.berd-nfdi.de/berd-academy).
 For more information see [here](https://www.berd-nfdi.de/berd-academy/reproducibility-2024/).
 
 ## Introduction
