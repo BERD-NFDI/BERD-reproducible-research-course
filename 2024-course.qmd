@@ -25,10 +25,15 @@ buddy will help each other in implementing the tasks of each week.
 
 ![](images/course-concept.jpg){width=90%}
 
-The course includes 5 Online Meetings, in which you will discuss the week’s contents with the instructor and fellow participants:
+The course includes 5 Online Meetings, in which you will discuss the week’s contents with an expert and fellow participants:
 
-Meeting 1: Sep 25, 3:00 – 4:30 pm CEST   
-Meeting 2: Oct 02, 3:00 – 4:30 pm CEST   
-Meeting 3: Oct 09, 3:00 – 4:30 pm CEST   
-Meeting 4: Oct 16, 3:00 – 4:30 pm CEST   
-Meeting 5: Oct 23, 3:00 – 4:30 pm CEST   
+| Meeting   | Date & Time (CEST)    | Topic | Expert |
+|-----------|-----------------------|-------|--------|
+| 1 | Sep 25, 3:00 – 4:30 pm  | Reproducible research and how to get there | [Heidi Seibold](https://digital-research.academy/trainers/HeidiSeibold/) |
+| 2 | Oct 02, 3:00 – 4:30 pm  | Get your research project organized | [Susann Auer](https://digital-research.academy/trainers/SusannAuer/) |
+| 3 | Oct 09, 3:00 – 4:30 pm  | Computational workflows 1 | [Heidi Seibold](https://digital-research.academy/trainers/HeidiSeibold/) |
+| 4 | Oct 16, 3:00 – 4:30 pm  | Computational workflows 2 | [Rabea Müller](https://digital-research.academy/trainers/RabeaMueller/) |
+| 5 | Oct 23, 3:00 – 4:30 pm  | Publishing research outputs | [Rabea Müller](https://digital-research.academy/trainers/RabeaMueller/) |
+
+
+
