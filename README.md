@@ -1,6 +1,6 @@
 # Course booklet for the BERD course "Make your research reproducible"
 
-Welcome to the course booklet repository! :wave:
+Welcome to the course booklet repository! :wave: :wave:
 
 To make this booklet FAIR (finable, accessible, interoperable, and reusable),
 we have created an OSF entry: https://osf.io/rupt7/
