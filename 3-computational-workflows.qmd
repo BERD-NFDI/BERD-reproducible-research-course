@@ -22,7 +22,7 @@ Read this chapter and watch this week's videos.
 Afterwards go through the following assignments:
 
 - Install git
-- Create a Git repository on GitHub or GitLab (you can call it e.g. "sandbox" or "just-trying-Git" :wink:). Then `clone` it, edit a file, `add`, `commit`, and `push` your changes.
+- Create a Git repository on GitHub or GitLab (you can call it e.g. "sandbox" or "just-trying-Git" 😉). Then `clone` it, edit a file, `add`, `commit`, and `push` your changes.
 - Optional: Create a Git repository for your current research project.
 - Optional: Think of things you would like to see improved in our course booklet (Alternatively: view the [open issues](https://github.com/BERD-NFDI/BERD-reproducible-research-course/issues)) and choose one thing where you can make a contribution. Create a [fork](https://github.com/BERD-NFDI/BERD-reproducible-research-course/fork) of the [booklet project](https://github.com/BERD-NFDI/BERD-reproducible-research-course) and then a [pull request](https://github.com/BERD-NFDI/BERD-reproducible-research-course/pulls) with your contribution and mark it in the respective issue.
 - Optional: try using Make to automate something in your current research project.
