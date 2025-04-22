@@ -1,0 +1,39 @@
+# BERD Academy course 2025 {.unnumbered}
+
+This course is a flipped-classroom online course via the [BERD Academy](https://www.berd-nfdi.de/berd-academy).   
+For more information see [here](https://www.berd-nfdi.de/berd-academy/reproducibility-2025/).
+
+## Introduction
+
+Welcome to the course "Make your research reproducible"!
+We will have 5 exciting weeks together in which you will implement reproducible
+research practices into your daily work.
+
+## Course format
+
+This is an online course. Each week you will..
+
+- watch the weekly videos,
+- review one of the booklet chapters,
+- have a short session with your accountability buddy (15-20 minutes), 
+- implement the tasks of the week, and
+- discuss your progress in the weekly online meeting with the instructor and 
+fellow course participants (1-1.5 hours).
+
+You will choose your accountability buddy during the course. You and your 
+buddy will help each other in implementing the tasks of each week.
+
+![](images/course-concept.jpg){width=90%}
+
+The course includes 5 Online Meetings, in which you will discuss the week’s contents with an expert and fellow participants:
+
+| Date & Time (CEST)  | Topic | Expert |
+| :---- | :---- | :---- |
+| 06.05., 16:00-17:30 | Reproducible research and how to get there | Elen Le Foll |
+| 13.05., 16:00-17:30 | Get your research project organized | Elen Le Foll |
+| 20.05., 16:00-17:30 | Computational workflows 1: The workflow as a pipeline; Version control | Johanna Bayer  |
+| 27.05., 16:00-17:30 | Computational workflows 2: Stabilize your computing environment and software; Automate your code | Rabea Müller |
+| 03.06., 16:00-17:30 | Publishing research outputs | Rabea Müller |
+
+
+
