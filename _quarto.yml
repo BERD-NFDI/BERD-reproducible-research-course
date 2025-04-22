@@ -35,6 +35,7 @@ book:
     - license.qmd
   - part: courses.qmd
     chapters:
+    - 2025-course.qmd
     - 2024-course.qmd
     - 2023-course.qmd
   
