@@ -1,4 +1,4 @@
-# Get your research project organized
+# B. Get your research project organized
 
 ::: {.callout-note}
 ## Learning targets

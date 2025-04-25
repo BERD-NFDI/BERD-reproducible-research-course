@@ -1,4 +1,4 @@
-# Publishing research outputs
+# D. Publishing research outputs
 
 ::: {.callout-note}
 ## Learning targets
