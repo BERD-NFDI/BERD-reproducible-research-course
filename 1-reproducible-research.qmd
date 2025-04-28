@@ -1,4 +1,4 @@
-# Reproducible research and how to get there
+# A. Reproducible research and how to get there
 
 ::: {.callout-note}
 ## Learning targets
