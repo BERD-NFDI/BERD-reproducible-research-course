@@ -21,11 +21,21 @@ that the previous. Please plan for this.
 Read this chapter and watch this week's videos. 
 Afterwards go through the following assignments:
 
-- Install git
-- Create a Git repository on GitHub or GitLab (you can call it e.g. "sandbox" or "just-trying-Git" 😉). Then `clone` it, edit a file, `add`, `commit`, and `push` your changes.
-- Optional: Create a Git repository for your current research project.
-- Optional: Think of things you would like to see improved in our course booklet (Alternatively: view the [open issues](https://github.com/BERD-NFDI/BERD-reproducible-research-course/issues)) and choose one thing where you can make a contribution. Create a [fork](https://github.com/BERD-NFDI/BERD-reproducible-research-course/fork) of the [booklet project](https://github.com/BERD-NFDI/BERD-reproducible-research-course) and then a [pull request](https://github.com/BERD-NFDI/BERD-reproducible-research-course/pulls) with your contribution and mark it in the respective issue.
-- Optional: try using Make to automate something in your current research project.
+- Install git (see Booklet)
+- Create a Github account (if you don’t yet have any)
 
-Discuss your progress with your accountability buddy. 
+Practical Task 1: Work on your own Github repository
+
+- Create a Git repository on GitHub or GitLab (you can call it e.g. "sandbox" or "just-trying-Git" 😉). Then `clone` it, edit a file, `add`, `commit`, and `push` your changes back to Github.
+Practical task 2: Contribute to someone else’s repository
+- Fork the following repository (it contains the file structure you should be already familiar with) : https://github.com/likeajumprope/BERD_course
+- Make a change to some of the files. For example, you can add a code comment (a command that is not executed) using the # symbol
+- Commit your changes.
+- Make a pull request to the original (my) repository. Make sure to summarize your changes and write a nice commit message.
+
+Optional Tasks:
+-  Create a Git repository for your current research project.
+- Optional: Think of things you would like to see improved in our course booklet (Alternatively: view the [open issues](https://github.com/BERD-NFDI/BERD-reproducible-research-course/issues)) and choose one thing where you can make a contribution. Create a [fork](https://github.com/BERD-NFDI/BERD-reproducible-research-course/fork) of the [booklet project](https://github.com/BERD-NFDI/BERD-reproducible-research-course) and then a [pull request](https://github.com/BERD-NFDI/BERD-reproducible-research-course/pulls) with your contribution and mark it in the respective issue.
+
+Discuss your progress and potential issues with your accountability buddy. 
 :::
