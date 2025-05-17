@@ -26,8 +26,10 @@ Afterwards go through the following assignments:
 
 Practical Task 1: Work on your own Github repository
 
-- Create a Git repository on GitHub or GitLab (you can call it e.g. "sandbox" or "just-trying-Git" 😉). Then `clone` it, edit a file, `add`, `commit`, and `push` your changes back to Github.
-Practical task 2: Contribute to someone else’s repository
+- Create a Git repository on GitHub or GitLab (you can call it e.g. "sandbox" or "just-trying-Git" 😉). Then `clone` it, edit a file, `add`, `commit`, and `push` your changes back to Github.  
+
+Practical task 2: Contribute to someone else’s repository  
+
 - Fork the following repository (it contains the file structure you should be already familiar with) : https://github.com/likeajumprope/BERD_course
 - Make a change to some of the files. For example, you can add a code comment (a command that is not executed) using the # symbol
 - Commit your changes.
