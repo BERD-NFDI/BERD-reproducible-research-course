@@ -37,6 +37,13 @@ Optional Tasks:
 
 - Create a Git repository for your current research project.
 - Think of things you would like to see improved in our course booklet (Alternatively: view the [open issues](https://github.com/BERD-NFDI/BERD-reproducible-research-course/issues)) and choose one thing where you can make a contribution. Create a [fork](https://github.com/BERD-NFDI/BERD-reproducible-research-course/fork) of the [booklet project](https://github.com/BERD-NFDI/BERD-reproducible-research-course) and then a [pull request](https://github.com/BERD-NFDI/BERD-reproducible-research-course/pulls) with your contribution and mark it in the respective issue.
-
+- Optional task for week 4: Try out the Makefile example from the course repository.  
+  If you haven’t already, clone the [BERD course repository](https://github.com/BERD-NFDI/BERD-reproducible-research-course), then navigate into the `make-example` folder.  
+  Run the following in your terminal:  
+  `make data_clean/PlantGrowth_new.csv`  
+  Then run the same command again and observe the output.  
+  Next, open `preprocess.R`, add a harmless comment (e.g. `# This is just a test comment to trigger Make`), save the file, and run the command again.  
+  What’s different this time?
 Discuss your progress and potential issues with your accountability buddy. 
+
 :::
