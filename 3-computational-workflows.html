@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -383,18 +418,57 @@ Tasks
 <li>Commit your changes.</li>
 <li>Make a pull request to the original (my) repository. Make sure to summarize your changes and write a nice commit message.</li>
 </ul>
+<p>Practical Task 2: Practice using <code>make</code></p>
+<ul>
+<li>You will generate a simple plot from the existing <code>sadata.csv</code> file in the <code>project</code> folder of the repository you forked in Practical Task 1 (https://github.com/likeajumprope/BERD_course).</li>
+</ul>
+<hr>
+<p>Step 1: Create a base R script</p>
+<p>Create a file named <code>plot_data_base.R</code> in your <code>project</code> folder with the following content:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Read the CSV and make a simple base R plot</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"sadata.csv"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">pdf</span>(<span class="st">"plot.pdf"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(data<span class="sc">$</span>date, data<span class="sc">$</span>SP.DYN.LE00.IN, <span class="at">type =</span> <span class="st">"p"</span>, <span class="at">col =</span> <span class="st">"blue"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Year"</span>, <span class="at">ylab =</span> <span class="st">"Life Expectancy"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"South Asia - Life Expectancy (sample)"</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This script reads the data and creates a scatter plot saved as <code>plot.pdf</code>.</p>
+<hr>
+<p>Step 2: Create a Makefile</p>
+<p>In the same folder, create a file named <code>Makefile</code> with the following content:</p>
+<pre class="make"><code>plot.pdf: plot_data_base.R sadata.csv
+    Rscript plot_data_base.R
+
+clean:
+    rm -f plot.pdf</code></pre>
+<blockquote class="blockquote">
+<p>⚠️ Use a real <strong>Tab</strong> (not spaces) at the beginning of the lines with <code>Rscript</code> and <code>rm</code>.</p>
+</blockquote>
+<hr>
+<p>Step 3: Run and test</p>
+<ol type="1">
+<li><p>Run the workflow:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> plot.pdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>→ This creates <code>plot.pdf</code></p></li>
+<li><p>Run it again:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> plot.pdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>→ Nothing happens. The plot is already up to date.</p></li>
+<li><p>Add a comment to <code>plot_data_base.R</code>, save the file, and run again:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> plot.pdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>→ The script will run again.</p></li>
+<li><p>Clean up:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> clean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+<hr>
+<p>Questions for Reflection - What would happen if you deleted the plot.pdf file and ran make again? - What triggers make to re-run the R script? What doesn’t? - Why do we specify both the input data and the R script as dependencies in the Makefile?</p>
 <p>Optional Tasks:</p>
 <ul>
 <li>Create a Git repository for your current research project.</li>
 <li>Think of things you would like to see improved in our course booklet (Alternatively: view the <a href="https://github.com/BERD-NFDI/BERD-reproducible-research-course/issues">open issues</a>) and choose one thing where you can make a contribution. Create a <a href="https://github.com/BERD-NFDI/BERD-reproducible-research-course/fork">fork</a> of the <a href="https://github.com/BERD-NFDI/BERD-reproducible-research-course">booklet project</a> and then a <a href="https://github.com/BERD-NFDI/BERD-reproducible-research-course/pulls">pull request</a> with your contribution and mark it in the respective issue.</li>
-<li>Optional task for week 4: Try out the Makefile example from the course repository.<br>
-If you haven’t already, clone the <a href="https://github.com/BERD-NFDI/BERD-reproducible-research-course">BERD course repository</a>, then navigate into the <code>make-example</code> folder.<br>
-Run the following in your terminal:<br>
-<code>make data_clean/PlantGrowth_new.csv</code><br>
-Then run the same command again and observe the output.<br>
-Next, open <code>preprocess.R</code>, add a harmless comment (e.g.&nbsp;<code># This is just a test comment to trigger Make</code>), save the file, and run the command again.<br>
-What’s different this time? Discuss your progress and potential issues with your accountability buddy.</li>
 </ul>
+<p>Discuss your progress and potential issues with your accountability buddy.</p>
 </div>
 </div>
 
