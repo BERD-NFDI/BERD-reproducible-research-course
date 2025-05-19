@@ -34,7 +34,7 @@ Practical task 2: Contribute to someone else’s repository
 - Make a pull request to the original (my) repository. Make sure to summarize your changes and write a nice commit message.
 
  
-Practical Task 2: Practice using `make`
+Practical Task 2 (week 4): Practice using `make`
 
 - You will generate a simple plot from the existing `sadata.csv` file in the `project` folder of the repository you forked in Practical Task 1 (https://github.com/likeajumprope/BERD_course).
 
