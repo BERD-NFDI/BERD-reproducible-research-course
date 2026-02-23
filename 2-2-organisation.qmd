@@ -40,6 +40,6 @@ What do you think about file or folder organization? Is your folder structure si
 
 -   [Research Compendia](https://the-turing-way.netlify.app/reproducible-research/compendia.html), The Turing Way
 - [Towards a Standardized Research Folder Structure](https://genr.eu/wp/towards-a-standardized-research-folder-structure/), GenR blog
--   Folder structure of R packages, [Making Packages in R](https://swcarpentry.github.io/r-novice-inflammation/08-making-packages-R/), Software Carpentry
+-   Folder structure of R packages, [Making Packages in R](https://swcarpentry.github.io/r-novice-inflammation/08-making-packages-R.html), Software Carpentry
 - [Research Project Template](https://github.com/HeidiSeibold/research-project-template), Heidi Seibold
 - [Data Analysis Project Template](http://projecttemplate.net/), a [group of R users](https://github.com/KentonWhite/ProjectTemplate/graphs/contributors)
